@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /gok/
+
+Sitemap: https://eirahoutmoss.github.io/sitemap.xml

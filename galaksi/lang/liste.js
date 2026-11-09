@@ -1,0 +1,1 @@
+window.QUL_LANGS=[{"c": "tr", "n": "Türkçe"}, {"c": "en", "n": "English"}];

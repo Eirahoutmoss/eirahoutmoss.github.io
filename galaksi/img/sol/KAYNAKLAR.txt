@@ -1,0 +1,7 @@
+Güneş Sistemi dokuları ve kaynakları
+- Mars, Jüpiter, Satürn, Neptün, Hipparcos yıldız haritası: NASA 3D Resources (github.com/nasa/NASA-3D-Resources) — NASA içeriği, telif hakkı yok.
+- Dünya gündüz (Blue Marble), gece ışıkları, su/kara maskesi, yükseklik: NASA Visible Earth / Earth Observatory görüntüleri (kamu malı); vasturiano/three-globe örnek dosyaları (MIT) üzerinden alındı.
+- Ay haritası: three.js örnek dokusu (mrdoob/three.js, MIT).
+- Merkür: Ay haritasından türetilmiş yaklaşık görünüm (NASA MESSENGER haritasıyla değiştirilebilir).
+- Güneş, Venüs bulutları, Uranüs, Satürn halkaları, Dünya bulutları: kodla üretilmiştir (gerçek görünümü taklit eden prosedürel).
+Yörünge konumları: JPL "Keplerian Elements for Approximate Positions" ortalama boylam değerleri (dairesel yaklaşım).

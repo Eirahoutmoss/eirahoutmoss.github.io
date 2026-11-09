@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<link rel="canonical" href="https://eirahoutmoss.github.io/?p=vitrin/kavramlar.html">
+<meta name="description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qul Efsaneleri">
+<meta property="og:title" content="Kavram Ağı — Qul Efsaneleri">
+<meta property="og:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:url" content="https://eirahoutmoss.github.io/?p=vitrin/kavramlar.html">
+<meta property="og:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kavram Ağı — Qul Efsaneleri">
+<meta name="twitter:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta name="twitter:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<script>if(top===self&&!/solo/.test(location.search))location.replace("../index.html?p=vitrin/kavramlar.html")</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title data-i18n="site.kav.title">Kavram Ağı — Qul Efsaneleri</title>
+<style>
+:root{--g:#e8b84b;--p:#d8c9a8;--d:#8f8570;--v:#05050a}*{box-sizing:border-box;margin:0}body{background:var(--v);color:var(--p);font:17px/1.7 Georgia,serif;overflow-x:hidden}
+header{text-align:center;padding:8vh 16px 2vh}header small{letter-spacing:.4em;text-transform:uppercase;color:var(--d);font-size:12px}h1{font-weight:400;letter-spacing:.22em;color:var(--g);font-size:clamp(2rem,6vw,3.4rem)}
+header p{max-width:620px;margin:.6em auto 0}nav{text-align:center;margin:12px 0}nav a{color:var(--p);border:1px solid #6b5d4299;padding:7px 14px;font-size:13px;letter-spacing:.12em;text-decoration:none;margin:0 4px}
+#wrap{position:relative;height:min(72vh,720px);margin:0 auto;max-width:1200px}canvas{width:100%;height:100%;display:block;cursor:grab}
+#card{position:absolute;right:16px;top:16px;width:min(360px,calc(100% - 32px));background:#0e0c09f2;border:1px solid #6b5d42;padding:18px 20px;display:none}#card h2{font-weight:400;color:var(--g);letter-spacing:.08em;font-size:1.3rem}#card p{font-size:15px}#card button{position:absolute;top:8px;right:10px;background:none;border:0;color:var(--p);font-size:18px;cursor:pointer}
+#list{max-width:900px;margin:4vh auto 10vh;padding:0 16px}#list h3{font-weight:400;color:var(--g);letter-spacing:.06em;margin-top:1.4em}#empty{text-align:center;color:var(--d);font-style:italic;padding:10vh 16px}
+</style><script data-base="../galaksi/lang/" src="../i18n_sayfa.js"></script><script src="../galaksi/kavramlar.js"></script></head><body>
+<header><small data-i18n="site.kav.eyebrow">Qul Efsaneleri</small><h1 data-i18n="site.kav.h">Kavram Ağı</h1><p data-i18n="site.kav.lead">Evrenin temel kavramları ve birbirlerine nasıl bağlandıkları. Bir kavrama dokun, tanımını oku.</p></header>
+<nav><a href="index.html" data-i18n="site.atlas.home">⌂ Ana sayfa</a><a href="atlas.html" data-i18n="site.vit.atlas">Atlas</a></nav>
+<div id="wrap"><canvas id="c" aria-label="Kavram ağı"></canvas><div id="card" role="dialog"><button aria-label="Kapat">✕</button><h2></h2><p></p></div></div><div id="list"></div>
+<script>
+(function(){var K=window.QUL_KAVRAM||[],c=document.getElementById('c'),x=c.getContext('2d'),W,H,N,E=[],sel=-1,drag=-1,ox=0,oy=0;
+if(!K.length){document.getElementById('wrap').outerHTML='<p id="empty" data-i18n="site.kav.empty">Kavram ağı, yazar onayından sonra açılacak.</p>';return;}
+var key=function(a){return a.split(/[ (—"]/).filter(function(w){return w.length>2})[0]||a};
+N=K.map(function(k,i){var a=i/K.length*6.283;return{k:k,x:Math.cos(a)*200,y:Math.sin(a)*200,vx:0,vy:0,n:key(k.ad).toLocaleLowerCase('tr')}});
+N.forEach(function(a,i){N.forEach(function(b,j){if(i<j&&(a.k.tanim.toLocaleLowerCase('tr').indexOf(b.n)>=0||b.k.tanim.toLocaleLowerCase('tr').indexOf(a.n)>=0))E.push([i,j])})});
+var deg=N.map(function(_,i){return E.filter(function(e){return e[0]===i||e[1]===i}).length});
+function rs(){var r=c.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);W=r.width;H=r.height;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+function step(){for(var i=0;i<N.length;i++){var a=N[i];for(var j=i+1;j<N.length;j++){var b=N[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+.01,f=2600/d2;a.vx+=dx*f/Math.sqrt(d2);a.vy+=dy*f/Math.sqrt(d2);b.vx-=dx*f/Math.sqrt(d2);b.vy-=dy*f/Math.sqrt(d2)}a.vx-=a.x*.004;a.vy-=a.y*.004}
+E.forEach(function(e){var a=N[e[0]],b=N[e[1]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+.01,f=(d-140)*.012;a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f});
+N.forEach(function(a,i){if(i===drag)return;a.vx*=.82;a.vy*=.82;a.x+=a.vx;a.y+=a.vy})}
+function draw(){step();x.clearRect(0,0,W,H);x.save();x.translate(W/2,H/2);var s=Math.min(W,H)/620;x.scale(s,s);
+E.forEach(function(e){var a=N[e[0]],b=N[e[1]],on=sel===e[0]||sel===e[1];x.strokeStyle=on?'rgba(232,184,75,.7)':'rgba(143,133,112,.25)';x.lineWidth=on?1.6:1;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()});
+N.forEach(function(a,i){var r=5+deg[i]*1.6;x.fillStyle=i===sel?'#e8b84b':'#d8c9a8';x.shadowColor='#e8b84b';x.shadowBlur=i===sel?18:6;x.beginPath();x.arc(a.x,a.y,r,0,6.283);x.fill();x.shadowBlur=0;x.fillStyle=i===sel?'#e8b84b':'#b8ab8e';x.font='13px Georgia';x.textAlign='center';x.fillText(a.k.ad.length>34?a.k.ad.slice(0,32)+'…':a.k.ad,a.x,a.y+r+15)});
+x.restore();requestAnimationFrame(draw)}draw();
+function pick(ev){var r=c.getBoundingClientRect(),s=Math.min(W,H)/620,px=(ev.clientX-r.left-W/2)/s,py=(ev.clientY-r.top-H/2)/s,b=-1,bd=900;N.forEach(function(a,i){var d=(a.x-px)*(a.x-px)+(a.y-py)*(a.y-py);if(d<bd){bd=d;b=i}});return[b,px,py]}
+var card=document.getElementById('card');function show(i){sel=i;if(i<0){card.style.display='none';return;}card.querySelector('h2').textContent=N[i].k.ad;card.querySelector('p').textContent=N[i].k.tanim;card.style.display='block'}
+card.querySelector('button').onclick=function(){show(-1)};
+c.addEventListener('pointerdown',function(ev){var p=pick(ev);if(p[0]>=0){drag=p[0];ox=N[drag].x-p[1];oy=N[drag].y-p[2];show(drag);c.setPointerCapture(ev.pointerId)}});
+c.addEventListener('pointermove',function(ev){if(drag<0)return;var p=pick(ev);N[drag].x=p[1]+ox;N[drag].y=p[2]+oy});c.addEventListener('pointerup',function(){drag=-1});
+document.getElementById('list').innerHTML=K.map(function(k){return '<h3>'+k.ad.replace(/</g,'&lt;')+'</h3><p>'+k.tanim.replace(/</g,'&lt;')+'</p>'}).join('');})();
+</script></body></html>

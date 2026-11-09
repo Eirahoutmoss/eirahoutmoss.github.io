@@ -1,0 +1,4 @@
+/muzik/*
+  Cache-Control: public, max-age=31536000, immutable
+/vitrin/k/*
+  Cache-Control: public, max-age=31536000, immutable

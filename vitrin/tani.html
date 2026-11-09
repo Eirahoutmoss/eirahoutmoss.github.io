@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr"><head>
+<link rel="canonical" href="https://eirahoutmoss.github.io/vitrin/tani.html">
+<meta name="description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qul Efsaneleri">
+<meta property="og:title" content="WebGL Tanı — Qul Efsaneleri">
+<meta property="og:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:url" content="https://eirahoutmoss.github.io/vitrin/tani.html">
+<meta property="og:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WebGL Tanı — Qul Efsaneleri">
+<meta name="twitter:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta name="twitter:image" content="https://eirahoutmoss.github.io/og/site.jpg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>WebGL Tanı — Qul Efsaneleri</title>
+<style>body{margin:0;background:#05050a;color:#e8e4dc;font:15px/1.6 system-ui,sans-serif;padding:20px}h1{font:600 20px Georgia,serif;margin:0 0 4px}p{color:#a9a9bd;margin:4px 0 14px}
+pre{white-space:pre-wrap;word-break:break-word;background:#0c0c14;border:1px solid #26263a;border-radius:8px;padding:14px;font:13px/1.5 ui-monospace,Consolas,monospace;user-select:all}
+button{font:inherit;padding:10px 16px;border-radius:999px;border:1px solid #4a4436;background:#d8b67c;color:#141008;cursor:pointer;margin-right:8px}a{color:#d8b67c}</style></head><body>
+<h1>WebGL Tanı</h1>
+<p>Bu sayfa siteden bağımsızdır. Tarayıcının 3B grafik penceresi (WebGL) açıp açamadığını farklı ayarlarla dener. Sonucu kopyalayıp gönder.</p>
+<p><button id="kop">Sonucu kopyala</button><button id="sifir" style="background:transparent;color:#e8dcc4">Önbelleği ve kayıtlı ayarları temizle</button><a href="../index.html">Siteye dön</a></p>
+<pre id="o">Çalışıyor…</pre>
+<script>
+(function(){
+  var L=[]; function w(s){ L.push(s); }
+  w('Tarayıcı: '+navigator.userAgent); w('Ekran: '+screen.width+'x'+screen.height+' @'+devicePixelRatio+' | pencere '+innerWidth+'x'+innerHeight);
+  w('Tarih: '+new Date().toISOString()); try{ w('Güvenli mod bayrağı (qsafe): '+(localStorage.getItem('qsafe')||'yok')); }catch(e){}
+  w('');
+  var sets=[
+    ['webgl2 · varsayılan', 'webgl2', {}],
+    ['webgl2 · antialias açık', 'webgl2', {antialias:true}],
+    ['webgl2 · antialias kapalı', 'webgl2', {antialias:false}],
+    ['webgl2 · yüksek performans', 'webgl2', {antialias:false,powerPreference:'high-performance'}],
+    ['webgl2 · düşük güç', 'webgl2', {antialias:false,powerPreference:'low-power'}],
+    ['webgl2 · yazılım yedeğine izin ver', 'webgl2', {antialias:false,failIfMajorPerformanceCaveat:false}],
+    ['webgl1 · varsayılan', 'webgl', {}],
+    ['webgl1 · antialias kapalı', 'webgl', {antialias:false}]
+  ];
+  var ok2=false;
+  sets.forEach(function(s){
+    var c=document.createElement('canvas'), gl=null, err='';
+    c.addEventListener('webglcontextcreationerror',function(e){ err=e.statusMessage||''; });
+    try{ gl=c.getContext(s[1],s[2]); }catch(e){ err=String(e); }
+    if(!gl){ w('✗ '+s[0]+'  → açılamadı'+(err?' ('+err+')':'')); return; }
+    if(s[1]==='webgl2') ok2=true;
+    var d=gl.getExtension('WEBGL_debug_renderer_info');
+    w('✓ '+s[0]+'  → '+(d?gl.getParameter(d.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER)));
+    if(s[0]==='webgl2 · varsayılan'||s[0]==='webgl1 · varsayılan'){
+      w('    sürücü/üretici: '+(d?gl.getParameter(d.UNMASKED_VENDOR_WEBGL):gl.getParameter(gl.VENDOR)));
+      w('    sürüm: '+gl.getParameter(gl.VERSION));
+      w('    en büyük doku: '+gl.getParameter(gl.MAX_TEXTURE_SIZE)+' | nokta boyutu: '+Array.prototype.join.call(gl.getParameter(gl.ALIASED_POINT_SIZE_RANGE),'–'));
+      w('    yarım duyarlıklı çizim hedefi: '+(!!(gl.getExtension('EXT_color_buffer_half_float')||gl.getExtension('EXT_color_buffer_float'))));
+      w('    paralel shader derleme: '+(!!gl.getExtension('KHR_parallel_shader_compile')));
+      var f=gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER,gl.HIGH_FLOAT); w('    fragment highp: '+(f&&f.precision>0?'var ('+f.precision+' bit)':'YOK'));
+    }
+    var x=gl.getExtension('WEBGL_lose_context'); if(x) x.loseContext();
+  });
+  w('');
+  w(ok2?'SONUÇ: WebGL2 açılabiliyor. Site yine de açılmıyorsa sorun başka bir yerde (F9 ya da konsol hatası gerekir).':'SONUÇ: Bu tarayıcı oturumunda WebGL2 açılamıyor. Sorun tarayıcı/sürücü tarafında.');
+  w('');
+  w('Ayrıca bu adresleri aç ve "Graphics Feature Status" ile "Problems detected" bölümlerini gönder:');
+  w('  Chrome: chrome://gpu     Brave: brave://gpu     Edge: edge://gpu');
+  try{ if(navigator.serviceWorker) navigator.serviceWorker.getRegistrations().then(function(r){ w('Servis çalışanı kaydı: '+r.length); document.getElementById('o').textContent=L.join('\n'); }); }catch(e){}
+  try{ if(window.caches) caches.keys().then(function(k){ w('Önbellekler: '+(k.join(', ')||'yok')); document.getElementById('o').textContent=L.join('\n'); }); }catch(e){}
+  document.getElementById('sifir').onclick=function(){ var b=this; b.textContent='Temizleniyor…'; var is=[];
+    try{ localStorage.removeItem('qsafe'); }catch(e){}
+    if(navigator.serviceWorker) is.push(navigator.serviceWorker.getRegistrations().then(function(r){ return Promise.all(r.map(function(x){ return x.unregister(); })); }));
+    if(window.caches) is.push(caches.keys().then(function(k){ return Promise.all(k.map(function(x){ return caches.delete(x); })); }));
+    Promise.all(is).then(function(){ b.textContent='Temizlendi — sayfa yenileniyor'; setTimeout(function(){ location.reload(); },900); }); };
+  try{ var cr=JSON.parse(localStorage.getItem('qcr')||'[]'); w(''); w('SON GALAKSİ AÇILIŞININ KAYDI ('+cr.length+' satır):'); if(!cr.length) w('  (kayıt yok — galaksi sayfası henüz açılmadı)'); cr.forEach(function(x){ w('  '+String(x[0]).padStart(6)+' ms  '+x[1]); }); }catch(e){}
+  document.getElementById('o').textContent=L.join('\n');
+  document.getElementById('kop').onclick=function(){ var t=L.join('\n'); if(navigator.clipboard) navigator.clipboard.writeText(t).then(function(){ document.getElementById('kop').textContent='Kopyalandı'; }); };
+})();
+</script></body></html>

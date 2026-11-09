@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<link rel="canonical" href="https://eirahoutmoss.github.io/?p=galaksi/index.html">
+<meta name="description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qul Efsaneleri">
+<meta property="og:title" content="Galaksi Konfederasyonu — Qul Efsaneleri">
+<meta property="og:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:url" content="https://eirahoutmoss.github.io/?p=galaksi/index.html">
+<meta property="og:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Galaksi Konfederasyonu — Qul Efsaneleri">
+<meta name="twitter:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta name="twitter:image" content="https://eirahoutmoss.github.io/og/site.jpg"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galaksi Konfederasyonu — Qul Efsaneleri</title><link rel="stylesheet" href="css/galaxy.css"></head><body>
+<div id="gl"></div>
+<div class="hud"><h1 data-i18n="ui.title">Galaksi Konfederasyonu</h1><p data-i18n="ui.sub">100+ galaksi · her galaksi bir sektör · sürükle, tekerlekle yaklaş, galaksiye veya kara deliğe tıkla</p>
+<div class="legend"><span><i style="background:#4fc3e8"></i><b data-i18n="leg.home">Dünya</b></span><span><i style="background:#e8b84b"></i><b data-i18n="leg.sector">Sektör gezegeni</b></span><span><i style="background:#7fd1ae"></i><b data-i18n="leg.itf">İTF kolonisi</b></span><span><i style="background:#9a9aae"></i><b data-i18n="leg.draft">Sektörü atanmamış</b></span><span><i style="background:#b8a0ff"></i><b data-i18n="leg.eira">Eşlenik Evren</b></span></div></div>
+<div class="hudc"><input id="q" data-i18n-ph="ui.search" placeholder="Gezegen veya galaksi ara…" autocomplete="off"><div id="sres"></div><button id="tour">▶ Sinematik Tur</button></div>
+<div class="hudr"><select id="lang"></select><button id="hush"></button><a id="atl" href="../vitrin/atlas.html" data-i18n="ui.atlas">☰ Atlas</a><a id="home" href="../vitrin/index.html" data-i18n="ui.homeBtn">⌂ Ana Sayfa</a><button id="back" data-i18n="ui.back">⤢ Tüm Evren</button></div>
+<div id="bt"></div><div id="bb"></div><div id="title"><div id="th"></div><div id="ts"></div></div>
+<div id="where"></div><div id="chips"></div><div id="tip" class="tip"></div>
+<div id="panel" class="panel"><button id="pc">✕</button><div id="art"><canvas id="cv" width="760" height="460"></canvas><img id="img" alt=""><span id="artnote"></span></div><p id="pe"></p><h2 id="pt"></h2><div id="card"></div><p id="pd"></p><div id="extra"></div></div>
+<div id="lb"><img id="lbi" alt=""></div>
+<div id="tools"><button id="tt"></button><button id="sol0"></button><button id="care"></button><button id="scl"></button><button id="pair"></button><button id="thr"></button><button id="cmd"></button><button id="snap"></button><button id="aks"></button><button id="log"></button><button id="mec"></button><button id="nar"></button></div><div id="flash"></div><div id="toast"></div><div id="dist"></div><div id="carec"></div><div id="load" data-i18n="ui.loading">Evren yükleniyor…</div>
+<script>if(top===self&&!/solo/.test(location.search))location.replace("../index.html?p=galaksi/index.html")</script>
+<script>(function(){var son=[];
+var T0=performance.now();try{localStorage.setItem("qcr","[]")}catch(e){}
+window.__crumb=function(s){try{var a=JSON.parse(localStorage.getItem("qcr")||"[]");a.push([Math.round(performance.now()-T0),s]);localStorage.setItem("qcr",JSON.stringify(a.slice(-60)))}catch(e){}};
+window.__crumb("sayfa başladı");
+var lt=performance.now();setInterval(function(){var n=performance.now(),g=n-lt-250;lt=n;if(g>1200)window.__crumb("DONMA "+Math.round(g)+" ms")},250);
+document.addEventListener("visibilitychange",function(){window.__crumb("görünürlük: "+document.visibilityState)});function ayrinti(e){var m=String(e.message||(e.reason&&e.reason.message)||e.reason||"bilinmeyen");var w=e.filename?(" ["+String(e.filename).split("/").pop()+":"+(e.lineno||0)+":"+(e.colno||0)+"]"):"";var st=e.error&&e.error.stack?String(e.error.stack).split("\n").slice(0,3).join(" | "):"";return{m:m,w:w,st:st}}
+function kayit(e,tur){var a=ayrinti(e);var o=tur+": "+a.m+a.w+(a.st?" | "+a.st:"");son.push(o);if(son.length>8)son.shift();window.__qulErr=son;try{console.error("[Qul]",o)}catch(x){}return a}
+addEventListener("error",function(e){if(!e.message&&e.target&&e.target!==window)return;var a=kayit(e,"hata");var l=document.getElementById("load");var yukleniyor=!!(l&&l.isConnected&&!l.classList.contains("hide"));
+if(a.m==="Script error."&&location.protocol==="file:"){a.m="Script error. — sayfa dosyadan (file://) açılmış olabilir; siteyi bir sunucu üzerinden aç (ör. yayinla sonrası alan adı ya da yerel sunucu)."}
+if(/WebGL context/i.test(a.m)){try{localStorage.setItem("qsafe",String(Date.now()))}catch(x){}var l0=document.getElementById("load");if(l0){l0.classList.remove("hide");l0.style.pointerEvents="auto";l0.innerHTML='<div style="max-width:520px;margin:0 auto;padding:0 18px;line-height:1.6;text-align:center"><div style="letter-spacing:.2em;font-size:12px;opacity:.7">GÖRÜNTÜ BAŞLATILAMADI</div><p style="margin:14px 0">Bu cihazda ya da tarayıcıda 3B grafik (WebGL) şu an açılamıyor. Evreni yine de gezebilirsin:</p><p><a href="../vitrin/atlas.html" style="color:#e8b84b">Atlas</a> · <a href="../d/" style="color:#e8b84b">Tüm dünyalar</a> · <a href="javascript:location.reload()" style="color:#e8b84b">Tekrar dene</a></p><p style="font-size:12px;opacity:.6">Chrome/Edge: Ayarlar → Sistem → donanım hızlandırmayı aç, ardından tarayıcıyı tamamen kapatıp aç. Ekran kartı sürücüsünü güncellemek de çoğu zaman çözer. F9 ile tanı bilgisini görebilirsin.</p></div>'}return}
+if(yukleniyor||/WebGL|context/i.test(a.m)){if(l){l.classList.remove("hide");l.style.pointerEvents="auto";l.innerHTML="Hata: "+a.m.replace(/</g,"&lt;")+(a.w?'<br><small style="opacity:.6">'+a.w.replace(/</g,"&lt;")+"</small>":"")+' — <a href="../vitrin/atlas.html" style="color:#e8b84b">Atlas (hafif sürüm)</a>'}}
+else{var t=document.getElementById("toast");if(!t){t=document.createElement("div");t.id="toast";document.body.appendChild(t)}if(t){t.textContent="Küçük bir sorun oluştu, devam edebilirsin.";t.classList.add("on");setTimeout(function(){t.classList.remove("on")},3500)}}});
+addEventListener("unhandledrejection",function(e){kayit(e,"söz")})})()</script>
+<script src="lang/liste.js"></script><script>(function(){var m=location.search.match(/lang=([\w-]+)/),c=m&&m[1];try{c=c||localStorage.getItem("qlang")}catch(e){}if(c&&c!=="tr"&&(window.QUL_LANGS||[]).some(function(l){return l.c===c}))document.write('<script src="lang/'+c+'.js"><\/script>');else c="tr";window.QUL_CODE=c})()</script><script src="data.js"></script><script src="bakis.js"></script><script src="ortak.js"></script><script src="meclis.js"></script><script src="galaksi.js"></script></body></html>

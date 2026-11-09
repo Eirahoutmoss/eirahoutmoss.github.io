@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<link rel="canonical" href="https://eirahoutmoss.github.io/?p=vitrin/frekans.html">
+<meta name="description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qul Efsaneleri">
+<meta property="og:title" content="Frekans — Qul Efsaneleri">
+<meta property="og:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta property="og:url" content="https://eirahoutmoss.github.io/?p=vitrin/frekans.html">
+<meta property="og:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Frekans — Qul Efsaneleri">
+<meta name="twitter:description" content="Hasan Güler&#x27;in Qul Efsaneleri evreni: Galaksi Konfederasyonu&#x27;nun dünyalarını gez, yüzeylerine in, evrenin kavramlarını ve müziğini keşfet.">
+<meta name="twitter:image" content="https://eirahoutmoss.github.io/og/site.jpg">
+<script>if(top===self&&!/solo/.test(location.search))location.replace("../index.html?p=vitrin/frekans.html")</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title data-i18n="site.frq.title">Frekans — Qul Efsaneleri</title>
+<style>
+:root{--g:#e8b84b;--p:#d8c9a8;--d:#8f8570;--v:#05050a}*{box-sizing:border-box;margin:0}body{background:var(--v);color:var(--p);font:17px/1.75 Georgia,serif}
+header{text-align:center;padding:7vh 16px 2vh}header small{letter-spacing:.4em;text-transform:uppercase;color:var(--d);font-size:12px}h1{font-weight:400;letter-spacing:.22em;color:var(--g);font-size:clamp(2rem,6vw,3.4rem)}
+.lead{max-width:640px;margin:.8em auto 0}.q{font-style:italic;color:#efe6d0}
+main{max-width:1000px;margin:0 auto;padding:0 16px 10vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,330px);gap:28px;align-items:start}
+#stage{position:relative;aspect-ratio:1;border:1px solid #6b5d4277;background:radial-gradient(circle,#15120d,#0a0907)}canvas{width:100%;height:100%;display:block}
+#mode{position:absolute;left:12px;top:10px;font-size:12px;letter-spacing:.2em;color:var(--d);text-transform:uppercase}
+.ctl label{display:block;font-size:12.5px;letter-spacing:.12em;color:#b8ab8e;margin:16px 0 6px;text-transform:uppercase}
+input[type=range]{width:100%;accent-color:var(--g)}.hz{font-size:2rem;color:var(--g);letter-spacing:.06em}.hz small{font-size:.9rem;color:var(--d)}
+button{background:none;border:1px solid var(--g);color:var(--g);padding:9px 16px;font:13px Georgia,serif;letter-spacing:.12em;cursor:pointer;margin:6px 6px 0 0}button.on{background:var(--g);color:#08070a}
+.txt{grid-column:1/-1;max-width:760px}.txt h2{font-weight:400;color:var(--g);letter-spacing:.1em;font-size:1.3rem;margin:1.6em 0 .4em}.txt p{margin:.6em 0}
+nav{text-align:center;margin:10px 0 20px}nav a{color:var(--p);border:1px solid #6b5d4299;padding:7px 14px;font-size:13px;letter-spacing:.12em;text-decoration:none;margin:0 4px}
+@media(max-width:760px){main{grid-template-columns:minmax(0,1fr)}}
+</style><script data-base="../galaksi/lang/" src="../i18n_sayfa.js"></script></head><body>
+<header><small data-i18n="site.frq.eyebrow">Ardıl bilgi</small><h1 data-i18n="site.frq.h">Frekans</h1>
+<p class="lead q" data-i18n="site.frq.canon">"Yeremya'da büyü yoktur; her şey frekans ve titreşim fiziğiyle işler."</p>
+<p class="lead" data-i18n="site.frq.lead">Bir levhayı belirli bir frekansta titreştirdiğinizde üzerindeki kum, kendiliğinden geometrik desenlere dizilir. Bir zamanlar gizemli sayılan bu desenler bugün dalga denklemleriyle hesaplanır.</p></header>
+<nav><a href="index.html" data-i18n="site.atlas.home">⌂ Ana sayfa</a></nav>
+<main>
+<div id="stage"><canvas id="c" aria-label="Chladni levhası"></canvas><div id="mode"></div></div>
+<div class="ctl"><div class="hz" id="hz">—</div>
+<label for="f" data-i18n="site.frq.freq">Frekans</label><input id="f" type="range" min="0" max="1" step=".001" value=".18">
+<button id="snd" data-i18n="site.frq.sound">♪ Sesi aç</button><button id="mic" data-i18n="site.frq.mic">🎙 Mikrofonla dene</button><button id="rst" data-i18n="site.frq.reset">Kumu dağıt</button>
+<p style="font-size:13.5px;color:var(--d);margin-top:14px" data-i18n="site.frq.help">Kaydırıcıyı oynatın ya da mikrofonla bir ses, ıslık veya şarkı verin: levha, sesin baskın frekansına en yakın titreşim kipine geçer.</p></div>
+<div class="txt"><h2 data-i18n="site.frq.h2a">Görünen</h2><p data-i18n="site.frq.p1">Kum taneleri bir el tarafından çiziliyormuş gibi kusursuz simetrik çizgilere toplanır. Frekans yükseldikçe desenler karmaşıklaşır, bazen bir çiçeğe, bazen bir mühre benzer.</p>
+<h2 data-i18n="site.frq.h2b">Ardı</h2><p data-i18n="site.frq.p2">Titreşen levhada duran dalgalar oluşur. Bazı çizgiler boyunca levha hiç hareket etmez; bunlara düğüm çizgileri denir. Titreşen bölgelerdeki kum sıçrayarak oradan uzaklaşır ve hareketsiz düğüm çizgilerinde birikir. Her rezonans frekansının kendine özgü bir düğüm deseni vardır.</p>
+<p data-i18n="site.frq.p3">Bu desenleri ilk kez Alman fizikçi Ernst Chladni 1787'de sistemli olarak gösterdi. Paris Bilimler Akademisi desenlerin matematiğini açıklayana ödül koydu; ödülü 1816'da Sophie Germain kazandı. Bir zamanlar şaşırtıcı bir gösteri olan şey, böylece ölçülebilir ve tekrarlanabilir bir bilgiye dönüştü.</p>
+<p style="font-size:13.5px;color:var(--d)" data-i18n="site.frq.p4">Bu sayfadaki levha, kare bir levhanın titreşim kiplerinin basitleştirilmiş bir matematiksel modelidir; gerçek levhalarda desenler malzemeye ve kenar koşullarına göre değişir.</p></div>
+</main>
+<script>
+(function(){
+var c=document.getElementById('c'),x=c.getContext('2d'),S=600,N=9000,P=new Float32Array(N*2),f=document.getElementById('f'),hz=document.getElementById('hz'),md=document.getElementById('mode');
+var M=[];for(var n=1;n<=9;n++)for(var m=n+1;m<=10;m++)M.push([n,m]);M.sort(function(a,b){return (a[0]*a[0]+a[1]*a[1])-(b[0]*b[0]+b[1]*b[1])});
+var BASE=11.5,cur=M[0],sgn=1;function freqOf(k){return BASE*(k[0]*k[0]+k[1]*k[1])}
+function rs(){var d=Math.min(2,devicePixelRatio||1),r=c.getBoundingClientRect();S=Math.round(r.width);c.width=S*d;c.height=S*d;x.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+function scatter(){for(var i=0;i<N;i++){P[i*2]=Math.random();P[i*2+1]=Math.random()}}scatter();
+function amp(px,py){var a=cur[0]*Math.PI,b=cur[1]*Math.PI;return Math.cos(a*px)*Math.cos(b*py)+sgn*Math.cos(b*px)*Math.cos(a*py)}
+function setMode(k){if(k===cur)return;cur=k;sgn=((k[0]+k[1])%2)?-1:1;var F=freqOf(k);hz.innerHTML=Math.round(F)+' <small>Hz</small>';md.textContent='('+k[0]+', '+k[1]+')';if(osc)osc.frequency.setTargetAtTime(F,ac.currentTime,.05)}
+function fromSlider(){setMode(M[Math.min(M.length-1,Math.floor(+f.value*(M.length-1)+.5))])}f.oninput=fromSlider;cur=null;fromSlider();
+function step(){for(var i=0;i<N;i++){var px=P[i*2],py=P[i*2+1],A=Math.abs(amp(px,py)),k=.02*A;px+=(Math.random()-.5)*k;py+=(Math.random()-.5)*k;
+ if(px<0)px=-px;if(px>1)px=2-px;if(py<0)py=-py;if(py>1)py=2-py;P[i*2]=px;P[i*2+1]=py}}
+function draw(){step();step();step();x.fillStyle='rgba(10,9,7,.55)';x.fillRect(0,0,S,S);x.fillStyle='#e8d6a8';for(var i=0;i<N;i++){x.fillRect(P[i*2]*S,P[i*2+1]*S,1.3,1.3)}requestAnimationFrame(draw)}draw();
+var ac=null,osc=null,gn=null,snd=document.getElementById('snd');
+snd.onclick=function(){if(!ac)ac=new (window.AudioContext||window.webkitAudioContext)();if(osc){gn.gain.setTargetAtTime(0,ac.currentTime,.1);var o=osc;setTimeout(function(){o.stop()},400);osc=null;snd.classList.remove('on');return;}
+ osc=ac.createOscillator();gn=ac.createGain();osc.frequency.value=freqOf(cur);gn.gain.value=0;osc.connect(gn);gn.connect(ac.destination);osc.start();gn.gain.setTargetAtTime(.06,ac.currentTime,.2);snd.classList.add('on')};
+var mic=document.getElementById('mic'),an=null,buf=null,micOn=false;
+mic.onclick=function(){if(micOn){micOn=false;mic.classList.remove('on');return;}if(!ac)ac=new (window.AudioContext||window.webkitAudioContext)();
+ navigator.mediaDevices.getUserMedia({audio:true}).then(function(st){var src=ac.createMediaStreamSource(st);an=ac.createAnalyser();an.fftSize=4096;src.connect(an);buf=new Float32Array(an.frequencyBinCount);micOn=true;mic.classList.add('on');listen()}).catch(function(){mic.textContent='🎙 —'})};
+function listen(){if(!micOn)return;an.getFloatFrequencyData(buf);var bi=0,bv=-1e9,lo=Math.floor(80/(ac.sampleRate/an.fftSize)),hi=Math.floor(2400/(ac.sampleRate/an.fftSize));for(var i=lo;i<hi;i++)if(buf[i]>bv){bv=buf[i];bi=i}
+ if(bv>-62){var F=bi*ac.sampleRate/an.fftSize,best=M[0],bd=1e9;M.forEach(function(k){var d=Math.abs(Math.log(freqOf(k)/F));if(d<bd){bd=d;best=k}});f.value=M.indexOf(best)/(M.length-1);setMode(best)}setTimeout(listen,120)}
+document.getElementById('rst').onclick=scatter;
+})();
+</script></body></html>
