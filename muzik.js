@@ -1,6 +1,6 @@
 // MÜZİK OYNATICI — kabuk sayfada yaşar, iframe içindeki sayfalar değişirken kesintisiz çalar
 (function(){
-  const $ = id => document.getElementById(id), PAGES = ['vitrin/index.html','vitrin/yapimcilar.html','vitrin/atlas.html','vitrin/kavramlar.html','vitrin/frekans.html','galaksi/index.html'];
+  const $ = id => document.getElementById(id), PAGES = ['vitrin/index.html','vitrin/yapimcilar.html','vitrin/atlas.html','vitrin/kavramlar.html','vitrin/frekans.html','vitrin/kitap-2678.html','galaksi/index.html'];
   const sp0 = new URLSearchParams(location.search), p = sp0.get('p'); $('fr').src = sp0.has('sergi') ? 'galaksi/index.html?sergi=1' : p && PAGES.includes(p.split('?')[0]) ? p : PAGES[0];
   const L = (window.QUL_MUZIK || []).map(t => ({ t:t.t, srcs:[t.f ? encodeURI(t.f) : null, t.drive ? 'https://drive.google.com/uc?export=download&id=' + t.drive : null].filter(Boolean) }));
   if(!L.length){ $('pl').remove(); $('gm').textContent='♪ Müzikle gir (parça yok)'; const out=()=>{ $('gate').classList.add('out'); setTimeout(()=>$('gate').remove(),1100); }; $('gm').onclick=out; $('gs').onclick=out; return; }
