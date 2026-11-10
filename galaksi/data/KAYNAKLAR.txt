@@ -1,0 +1,1 @@
+Yıldız konumları ve takımyıldızı çizgileri: d3-celestial (Olaf Frohn, BSD-3-Clause); yıldız verisi Hipparcos/Tycho katalogları (ESA). Çin takımyıldızı çizgileri de d3-celestial'dan.

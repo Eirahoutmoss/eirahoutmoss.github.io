@@ -339,3 +339,11 @@ body.sinif #panel{font-size:1.18em}body.sinif #tools button,body.sinif .hudc inp
 #tools #shelf0,#tools #plan0,#tools #not0,#tools #duvar0,#tools #rec0,#tools #sinif0,#tools #radyo0{color:#d8c9a0}
 
 #tools.open{max-height:calc(100vh - 150px);overflow-y:auto;overscroll-behavior:contain;padding-right:4px}
+#sol .sln{width:100%;margin-bottom:6px;background:rgba(0,0,0,.35);color:#e8dcc0;border:1px solid #6b5d42;border-radius:6px;padding:5px 4px;font-size:11.5px}
+
+#bh{position:fixed;inset:0;z-index:95;background:#000}#bh canvas{display:block;touch-action:none;cursor:grab}
+#bh .bx{position:absolute;right:12px;top:12px;background:rgba(20,17,13,.8);color:#e8c46a;border:1px solid #6b5d42;border-radius:999px;width:38px;height:38px;font-size:16px;cursor:pointer}
+#bh .bi{position:absolute;left:14px;right:60px;bottom:14px;color:#9a917a;font:12px Georgia,serif;pointer-events:none}
+#bh .bc{position:absolute;left:12px;top:12px;display:flex;gap:10px;align-items:center;background:rgba(20,17,13,.8);color:#e8dcc0;border:1px solid #6b5d42;border-radius:10px;padding:6px 10px;font:12px Georgia,serif}#bh .bc select{background:#0d0f17;color:#e8dcc0;border:1px solid #6b5d42;border-radius:6px}
+#xp .xt{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0}#xp .xt td,#xp .xt th{border-bottom:1px solid #2a2417;padding:4px 6px;text-align:left}#xp .xt th{color:#9a917a;font-weight:400}
+#tools #uzlab0{color:#8fd6ff}
