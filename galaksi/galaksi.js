@@ -4407,7 +4407,7 @@ float vn(vec3 x){vec3 i=floor(x),f=fract(x);f=f*f*(3.-2.*f);return mix(mix(mix(h
 float fbm(vec3 p){float s=0.,a=.5;for(int i=0;i<4;i++){s+=a*vn(p);p*=2.03;a*=.5;}return s;}`,F0=`varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
 void main(){vUv=uv;vO=normalize(position);vec3 t=normalize(vec3(position.z,0.,-position.x)+vec3(1e-5,0.,0.));
  vN=normalize(mat3(modelMatrix)*vO);vT=normalize(mat3(modelMatrix)*t);vB=cross(vN,vT);
- vec4 w=modelMatrix*vec4(position,1.);vW=w.xyz;gl_Position=projectionMatrix*viewMatrix*w;}`,K0="vec3 sunTint(float mu){return mix(vec3(1.,.38,.14),vec3(1.,.97,.92),smoothstep(-.02,.32,mu));}",cd=`const float RP=1.,RA=1.0094;const vec3 BR=vec3(37.,86.,211.),BO=vec3(4.1,12.,.54);const float BM=30.,HR=.00126,HM=.00019;
+ vec4 w=modelMatrix*vec4(position,1.);vW=w.xyz;gl_Position=projectionMatrix*viewMatrix*w;}`,K0="vec3 sunTint(float mu){return mix(vec3(1.,.5,.26),vec3(1.,.98,.95),smoothstep(-.03,.11,mu));}",cd=`const float RP=1.,RA=1.0094;const vec3 BR=vec3(37.,86.,211.),BO=vec3(4.1,12.,.54);const float BM=30.,HR=.00126,HM=.00019;
 vec2 rs(vec3 o,vec3 d,float r){float b=dot(o,d),c=dot(o,o)-r*r,h=b*b-c;if(h<0.)return vec2(1e9,-1e9);h=sqrt(h);return vec2(-b-h,-b+h);}
 float airm(float mz){if(mz<-.08)return 1e4;float z=degrees(acos(clamp(mz,-1.,1.)));return 1./(max(mz,0.)+.50572*pow(max(96.07995-z,.01),-1.6364));}
 vec3 tauOf(float oR,float oM){return BR*oR+BO*oR*.6+BM*1.1*oM;}
@@ -4422,7 +4422,7 @@ float mnC(vec3 c){return min(c.r,min(c.g,c.b));}
 float cloudD(vec2 uv,vec3 p){float lon=uv.x*360.-180.,lat=(uv.y-.5)*180.;vec3 tc=texture2D(tCG,uv).rgb;
  if(uW1>.5){vec4 c1=clip(tC1,uB1,lon,lat);tc=mix(tc,c1.rgb,c1.a);if(uW2>.5){vec4 c2=clip(tC2,uB2,lon,lat);tc=mix(tc,c2.rgb,c2.a);}}
  float mx=max(tc.r,max(tc.g,tc.b)),mn=mnC(tc),valid=smoothstep(.015,.05,mx);
- float a=smoothstep(.2,.62,mn)*(1.-smoothstep(.1,.26,mx-mn))*smoothstep(.07,.22,mn-mnC(texture2D(tDay,uv).rgb)*1.05);
+ float a=smoothstep(.14,.7,mn)*(1.-smoothstep(.1,.3,mx-mn))*smoothstep(.04,.26,mn-mnC(texture2D(tDay,uv).rgb)*1.05);
  float f=texture2D(tCloud,uv).r;a=mix(smoothstep(.1,.72,f*1.15-(1.-f)*.3)*.85,a,valid);
  float det=fbm(p*700.)*.5+fbm(p*2600.)*.5;return clamp(a*(1.+(det-.5)*.4*(1.-a)),0.,1.);}`,OM=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
 uniform sampler2D tDay,tNight,tWater,tNorm,tCloud,tD1,tD2,tN1,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2,uWN;uniform vec3 uL,uLo;uniform float uT,uCD,uSun;${K0}${ld}${cd}${j0}
@@ -4442,15 +4442,15 @@ void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);
  vec3 deep=vec3(.003,.012,.035);c=mix(c,(deep+day*.4)*sc*max(mu,0.)*1.15*(1.-.6*sh),wat*.5);
  vec3 H=normalize(L+V);float nh=max(dot(Nw,H),0.),F=.02+.98*pow(1.-max(dot(Nw,V),0.),5.);
  c+=sc*(pow(nh,600.)*4.+pow(nh,60.)*.25)*wat*(1.-cl)*(1.-sh*.85)*(.3+F);
- vec3 nt=texture2D(tNight,vUv).rgb;if(uWN>.5){vec4 n1=clip(tN1,uB1,lon,lat);nt=mix(nt,n1.rgb,n1.a);}nt*=smoothstep(.16,.55,max(nt.r,nt.g));nt=pow(nt,vec3(2.));
+ vec3 nt=texture2D(tNight,vUv).rgb;if(uWN>.5){vec4 n1=clip(tN1,uB1,lon,lat);nt=mix(nt,n1.rgb,n1.a);}nt*=smoothstep(.3,.65,max(nt.r,nt.g))*smoothstep(.02,.15,nt.r-nt.b);nt=pow(nt,vec3(2.));
  c+=nt*vec3(1.,.72,.42)*2.6*(1.-smoothstep(-.12,.06,mu))*(1.-cl*.75);
  aerial(cameraPosition,vW,L,uSun,c);gl_FragColor=vec4(c,1.);}`,FM=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
 uniform sampler2D tCloud,tNight,tDay,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2;uniform vec3 uL;uniform float uT,uCD,uSun;${K0}${ld}${cd}${j0}
 void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);float mu=dot(N,L);
  float a=cloudD(vUv,vO);if(a<.004)discard;float det=fbm(vO*190.);
  float dk=smoothstep(-.07,.16,mu);vec3 lit=sunTint(mu)*(.3+.7*max(mu,0.))*dk*1.25*(.8+.3*det);
- float edge=pow(1.-max(dot(N,V),0.),2.);lit+=vec3(1.,.5,.32)*exp(-pow((mu-.03)*16.,2.))*.3;
- vec3 nl=texture2D(tNight,vUv).rgb;nl*=smoothstep(.16,.55,max(nl.r,nl.g));lit+=pow(nl,vec3(2.))*vec3(1.,.72,.42)*.5*(1.-smoothstep(-.12,.05,mu));
+ float edge=pow(1.-max(dot(N,V),0.),2.);lit+=vec3(1.,.55,.38)*exp(-pow((mu-.02)*20.,2.))*.18;
+ vec3 nl=texture2D(tNight,vUv).rgb;nl*=smoothstep(.3,.65,max(nl.r,nl.g))*smoothstep(.02,.15,nl.r-nl.b);lit+=pow(nl,vec3(2.))*vec3(1.,.72,.42)*.5*(1.-smoothstep(-.12,.05,mu));
  aerial(cameraPosition,vW,L,uSun,lit);gl_FragColor=vec4(lit*a,a*(.94-.3*edge));}`,BM=`precision highp float;varying vec3 vW;uniform vec3 uL;uniform float uSun;${cd}
 void main(){vec3 o=cameraPosition,d=normalize(vW-o),L=normalize(uL);vec2 a=rs(o,d,RA);if(a.x>a.y)discard;vec2 p=rs(o,d,RP);if(p.x>0.&&p.x<p.y)discard;
  float t0=max(a.x,0.),ds=(a.y-t0)/16.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
