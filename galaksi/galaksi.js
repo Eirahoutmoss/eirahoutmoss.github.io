@@ -4415,19 +4415,20 @@ float phR(float m){return .0597*(1.+m*m);}
 float phM(float m){float g=.8;return .1194*((1.-g*g)*(1.+m*m))/((2.+g*g)*pow(1.+g*g-2.*g*m,1.5));}
 float cshadow(vec3 x,vec3 L);
 void aerial(vec3 o,vec3 p,vec3 L,float sunI,inout vec3 col){vec3 d=p-o;float tl=length(d);d/=tl;vec2 a=rs(o,d,RA);float t0=max(a.x,0.);if(tl<=t0)return;
- float ds=(tl-t0)/8.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
- for(int i=0;i<8;i++){vec3 x=o+d*(t0+ds*(float(i)+.5));float r=length(x),h=max(r-RP,0.);float dR=exp(-h/HR)*ds,dM=exp(-h/HM)*ds;oR+=dR;oM+=dM;
+ float jt=fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233)))*43758.5453);float ds=(tl-t0)/12.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
+ for(int i=0;i<12;i++){vec3 x=o+d*(t0+ds*(float(i)+jt));float r=length(x),h=max(r-RP,0.);float dR=exp(-h/HR)*ds,dM=exp(-h/HM)*ds;oR+=dR;oM+=dM;
   float am=airm(dot(x/r,L));vec3 at=exp(-tauOf(oR+HR*exp(-h/HR)*am,oM+HM*exp(-h/HM)*am));float cs=(uGR>.5&&h<.0026)?cshadow(x,L):1.;sR+=dR*at*cs;sM+=dM*at*cs;}
  float m=dot(d,L);col=col*exp(-tauOf(oR,oM))+sunI*(sR*BR*phR(m)+sM*BM*phM(m));}`,rg=`float cshadow(vec3 x,vec3 L){vec2 q=rs(x,L,1.0025);if(q.y<=0.)return 1.;vec3 p=(x+L*q.y)/1.0025;float cg=cos(uG),sg=sin(uG);vec3 o=vec3(p.x*cg-p.z*sg,p.y,p.x*sg+p.z*cg);
  vec2 uv=vec2(atan(-o.z,o.x)*.1591549+.5,asin(clamp(o.y,-1.,1.))*.3183099+.5);vec3 tc=texture2D(tCG,uv).rgb;float mx=max(tc.r,max(tc.g,tc.b)),mn=min(tc.r,min(tc.g,tc.b));
  float a=smoothstep(.3,.75,texture2D(tCloud,uv).r)*.8;return 1.-.85*a;}`,ag=`vec4 clip(sampler2D t,vec4 b,float lon,float lat){float u=mod(lon-b.x+720.,360.)/b.z,v=(b.y-lat)/b.w;float e=min(min(u,1.-u),min(v,1.-v));return vec4(texture2D(t,vec2(u,1.-v)).rgb,step(0.,e)*smoothstep(0.,.3,e));}
 float gFp=0.;float mnC(vec3 c){return min(c.r,min(c.g,c.b));}
 float cA(vec3 tc,float dm){float mx=max(tc.r,max(tc.g,tc.b)),mn=mnC(tc);return smoothstep(.14,.7,mn)*(1.-smoothstep(.1,.3,mx-mn))*smoothstep(.04,.26,mn-dm*1.05);}
+float cloudL(vec2 uv,vec3 p){float f=texture2D(tCloud,uv).r;float a=smoothstep(.1,.72,f*1.15-(1.-f)*.3)*.85;float nz=fbm(p*90.)*.5+fbm(p*240.)*.5;return smoothstep(.2,.5,a*1.15+(nz-.5)*(1.15+.6*a)-.12);}
 float cloudD(vec2 uv,vec3 p){float lon=uv.x*360.-180.,lat=(uv.y-.5)*180.;vec3 tg=texture2D(tCG,uv).rgb;float dm=mnC(texture2D(tDay,uv).rgb),mxg=max(tg.r,max(tg.g,tg.b)),valid=smoothstep(.015,.05,mxg)*0.;
  float a=cA(tg,dm);float f=texture2D(tCloud,uv).r;a=mix(smoothstep(.1,.72,f*1.15-(1.-f)*.3)*.85,a,valid);
  if(uW1>.5){vec4 c1=clip(tC1,uB1,lon,lat);float m1=max(c1.r,max(c1.g,c1.b));float a1=cA(c1.rgb,dm);a=mix(a,clamp(a1,max(a-.35,0.),a+.3),c1.a*smoothstep(.015,.05,m1)*valid);
   if(uW2>.5){vec4 c2=clip(tC2,uB2,lon,lat);float m2=max(c2.r,max(c2.g,c2.b));float a2=cA(c2.rgb,dm);a=mix(a,clamp(a2,max(a-.3,0.),a+.3),c2.a*smoothstep(.015,.05,m2)*valid);}}
- float det=mix(.5,fbm(p*700.),1.-smoothstep(.0004,.002,gFp))*.5+mix(.5,fbm(p*2600.),1.-smoothstep(.0001,.0005,gFp))*.5;return clamp(a*(1.+(det-.5)*.4*(1.-a)),0.,1.);}`,QM=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
+ float fq=1.-smoothstep(.0003,.0016,gFp),fq2=1.-smoothstep(.0001,.0005,gFp),fq3=1.-smoothstep(.00003,.00015,gFp);float nz=fbm(p*90.)*.28+fbm(p*240.)*.3+mix(.5,fbm(p*900.),fq)*.24+mix(.5,fbm(p*3300.),fq2)*.12+mix(.5,fbm(p*12000.),fq3)*.06;float dn=a*1.15+(nz-.5)*(1.15+.6*a)-.12;return clamp(smoothstep(.2,.5,dn),0.,1.);}`,QM=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
 uniform sampler2D tDay,tNight,tWater,tNorm,tCloud,tD1,tD2,tN1,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2,uWN;uniform vec3 uL,uLo;uniform float uT,uCD,uSun,uG,uMI,uGR;uniform vec3 uM;${sg}${xd}${bd}${rg}${ag}
 float watC(vec3 c){return smoothstep(.05,.13,c.b-max(c.r,c.g))*(1.-smoothstep(.3,.45,dot(c,vec3(.333))));}
 void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);float mu=dot(N,L);gFp=length(fwidth(vO));float aw=1.-smoothstep(.0002,.0012,gFp);float lon=vUv.x*360.-180.,lat=(vUv.y-.5)*180.;
@@ -4449,21 +4450,22 @@ void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);
  c+=nt*(1.-smoothstep(-.12,.06,mu))*(1.-cl*.8);
  vec3 M=normalize(uM);c+=day*vec3(.5,.62,.85)*max(dot(Nb,M),0.)*uMI*.05*nk*(1.-.7*cl);c+=vec3(.02,.06,.07)*shal*wat*uMI*max(dot(N,M),0.)*.4*nk;
  aerial(cameraPosition,vW,L,uSun,c);gl_FragColor=vec4(c,1.);}`,eS=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
-uniform sampler2D tCloud,tNight,tDay,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2;uniform vec3 uL;uniform float uT,uCD,uSun,uG,uMI,uGR;uniform vec3 uM;${sg}${xd}${bd}${rg}${ag}
+uniform sampler2D tCloud,tNight,tDay,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2;uniform vec3 uL,uLo;uniform float uT,uCD,uSun,uG,uMI,uGR;uniform vec3 uM;${sg}${xd}${bd}${rg}${ag}
 void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);float mu=dot(N,L);
- gFp=length(fwidth(vO));float a=cloudD(vUv,vO);if(a<.004)discard;float det=fbm(vO*190.);
- float dk=smoothstep(-.07,.16,mu);vec3 lit=sunTint(mu)*(.3+.7*max(mu,0.))*dk*1.25*(.8+.3*det);
+ gFp=length(fwidth(vO));float a=cloudD(vUv,vO);if(a<.004)discard;float det=.45*fbm(vO*190.)+.3*mix(.5,fbm(vO*1300.),1.-smoothstep(.0002,.0009,gFp))+.25*mix(.5,fbm(vO*5000.),1.-smoothstep(.00006,.0003,gFp));
+ float dk=smoothstep(-.07,.16,mu);vec3 lit=sunTint(mu)*(.3+.7*max(mu,0.))*dk*.72*(.4+1.0*det);
  float edge=pow(1.-max(dot(N,V),0.),2.);lit+=vec3(1.,.55,.38)*exp(-pow((mu-.02)*20.,2.))*.18;
  float lv=texture2D(tNight,vUv).r;float nk=1.-smoothstep(-.1,.05,mu);lit+=vec3(1.,.7,.4)*lv*lv*.6*nk;lit+=vec3(.5,.6,.8)*max(dot(N,normalize(uM)),0.)*uMI*.06*nk;
  
+ {float zn=max(mu,.12);float cosl=max(length(vO.xz),.15);vec2 sdv=vec2(dot(L,vT)/(6.2832*cosl),dot(L,vB)/3.1416)/zn;vec3 pd=(uLo-vO*dot(uLo,vO))/zn;float as=cloudL(vUv+sdv*.0007,normalize(vO+pd*.0007)),ab=cloudL(vUv-sdv*.0007,normalize(vO-pd*.0007)),a0=cloudL(vUv,vO);lit*=clamp(1.+(ab-as)*1.1+(a0-.5)*.0,.4,1.4);lit+=vec3(.05,.075,.12)*dk*.7;}
  lit*=.72+.38*smoothstep(.2,.9,a);aerial(cameraPosition,vW,L,uSun,lit);gl_FragColor=vec4(lit*a,a*(.94-.3*edge));}`,tS=`precision highp float;varying vec3 vW;uniform vec3 uL;uniform float uSun;const float uGR=0.;${bd}float cshadow(vec3 x,vec3 L){return 1.;}
 const float RG=1.0152;
 vec3 airglow(vec3 o,vec3 d,vec3 L,bool ground){float tt=-dot(o,d);if(tt<0.)return vec3(0.);const float r1=1.0134,r2=1.0149;float b=length(o+d*tt);vec3 x;float pl,k;
  if(ground||b>r2||b<RP)return vec3(0.);pl=2.*(sqrt(max(r2*r2-b*b,0.))-sqrt(max(r1*r1-b*b,0.)));x=o+d*tt;k=.22;
  float nf=1.-smoothstep(-.12,.04,dot(normalize(x),L));return vec3(.32,.95,.5)*pl*k*nf;}
 void main(){vec3 o=cameraPosition,d=normalize(vW-o),L=normalize(uL);vec2 g=rs(o,d,RG);if(g.x>g.y)discard;vec2 p=rs(o,d,RP);if(p.x>0.&&p.x<p.y){gl_FragColor=vec4(airglow(o,d,L,true),0.);return;}vec2 a=rs(o,d,RA);if(a.x>a.y){gl_FragColor=vec4(airglow(o,d,L,false),0.);return;}
- float t0=max(a.x,0.),ds=(a.y-t0)/16.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
- for(int i=0;i<16;i++){vec3 x=o+d*(t0+ds*(float(i)+.5));float r=length(x),h=max(r-RP,0.);float dR=exp(-h/HR)*ds,dM=exp(-h/HM)*ds;oR+=dR;oM+=dM;
+ float jt=fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233)))*43758.5453);float t0=max(a.x,0.),ds=(a.y-t0)/16.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
+ for(int i=0;i<16;i++){vec3 x=o+d*(t0+ds*(float(i)+jt));float r=length(x),h=max(r-RP,0.);float dR=exp(-h/HR)*ds,dM=exp(-h/HM)*ds;oR+=dR;oM+=dM;
   float am=airm(dot(x/r,L));vec3 at=exp(-tauOf(oR+HR*exp(-h/HR)*am,oM+HM*exp(-h/HM)*am));sR+=dR*at;sM+=dM*at;}
  float m=dot(d,L);vec3 col=uSun*(sR*BR*phR(m)+sM*BM*phM(m))+airglow(o,d,L,false);vec3 tr=exp(-tauOf(oR,oM));gl_FragColor=vec4(col,clamp(1.-dot(tr,vec3(.333)),0.,1.));}`,nS=`precision highp float;varying vec3 vO;varying vec3 vN;varying vec3 vW;uniform vec3 uL;uniform float uT;${xd}
 void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW);vec3 P=vec3(.0481,.9869,.1543);float cn=dot(vO,P);float th=acos(abs(cn));float lat=th;float lon=atan(vO.z,vO.x);
@@ -4500,7 +4502,7 @@ void main(){vec2 uv0=vUv;vec2 asp=vec2(uRes.x/uRes.y,1.);vec2 q0=(uv0-.5)*asp;fl
    vec2 fb=(q0-vec2(0.,-.46))*vec2(.95,1.7);float fog=exp(-dot(fb,fb)*2.2)*uBr*(.85+.3*hh(floor(uv0*24.)));c=mix(c,vec3(.72,.78,.86)*(.3+.6*dot(c,vec3(.333))),clamp(fog,0.,.6));}
   c=mix(c,vec3(.012,.012,.015),smoothstep(.985,1.045,d));}
  if(uWide>.5){float bh=(1.-(uRes.x/uRes.y)/2.39)*.5;if(bh>0.&&(uv.y<bh||uv.y>1.-bh))c=vec3(0.);}
- gl_FragColor=vec4(c,1.);}`,un,Yn,qr,It,jt,vs,fd,di,jr,$0,Q0,eg,to,Yc,$a,so=!1,_d=0,pd=0,_t={on:!1,yaw:0,pitch:-.6,vy:0,vp:0,fov:92,ptr:null,lx:0,ly:0},Kc=1,ul=!1,Ii=null,Yr=!1,Qa=0,hd=0,md=[],Xc=1,Zr=Date.now(),Md=1,Xn="mavi",Ut=null,jc=0,zi=0,gd=1,fr=!1,Sd=!1,og=!0,lg=1,io=0,Si={uL:{value:new I(1,0,0)},uLo:{value:new I(1,0,0)},uT:{value:0},uCD:{value:0},uSun:{value:4.5},uG:{value:0},uM:{value:new I(1,0,0)},uMI:{value:0},uGR:{value:0}},cn=n=>un.querySelector(n),rS=new hs,eo=(n,e=!0)=>{let t=rS.load(KM+n);return t.colorSpace=pn,t.anisotropy=Yn?Math.min(8,Yn.capabilities.getMaxAnisotropy()):8,e&&(t.wrapS=Ti),t};function aS(){un=document.createElement("div"),un.id="mavi",un.innerHTML=`<canvas></canvas><div class="mv-top"><b>${ln.title}</b><span class="mv-clock"></span><button class="mv-x" aria-label="\u2715">\u2715</button></div><div class="mv-src">NASA GIBS \xB7 Blue Marble NG \xB7 VIIRS Black Marble \xB7 NASA Earth Observatory \xB7 v12</div>
+ gl_FragColor=vec4(c,1.);}`,un,Yn,qr,It,jt,vs,fd,di,jr,$0,Q0,eg,to,Yc,$a,so=!1,_d=0,pd=0,_t={on:!1,yaw:0,pitch:-.6,vy:0,vp:0,fov:92,ptr:null,lx:0,ly:0},Kc=1,ul=!1,Ii=null,Yr=!1,Qa=0,hd=0,md=[],Xc=1,Zr=Date.now(),Md=1,Xn="mavi",Ut=null,jc=0,zi=0,gd=1,fr=!1,Sd=!1,og=!0,lg=1,io=0,Si={uL:{value:new I(1,0,0)},uLo:{value:new I(1,0,0)},uT:{value:0},uCD:{value:0},uSun:{value:4.5},uG:{value:0},uM:{value:new I(1,0,0)},uMI:{value:0},uGR:{value:0}},cn=n=>un.querySelector(n),rS=new hs,eo=(n,e=!0)=>{let t=rS.load(KM+n);return t.colorSpace=pn,t.anisotropy=Yn?Math.min(8,Yn.capabilities.getMaxAnisotropy()):8,e&&(t.wrapS=Ti),t};function aS(){un=document.createElement("div"),un.id="mavi",un.innerHTML=`<canvas></canvas><div class="mv-top"><b>${ln.title}</b><span class="mv-clock"></span><button class="mv-x" aria-label="\u2715">\u2715</button></div><div class="mv-src">NASA GIBS \xB7 Blue Marble NG \xB7 VIIRS Black Marble \xB7 NASA Earth Observatory \xB7 v13</div>
   <div class="mv-hint">${ln.hint}</div>
   <div class="mv-bar"><div class="mv-views">${ln.views.map(d=>`<button data-v="${d[0]}">${d[1]}</button>`).join("")}</div>
    <div class="mv-time"><button data-t="-6">\u22126 ${Lt("sa","h")}</button><button data-t="0">${ln.now}</button><button data-t="6">+6 ${Lt("sa","h")}</button>
