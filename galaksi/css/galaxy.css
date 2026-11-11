@@ -142,9 +142,15 @@ body.idle #tools{opacity:.06}
 #emap .mh{position:absolute;top:16px;left:50%;transform:translateX(-50%);color:#b9ad92;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 0 10px #000;pointer-events:none}
 #emap .mx{position:absolute;top:14px;right:18px;background:rgba(20,17,13,.8);color:var(--p);border:1px solid #6b5d42;padding:8px 14px;cursor:pointer}
 #tt{display:none}
+#tools.grp #tt{display:block}#tools.grp>.tp{display:none}#tools.grp.open>.tp{display:block}
+#tools .tp{background:rgba(12,10,8,.94);border:1px solid #6b5d4299;padding:6px 14px 14px;width:min(470px,calc(100vw - 40px));max-height:calc(100vh - 190px);overflow:auto;backdrop-filter:blur(6px);box-shadow:0 10px 40px #000a}
+#tools .tp h4{font-weight:400;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#8f8570;margin:12px 0 7px;padding-bottom:5px;border-bottom:1px solid #6b5d4244}
+#tools .tp .tg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#tools .tp .tg button{width:100%;text-align:left;padding:7px 10px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#tools.grp.open #tt{border-color:var(--g);color:var(--g)}
 @media(max-width:760px){
  #tt{display:block}#tools button:not(#tt){display:none}#tools.open button:not(#tt){display:block}
- #tools{top:auto;bottom:64px;left:12px}
+ #tools{top:auto;bottom:64px;left:12px}#tools.grp{flex-direction:column-reverse}#tools .tp{max-height:calc(100vh - 150px)}#tools.grp.open .tp button{display:block}
  .hud{max-width:92%}.hud p,.legend{display:none}
  .hudc{top:auto!important;bottom:20px;right:12px;left:auto!important;flex-direction:row}
  #chips{bottom:70px;left:12px;right:12px}#where{bottom:122px}#dist{display:none}
