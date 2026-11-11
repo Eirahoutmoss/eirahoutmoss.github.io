@@ -4420,13 +4420,13 @@ void aerial(vec3 o,vec3 p,vec3 L,float sunI,inout vec3 col){vec3 d=p-o;float tl=
   float am=airm(dot(x/r,L));vec3 at=exp(-tauOf(oR+HR*exp(-h/HR)*am,oM+HM*exp(-h/HM)*am));float cs=h<.0026?cshadow(x,L):1.;sR+=dR*at*cs;sM+=dM*at*cs;}
  float m=dot(d,L);col=col*exp(-tauOf(oR,oM))+sunI*(sR*BR*phR(m)+sM*BM*phM(m));}`,sg=`float cshadow(vec3 x,vec3 L){vec2 q=rs(x,L,1.0025);if(q.y<=0.)return 1.;vec3 p=(x+L*q.y)/1.0025;float cg=cos(uG),sg=sin(uG);vec3 o=vec3(p.x*cg-p.z*sg,p.y,p.x*sg+p.z*cg);
  vec2 uv=vec2(atan(-o.z,o.x)*.1591549+.5,asin(clamp(o.y,-1.,1.))*.3183099+.5);vec3 tc=texture2D(tCG,uv).rgb;float mx=max(tc.r,max(tc.g,tc.b)),mn=min(tc.r,min(tc.g,tc.b));
- float a=mix(smoothstep(.3,.75,texture2D(tCloud,uv).r)*.8,smoothstep(.25,.65,mn)*(1.-smoothstep(.1,.3,mx-mn)),smoothstep(.015,.05,mx));return 1.-.85*a;}`,rg=`vec4 clip(sampler2D t,vec4 b,float lon,float lat){float u=mod(lon-b.x+720.,360.)/b.z,v=(b.y-lat)/b.w;float e=min(min(u,1.-u),min(v,1.-v));return vec4(texture2D(t,vec2(u,1.-v)).rgb,step(0.,e)*smoothstep(0.,.16,e));}
+ float a=mix(smoothstep(.3,.75,texture2D(tCloud,uv).r)*.8,smoothstep(.25,.65,mn)*(1.-smoothstep(.1,.3,mx-mn)),smoothstep(.015,.05,mx));return 1.-.85*a;}`,rg=`vec4 clip(sampler2D t,vec4 b,float lon,float lat){float u=mod(lon-b.x+720.,360.)/b.z,v=(b.y-lat)/b.w;float e=min(min(u,1.-u),min(v,1.-v));return vec4(texture2D(t,vec2(u,1.-v)).rgb,step(0.,e)*smoothstep(0.,.3,e));}
 float gFp=0.;float mnC(vec3 c){return min(c.r,min(c.g,c.b));}
-float cloudD(vec2 uv,vec3 p){float lon=uv.x*360.-180.,lat=(uv.y-.5)*180.;vec3 tc=texture2D(tCG,uv).rgb;
- if(uW1>.5){vec4 c1=clip(tC1,uB1,lon,lat);tc=mix(tc,c1.rgb,c1.a);if(uW2>.5){vec4 c2=clip(tC2,uB2,lon,lat);tc=mix(tc,c2.rgb,c2.a);}}
- float mx=max(tc.r,max(tc.g,tc.b)),mn=mnC(tc),valid=smoothstep(.015,.05,mx);
- float a=smoothstep(.14,.7,mn)*(1.-smoothstep(.1,.3,mx-mn))*smoothstep(.04,.26,mn-mnC(texture2D(tDay,uv).rgb)*1.05);
- float f=texture2D(tCloud,uv).r;a=mix(smoothstep(.1,.72,f*1.15-(1.-f)*.3)*.85,a,valid);
+float cA(vec3 tc,float dm){float mx=max(tc.r,max(tc.g,tc.b)),mn=mnC(tc);return smoothstep(.14,.7,mn)*(1.-smoothstep(.1,.3,mx-mn))*smoothstep(.04,.26,mn-dm*1.05);}
+float cloudD(vec2 uv,vec3 p){float lon=uv.x*360.-180.,lat=(uv.y-.5)*180.;vec3 tg=texture2D(tCG,uv).rgb;float dm=mnC(texture2D(tDay,uv).rgb),mxg=max(tg.r,max(tg.g,tg.b)),valid=smoothstep(.015,.05,mxg);
+ float a=cA(tg,dm);float f=texture2D(tCloud,uv).r;a=mix(smoothstep(.1,.72,f*1.15-(1.-f)*.3)*.85,a,valid);
+ if(uW1>.5){vec4 c1=clip(tC1,uB1,lon,lat);float m1=max(c1.r,max(c1.g,c1.b));float a1=cA(c1.rgb,dm);a=mix(a,clamp(a1,max(a-.35,0.),a+.3),c1.a*smoothstep(.015,.05,m1)*valid);
+  if(uW2>.5){vec4 c2=clip(tC2,uB2,lon,lat);float m2=max(c2.r,max(c2.g,c2.b));float a2=cA(c2.rgb,dm);a=mix(a,clamp(a2,max(a-.3,0.),a+.3),c2.a*smoothstep(.015,.05,m2)*valid);}}
  float det=mix(.5,fbm(p*700.),1.-smoothstep(.0004,.002,gFp))*.5+mix(.5,fbm(p*2600.),1.-smoothstep(.0001,.0005,gFp))*.5;return clamp(a*(1.+(det-.5)*.4*(1.-a)),0.,1.);}`,$M=`precision highp float;varying vec2 vUv;varying vec3 vN;varying vec3 vW;varying vec3 vT;varying vec3 vB;varying vec3 vO;
 uniform sampler2D tDay,tNight,tWater,tNorm,tCloud,tD1,tD2,tN1,tCG,tC1,tC2;uniform vec4 uB1,uB2;uniform float uW1,uW2,uWN;uniform vec3 uL,uLo;uniform float uT,uCD,uSun,uG,uMI;uniform vec3 uM;${ig}${yd}${xd}${sg}${rg}
 float watC(vec3 c){return smoothstep(.05,.13,c.b-max(c.r,c.g))*(1.-smoothstep(.3,.45,dot(c,vec3(.333))));}
@@ -4458,9 +4458,9 @@ void main(){vec3 N=normalize(vN),V=normalize(cameraPosition-vW),L=normalize(uL);
  {vec3 cel=floor(vO*48.);float hs=h3(cel+floor(uT*3.5));if(hs>.9955){float ph=fract(uT*3.5);vec3 cc=normalize(cel+.5+vec3(h3(cel+1.),h3(cel+2.),h3(cel+3.)));lit+=vec3(.8,.86,1.)*exp(-ph*10.)*(1.+2.*step(.5,fract(ph*17.)))*exp(-length(vO-cc)*70.)*smoothstep(.45,.9,a)*nk*7.;}}
  lit*=.72+.38*smoothstep(.2,.9,a);aerial(cameraPosition,vW,L,uSun,lit);gl_FragColor=vec4(lit*a,a*(.94-.3*edge));}`,eS=`precision highp float;varying vec3 vW;uniform vec3 uL;uniform float uSun;${xd}float cshadow(vec3 x,vec3 L){return 1.;}
 const float RG=1.0152;
-vec3 airglow(vec3 o,vec3 d,vec3 L,bool ground){float tt=-dot(o,d);if(tt<0.)return vec3(0.);float b=length(o+d*tt);const float r1=1.0134,r2=1.0149;float pl;
- if(ground)pl=(r2-r1)/max(sqrt(max(1.-b*b/(r1*r1),0.)),.08);else{if(b>r2)return vec3(0.);pl=2.*(sqrt(max(r2*r2-b*b,0.))-sqrt(max(r1*r1-b*b,0.)));}
- vec3 x=o+d*tt;float nf=1.-smoothstep(-.12,.04,dot(normalize(x),L));return vec3(.32,.95,.5)*pl*26.*nf;}
+vec3 airglow(vec3 o,vec3 d,vec3 L,bool ground){float tt=-dot(o,d);if(tt<0.)return vec3(0.);const float r1=1.0134,r2=1.0149;float b=length(o+d*tt);vec3 x;float pl,k;
+ if(ground){vec2 h=rs(o,d,r1);if(h.x<0.)return vec3(0.);x=o+d*h.x;float cs=abs(dot(normalize(x),d));pl=min((r2-r1)/max(cs,.12),.012);k=5.;}else{if(b>r2)return vec3(0.);pl=2.*(sqrt(max(r2*r2-b*b,0.))-sqrt(max(r1*r1-b*b,0.)));x=o+d*tt;k=26.;}
+ float nf=1.-smoothstep(-.12,.04,dot(normalize(x),L));return vec3(.32,.95,.5)*pl*k*nf;}
 void main(){vec3 o=cameraPosition,d=normalize(vW-o),L=normalize(uL);vec2 g=rs(o,d,RG);if(g.x>g.y)discard;vec2 p=rs(o,d,RP);if(p.x>0.&&p.x<p.y){gl_FragColor=vec4(airglow(o,d,L,true),0.);return;}vec2 a=rs(o,d,RA);if(a.x>a.y){gl_FragColor=vec4(airglow(o,d,L,false),0.);return;}
  float t0=max(a.x,0.),ds=(a.y-t0)/16.;vec3 sR=vec3(0.),sM=vec3(0.);float oR=0.,oM=0.;
  for(int i=0;i<16;i++){vec3 x=o+d*(t0+ds*(float(i)+.5));float r=length(x),h=max(r-RP,0.);float dR=exp(-h/HR)*ds,dM=exp(-h/HM)*ds;oR+=dR;oM+=dM;
