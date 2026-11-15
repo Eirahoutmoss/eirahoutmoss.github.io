@@ -1,0 +1,16 @@
+{
+  "akaris-z": [
+    {
+      "ad": "Akariz Gök Muhafızı (Skywarden)",
+      "dosya": "Akariz/Akariz_Skywarden_animated.glb",
+      "tur": "canli",
+      "kanat": 14,
+      "sayi": 2,
+      "bolgeler": ["Dağ Sıraları", "Yeşil Vadiler ve Nehirler", "Volkanik Kraterler"],
+      "irtifa": [45, 150],
+      "yaricap": [140, 330],
+      "yerine": "kanatli",
+      "parlak": 1.6
+    }
+  ]
+}
