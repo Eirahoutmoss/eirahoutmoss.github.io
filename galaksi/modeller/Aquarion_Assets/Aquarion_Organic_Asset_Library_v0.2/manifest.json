@@ -1,0 +1,70 @@
+{
+  "library": "Aquarion Organic Asset Library",
+  "version": "0.2",
+  "counts": {
+    "trees": 4,
+    "rocks": 6,
+    "reef_colonies": 5,
+    "underwater_plant_models": 4,
+    "ground_tiles": 10,
+    "unique_PBR_texture_sets": 12,
+    "GLB_models": 29
+  },
+  "PBR_maps": [
+    "albedo",
+    "roughness",
+    "normal",
+    "height",
+    "ao"
+  ],
+  "texture_resolution": "512x512",
+  "models": {
+    "trees": [
+      "Aquarion_Hero_Mangrove",
+      "Aquarion_Tidal_Mangrove",
+      "Aquarion_Saltwind_Fig",
+      "Aquarion_Ancient_Root_Crown"
+    ],
+    "rocks": [
+      "Aquarion_Eroded_Limestone_Hero",
+      "Aquarion_Tidepool_Basalt",
+      "Aquarion_Salt_Cut_Cliff",
+      "Aquarion_Reef_Limestone",
+      "Aquarion_Silt_Layered_Stone",
+      "Aquarion_Root_Worn_Boulder"
+    ],
+    "reefs": [
+      "Aquarion_Brain_Coral_Colony",
+      "Aquarion_Sea_Fan_Colony",
+      "Aquarion_Tube_Sponge_Garden",
+      "Aquarion_Staghorn_Reef",
+      "Aquarion_Plate_Coral_Terrace"
+    ],
+    "plants": [
+      "Aquarion_Kelp_Forest_Animated",
+      "Aquarion_Seagrass_Meadow_Animated",
+      "Aquarion_Tidal_Fern",
+      "Aquarion_Lagoon_Lily"
+    ],
+    "ground_tiles": [
+      "Aquarion_Ground_Mud.glb",
+      "Aquarion_Ground_Sand.glb",
+      "Aquarion_Ground_Limestone.glb",
+      "Aquarion_Ground_Basalt.glb",
+      "Aquarion_Ground_Reef.glb",
+      "Aquarion_Ground_Seagrass.glb",
+      "Aquarion_Ground_Algae.glb",
+      "Aquarion_Ground_Shell.glb",
+      "Aquarion_Ground_Salt.glb",
+      "Aquarion_Ground_Silt.glb"
+    ]
+  },
+  "notes": [
+    "12 distinct procedural texture signatures; each material has a unique seed and surface pattern.",
+    "Trees have buttress roots, aerial roots, bark ridges and leaf veins.",
+    "Rocks have erosion breakup, fissures and sediment strata.",
+    "Reef colonies include brain, fan, tube sponge, branching and plate forms.",
+    "Underwater plants are separate animation-ready GLBs; this package does not contain baked animation clips.",
+    "Procedural assets, not photogrammetry scans or final hand-sculpted film assets."
+  ]
+}

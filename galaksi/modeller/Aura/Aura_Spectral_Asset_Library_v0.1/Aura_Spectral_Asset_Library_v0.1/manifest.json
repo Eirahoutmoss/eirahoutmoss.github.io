@@ -1,0 +1,178 @@
+{
+  "title": "Aura Spectral Asset Library v0.1",
+  "source": "Aura.docx",
+  "world_identity": [
+    "Perpetual temperate homeostasis maintained by a luminous prismatic atmosphere",
+    "Life absorbs pure spectral energy from wavelengths rather than hunting or conventional photosynthesis",
+    "Plants change color in response to absorbed atmospheric energy frequencies",
+    "Floating creatures redistribute excess color-energy and stabilize ecosystem balance",
+    "Surface contains rainbow spectral-mineral formations",
+    "Subterranean crystal caves act as memory chambers where crystal geometry refracts light into mathematical patterns"
+  ],
+  "texture_spec": "All maps are 2048x2048 (2K). Each PBR material set contains albedo, roughness, tangent-space normal, height and ambient occlusion.",
+  "textures": {
+    "Prism_Moss": {
+      "albedo": "textures/2K/prism_moss_albedo_2k.jpg",
+      "roughness": "textures/2K/prism_moss_roughness_2k.jpg",
+      "normal": "textures/2K/prism_moss_normal_2k.jpg",
+      "height": "textures/2K/prism_moss_height_2k.jpg",
+      "ao": "textures/2K/prism_moss_ao_2k.jpg"
+    },
+    "Iridescent_Crystal": {
+      "albedo": "textures/2K/iridescent_crystal_albedo_2k.jpg",
+      "roughness": "textures/2K/iridescent_crystal_roughness_2k.jpg",
+      "normal": "textures/2K/iridescent_crystal_normal_2k.jpg",
+      "height": "textures/2K/iridescent_crystal_height_2k.jpg",
+      "ao": "textures/2K/iridescent_crystal_ao_2k.jpg"
+    },
+    "Chromatic_Flower": {
+      "albedo": "textures/2K/chromatic_flower_albedo_2k.jpg",
+      "roughness": "textures/2K/chromatic_flower_roughness_2k.jpg",
+      "normal": "textures/2K/chromatic_flower_normal_2k.jpg",
+      "height": "textures/2K/chromatic_flower_height_2k.jpg",
+      "ao": "textures/2K/chromatic_flower_ao_2k.jpg"
+    },
+    "Opal_Stone": {
+      "albedo": "textures/2K/opal_stone_albedo_2k.jpg",
+      "roughness": "textures/2K/opal_stone_roughness_2k.jpg",
+      "normal": "textures/2K/opal_stone_normal_2k.jpg",
+      "height": "textures/2K/opal_stone_height_2k.jpg",
+      "ao": "textures/2K/opal_stone_ao_2k.jpg"
+    },
+    "Luminous_Riverbed": {
+      "albedo": "textures/2K/luminous_riverbed_albedo_2k.jpg",
+      "roughness": "textures/2K/luminous_riverbed_roughness_2k.jpg",
+      "normal": "textures/2K/luminous_riverbed_normal_2k.jpg",
+      "height": "textures/2K/luminous_riverbed_height_2k.jpg",
+      "ao": "textures/2K/luminous_riverbed_ao_2k.jpg"
+    },
+    "Cave_Resonance": {
+      "albedo": "textures/2K/cave_resonance_albedo_2k.jpg",
+      "roughness": "textures/2K/cave_resonance_roughness_2k.jpg",
+      "normal": "textures/2K/cave_resonance_normal_2k.jpg",
+      "height": "textures/2K/cave_resonance_height_2k.jpg",
+      "ao": "textures/2K/cave_resonance_ao_2k.jpg"
+    }
+  },
+  "models": [
+    {
+      "name": "Spectral_Terrace_Ridge",
+      "file": "models/terrain/Spectral_Terrace_Ridge.glb",
+      "type": "terrain",
+      "notes": "Layered spectral mineral landform, suitable for terrain scatter and close camera framing"
+    },
+    {
+      "name": "Opal_Riverbed_Slab",
+      "file": "models/terrain/Opal_Riverbed_Slab.glb",
+      "type": "terrain",
+      "notes": "Layered spectral mineral landform, suitable for terrain scatter and close camera framing"
+    },
+    {
+      "name": "Prism_Moss_Hill",
+      "file": "models/terrain/Prism_Moss_Hill.glb",
+      "type": "terrain",
+      "notes": "Layered spectral mineral landform, suitable for terrain scatter and close camera framing"
+    },
+    {
+      "name": "Chromatic_Canyon_Shelf",
+      "file": "models/terrain/Chromatic_Canyon_Shelf.glb",
+      "type": "terrain",
+      "notes": "Layered spectral mineral landform, suitable for terrain scatter and close camera framing"
+    },
+    {
+      "name": "Prismatic_Spire_Grove",
+      "file": "models/crystals/Prismatic_Spire_Grove.glb",
+      "type": "crystal",
+      "notes": "Faceted spectral mineral cluster with varied spire sizes"
+    },
+    {
+      "name": "Opal_Geode_Cluster",
+      "file": "models/crystals/Opal_Geode_Cluster.glb",
+      "type": "crystal",
+      "notes": "Faceted spectral mineral cluster with varied spire sizes"
+    },
+    {
+      "name": "Resonance_Crystal_Fan",
+      "file": "models/crystals/Resonance_Crystal_Fan.glb",
+      "type": "crystal",
+      "notes": "Faceted spectral mineral cluster with varied spire sizes"
+    },
+    {
+      "name": "Rainbow_Mineral_Arch",
+      "file": "models/crystals/Rainbow_Mineral_Arch.glb",
+      "type": "crystal",
+      "notes": "Faceted spectral mineral cluster with varied spire sizes"
+    },
+    {
+      "name": "Spectrum_Bloom",
+      "file": "models/flora/Spectrum_Bloom.glb",
+      "type": "flora",
+      "notes": "Spectral-energy absorbing alien flora; geometry prototype for animated color-frequency response"
+    },
+    {
+      "name": "Prism_Fern",
+      "file": "models/flora/Prism_Fern.glb",
+      "type": "flora",
+      "notes": "Spectral-energy absorbing alien flora; geometry prototype for animated color-frequency response"
+    },
+    {
+      "name": "Chromatic_Weave_Reed",
+      "file": "models/flora/Chromatic_Weave_Reed.glb",
+      "type": "flora",
+      "notes": "Spectral-energy absorbing alien flora; geometry prototype for animated color-frequency response"
+    },
+    {
+      "name": "Iridescent_Canopy_Plant",
+      "file": "models/flora/Iridescent_Canopy_Plant.glb",
+      "type": "flora",
+      "notes": "Spectral-energy absorbing alien flora; geometry prototype for animated color-frequency response"
+    },
+    {
+      "name": "Lumen_Petal_Shrub",
+      "file": "models/flora/Lumen_Petal_Shrub.glb",
+      "type": "flora",
+      "notes": "Spectral-energy absorbing alien flora; geometry prototype for animated color-frequency response"
+    },
+    {
+      "name": "Auralis_Manta_Glider",
+      "file": "models/fauna/Auralis_Manta_Glider.glb",
+      "type": "fauna_prototype",
+      "notes": "Graceful spectral-energy balancing glider; wing and tail parts are ready for rigging"
+    },
+    {
+      "name": "Prism_Tail_Drifter",
+      "file": "models/fauna/Prism_Tail_Drifter.glb",
+      "type": "fauna_prototype",
+      "notes": "Graceful spectral-energy balancing glider; wing and tail parts are ready for rigging"
+    },
+    {
+      "name": "Harmonic_Ribbon_Swimmer",
+      "file": "models/fauna/Harmonic_Ribbon_Swimmer.glb",
+      "type": "fauna_prototype",
+      "notes": "Graceful spectral-energy balancing glider; wing and tail parts are ready for rigging"
+    },
+    {
+      "name": "Prism_Memory_Chamber",
+      "file": "models/caves/Prism_Memory_Chamber.glb",
+      "type": "cave_module",
+      "notes": "Modular crystal cave shell with interior spectral mineral spires"
+    },
+    {
+      "name": "Refraction_Cathedral_Cave",
+      "file": "models/caves/Refraction_Cathedral_Cave.glb",
+      "type": "cave_module",
+      "notes": "Modular crystal cave shell with interior spectral mineral spires"
+    },
+    {
+      "name": "Resonance_Geode_Tunnel",
+      "file": "models/caves/Resonance_Geode_Tunnel.glb",
+      "type": "cave_module",
+      "notes": "Modular crystal cave shell with interior spectral mineral spires"
+    }
+  ],
+  "limitations": [
+    "GLB geometry is a procedural modular starter set, not final sculpted cinematic hero assets.",
+    "PBR maps are delivered separately and need assignment to materials in Blender, Unreal or Unity.",
+    "Fauna and flora have no baked animation clips; their geometry is prepared for later rigging and shader-driven spectral color animation."
+  ]
+}

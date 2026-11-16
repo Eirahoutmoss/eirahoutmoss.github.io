@@ -1,0 +1,203 @@
+{
+  "title": "Altera Volcanic Asset Library v0.1",
+  "source": "Altera.docx",
+  "world_rules": [
+    "Continuously active volcanoes, shield volcanoes and explosive stratovolcanoes",
+    "Lava rivers, geothermal vents and fumaroles",
+    "Dense dusty smoky twilight atmosphere with volcanic gases",
+    "Heat-resistant flora and mineral-rich terrain",
+    "Creatures with heat-resistant integument, filtered respiration, lava locomotion and chemosynthetic adaptations"
+  ],
+  "textures": {
+    "Obsidian Basalt": {
+      "albedo": "textures/4K/obsidian_basalt_albedo.jpg",
+      "roughness": "textures/4K/obsidian_basalt_roughness.jpg",
+      "normal": "textures/4K/obsidian_basalt_normal.jpg",
+      "height": "textures/4K/obsidian_basalt_height.jpg",
+      "ao": "textures/4K/obsidian_basalt_ao.jpg"
+    },
+    "Sulfur Fumarole": {
+      "albedo": "textures/4K/sulfur_fumarole_albedo.jpg",
+      "roughness": "textures/4K/sulfur_fumarole_roughness.jpg",
+      "normal": "textures/4K/sulfur_fumarole_normal.jpg",
+      "height": "textures/4K/sulfur_fumarole_height.jpg",
+      "ao": "textures/4K/sulfur_fumarole_ao.jpg"
+    },
+    "Lava Crust": {
+      "albedo": "textures/4K/lava_crust_albedo.jpg",
+      "roughness": "textures/4K/lava_crust_roughness.jpg",
+      "normal": "textures/4K/lava_crust_normal.jpg",
+      "height": "textures/4K/lava_crust_height.jpg",
+      "ao": "textures/4K/lava_crust_ao.jpg"
+    },
+    "Volcanic Glass": {
+      "albedo": "textures/4K/volcanic_glass_albedo.jpg",
+      "roughness": "textures/4K/volcanic_glass_roughness.jpg",
+      "normal": "textures/4K/volcanic_glass_normal.jpg",
+      "height": "textures/4K/volcanic_glass_height.jpg",
+      "ao": "textures/4K/volcanic_glass_ao.jpg"
+    },
+    "Pumice Ash": {
+      "albedo": "textures/2K/pumice_ash_albedo.jpg",
+      "roughness": "textures/2K/pumice_ash_roughness.jpg",
+      "normal": "textures/2K/pumice_ash_normal.jpg",
+      "height": "textures/2K/pumice_ash_height.jpg",
+      "ao": "textures/2K/pumice_ash_ao.jpg"
+    },
+    "Iron Oxide": {
+      "albedo": "textures/2K/iron_oxide_albedo.jpg",
+      "roughness": "textures/2K/iron_oxide_roughness.jpg",
+      "normal": "textures/2K/iron_oxide_normal.jpg",
+      "height": "textures/2K/iron_oxide_height.jpg",
+      "ao": "textures/2K/iron_oxide_ao.jpg"
+    },
+    "Magma Mineral": {
+      "albedo": "textures/2K/magma_mineral_albedo.jpg",
+      "roughness": "textures/2K/magma_mineral_roughness.jpg",
+      "normal": "textures/2K/magma_mineral_normal.jpg",
+      "height": "textures/2K/magma_mineral_height.jpg",
+      "ao": "textures/2K/magma_mineral_ao.jpg"
+    },
+    "Thermal Flora": {
+      "albedo": "textures/2K/thermal_flora_albedo.jpg",
+      "roughness": "textures/2K/thermal_flora_roughness.jpg",
+      "normal": "textures/2K/thermal_flora_normal.jpg",
+      "height": "textures/2K/thermal_flora_height.jpg",
+      "ao": "textures/2K/thermal_flora_ao.jpg"
+    }
+  },
+  "models": [
+    {
+      "name": "Altera_Cinder_Crown_Stratovolcano",
+      "file": "models/volcanoes/Altera_Cinder_Crown_Stratovolcano.glb",
+      "type": "volcano",
+      "notes": "Cratered volcanic cone; separate PBR maps supplied"
+    },
+    {
+      "name": "Altera_Broadshield_Volcano",
+      "file": "models/volcanoes/Altera_Broadshield_Volcano.glb",
+      "type": "volcano",
+      "notes": "Cratered volcanic cone; separate PBR maps supplied"
+    },
+    {
+      "name": "Altera_Rift_Vent_Cones",
+      "file": "models/volcanoes/Altera_Rift_Vent_Cones.glb",
+      "type": "volcano",
+      "notes": "Cratered volcanic cone; separate PBR maps supplied"
+    },
+    {
+      "name": "Columnar_Basalt_Monolith",
+      "file": "models/rocks/Columnar_Basalt_Monolith.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Ash_Eroded_Boulder",
+      "file": "models/rocks/Ash_Eroded_Boulder.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Obsidian_Fracture_Slab",
+      "file": "models/rocks/Obsidian_Fracture_Slab.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Sulfur_Vent_Rock",
+      "file": "models/rocks/Sulfur_Vent_Rock.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Pumice_Bomb_Rock",
+      "file": "models/rocks/Pumice_Bomb_Rock.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Lava_Tube_Rim",
+      "file": "models/rocks/Lava_Tube_Rim.glb",
+      "type": "rock",
+      "notes": "Eroded high-poly silhouette with irregular fractured surface"
+    },
+    {
+      "name": "Sulfur_Spire_Cluster",
+      "file": "models/crystals/Sulfur_Spire_Cluster.glb",
+      "type": "crystal",
+      "notes": "Faceted mineral cluster with varied crystal heights"
+    },
+    {
+      "name": "Iron_Glass_Crystals",
+      "file": "models/crystals/Iron_Glass_Crystals.glb",
+      "type": "crystal",
+      "notes": "Faceted mineral cluster with varied crystal heights"
+    },
+    {
+      "name": "Magma_Quartz_Geode",
+      "file": "models/crystals/Magma_Quartz_Geode.glb",
+      "type": "crystal",
+      "notes": "Faceted mineral cluster with varied crystal heights"
+    },
+    {
+      "name": "Basaltic_Obelisk",
+      "file": "models/crystals/Basaltic_Obelisk.glb",
+      "type": "crystal",
+      "notes": "Faceted mineral cluster with varied crystal heights"
+    },
+    {
+      "name": "Ember_Fern",
+      "file": "models/flora/Ember_Fern.glb",
+      "type": "flora",
+      "notes": "Heat-adapted alien plant prototype with layered leaves"
+    },
+    {
+      "name": "Basalt_Bloom",
+      "file": "models/flora/Basalt_Bloom.glb",
+      "type": "flora",
+      "notes": "Heat-adapted alien plant prototype with layered leaves"
+    },
+    {
+      "name": "Fumarole_Fan",
+      "file": "models/flora/Fumarole_Fan.glb",
+      "type": "flora",
+      "notes": "Heat-adapted alien plant prototype with layered leaves"
+    },
+    {
+      "name": "Cinder_Reed",
+      "file": "models/flora/Cinder_Reed.glb",
+      "type": "flora",
+      "notes": "Heat-adapted alien plant prototype with layered leaves"
+    },
+    {
+      "name": "Thermal_Crown_Succulent",
+      "file": "models/flora/Thermal_Crown_Succulent.glb",
+      "type": "flora",
+      "notes": "Heat-adapted alien plant prototype with layered leaves"
+    },
+    {
+      "name": "Cinderback_Armored_Quadruped",
+      "file": "models/creatures/Cinderback_Armored_Quadruped.glb",
+      "type": "creature_prototype",
+      "notes": "Distinct silhouette blockout; requires final sculpt/detail pass"
+    },
+    {
+      "name": "Magma_Vein_Serpent",
+      "file": "models/creatures/Magma_Vein_Serpent.glb",
+      "type": "creature_prototype",
+      "notes": "Distinct silhouette blockout; requires final sculpt/detail pass"
+    },
+    {
+      "name": "Ashwing_Thermal_Glider",
+      "file": "models/creatures/Ashwing_Thermal_Glider.glb",
+      "type": "creature_prototype",
+      "notes": "Distinct silhouette blockout; requires final sculpt/detail pass"
+    }
+  ],
+  "notes": [
+    "PBR texture maps are supplied separately and must be assigned in Blender, Unreal or Unity.",
+    "Texture resolution is 4K for the first four materials and 2K for the remaining four.",
+    "GLB models are procedural starter meshes, not finished hand-sculpted cinematic hero assets.",
+    "No baked animation clips are included in this version."
+  ]
+}

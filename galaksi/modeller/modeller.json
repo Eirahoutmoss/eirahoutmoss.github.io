@@ -1,16 +1,5457 @@
 {
-  "akaris-z": [
-    {
-      "ad": "Akariz Gök Muhafızı (Skywarden)",
-      "dosya": "Akariz/Akariz_Skywarden_onarilmis.glb",
-      "tur": "canli",
-      "kanat": 14,
-      "sayi": 2,
-      "bolgeler": ["Dağ Sıraları", "Yeşil Vadiler ve Nehirler", "Volkanik Kraterler"],
-      "irtifa": [45, 150],
-      "yaricap": [140, 330],
-      "yerine": "kanatli",
-      "parlak": 1.6
-    }
-  ]
+ "akaris-z": [
+  {
+   "ad": "Akariz Gök Muhafızı (Skywarden)",
+   "dosya": "Akariz/Akariz_Skywarden_onarilmis.glb",
+   "tur": "canli",
+   "kanat": 14,
+   "sayi": 2,
+   "bolgeler": [
+    "Dağ Sıraları",
+    "Yeşil Vadiler ve Nehirler",
+    "Volkanik Kraterler"
+   ],
+   "irtifa": [
+    45,
+    150
+   ],
+   "yaricap": [
+    140,
+    330
+   ],
+   "yerine": "kanatli",
+   "parlak": 1.6
+  },
+  {
+   "ad": "Kadim Kanopi",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Ancient_Canopy.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri",
+    "Yeşil Vadiler ve Nehirler"
+   ],
+   "boy": 13,
+   "hucre": 13,
+   "olasilik": 0.45,
+   "olcek": [
+    0.9,
+    1.5
+   ],
+   "yaricap": 170,
+   "azami": 130,
+   "egimMax": 0.45,
+   "yMin": 1.2,
+   "yerine": "agac"
+  },
+  {
+   "ad": "Altın Taç",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Golden_Crown.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 13.5,
+   "hucre": 22,
+   "olasilik": 0.35,
+   "olcek": [
+    0.9,
+    1.4
+   ],
+   "yaricap": 200,
+   "azami": 60,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Ağlayan Peçe",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Weeping_Veil.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yeşil Vadiler ve Nehirler",
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 11,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 180,
+   "azami": 80,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Mavi Mangrov",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Blue_Mangrove.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yeşil Vadiler ve Nehirler"
+   ],
+   "boy": 9,
+   "hucre": 12,
+   "olasilik": 0.45,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 160,
+   "azami": 90,
+   "egimMax": 0.45,
+   "yMin": 0.2
+  },
+  {
+   "ad": "Kristal Çiçek Ağacı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Crystal_Bloom.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri",
+    "Obsidyen Alanları"
+   ],
+   "boy": 10.5,
+   "hucre": 26,
+   "olasilik": 0.3,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 200,
+   "azami": 40,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Bükük Kanyon Ağacı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Tree_Twisted_Canyon.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kanyon Sistemleri",
+    "Dağ Sıraları"
+   ],
+   "boy": 8,
+   "hucre": 14,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 170,
+   "azami": 80,
+   "egimMax": 0.45,
+   "yMin": 1.2,
+   "yerine": "cam"
+  },
+  {
+   "ad": "Yıldız Çiçeği",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Star_Flower.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yeşil Vadiler ve Nehirler",
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 0.9,
+   "hucre": 2.2,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 45,
+   "azami": 600,
+   "egimMax": 0.45,
+   "yMin": 1.2,
+   "yerine": "cicek"
+  },
+  {
+   "ad": "Mavi Eğrelti",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Blue_Fern.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri",
+    "Yeşil Vadiler ve Nehirler"
+   ],
+   "boy": 1.6,
+   "hucre": 3,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 55,
+   "azami": 600,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Ot Öbeği",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Grass_Tuft.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yeşil Vadiler ve Nehirler",
+    "Dağ Sıraları"
+   ],
+   "boy": 1.4,
+   "hucre": 2.6,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 50,
+   "azami": 700,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Işıl Mantarlar",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Glow_Mushrooms.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 1.4,
+   "hucre": 4,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.5
+   ],
+   "yaricap": 55,
+   "azami": 400,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Liken Yelpazesi",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Lichen_Fan.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları",
+    "Kanyon Sistemleri"
+   ],
+   "boy": 1.5,
+   "hucre": 6,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 70,
+   "azami": 200,
+   "egimMax": 0.6,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Kök Sarmaşığı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Plant_Root_Vine.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 1.6,
+   "hucre": 6,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 70,
+   "azami": 200,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Granit Levha",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Granite_Slab.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları"
+   ],
+   "boy": 3.5,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 150,
+   "azami": 140,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "yerine": "kaya"
+  },
+  {
+   "ad": "Sivri Sırt",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Jagged_Ridge.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları"
+   ],
+   "boy": 2.8,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    1,
+    3
+   ],
+   "yaricap": 160,
+   "azami": 90,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Liken Taşı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Lichen_Stone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları",
+    "Yeşil Vadiler ve Nehirler"
+   ],
+   "boy": 2.2,
+   "hucre": 14,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 140,
+   "azami": 90,
+   "egimMax": 0.7,
+   "yMin": -50
+  },
+  {
+   "ad": "Bazalt Kaya",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Basalt_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Volkanik Kraterler"
+   ],
+   "boy": 3.4,
+   "hucre": 10,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 150,
+   "azami": 160,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Kavrulmuş Volkan Taşı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Volcanic_Scorched.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Volkanik Kraterler"
+   ],
+   "boy": 2.8,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 150,
+   "azami": 120,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Kızıl Kanyon Kayası",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Red_Canyon_Rock.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kanyon Sistemleri"
+   ],
+   "boy": 3,
+   "hucre": 10,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    2.6
+   ],
+   "yaricap": 150,
+   "azami": 160,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Soluk Kireçtaşı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Pale_Limestone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kanyon Sistemleri"
+   ],
+   "boy": 2.6,
+   "hucre": 18,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 150,
+   "azami": 70,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Yosunlu Kök Kayası",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Moss_Root_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Köklü Orman Bölgeleri"
+   ],
+   "boy": 3.2,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 150,
+   "azami": 80,
+   "egimMax": 0.7,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Dere Taşı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_River_Smooth.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yeşil Vadiler ve Nehirler"
+   ],
+   "boy": 2,
+   "hucre": 8,
+   "olasilik": 0.35,
+   "olcek": [
+    0.6,
+    1.4
+   ],
+   "yaricap": 120,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -3
+  },
+  {
+   "ad": "Obsidyen Kıymık",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Rock_Obsidian_Shard.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Obsidyen Alanları"
+   ],
+   "boy": 2.8,
+   "hucre": 7,
+   "olasilik": 0.5,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 130,
+   "azami": 260,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "yerine": "obs"
+  },
+  {
+   "ad": "Obsidyen Kule",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Obsidian_Spire.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Obsidyen Alanları"
+   ],
+   "boy": 2.8,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    1,
+    2.6
+   ],
+   "yaricap": 150,
+   "azami": 80,
+   "egimMax": 0.8,
+   "yMin": -50
+  },
+  {
+   "ad": "Mavi Kristal",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Azure.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Obsidyen Alanları",
+    "Kanyon Sistemleri"
+   ],
+   "boy": 2.2,
+   "hucre": 22,
+   "olasilik": 0.3,
+   "olcek": [
+    1,
+    2.2
+   ],
+   "yaricap": 160,
+   "azami": 60,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "parlak": 1.5
+  },
+  {
+   "ad": "Ametist",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Amethyst.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Obsidyen Alanları"
+   ],
+   "boy": 2.3,
+   "hucre": 24,
+   "olasilik": 0.3,
+   "olcek": [
+    1,
+    2.2
+   ],
+   "yaricap": 160,
+   "azami": 50,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "parlak": 1.5
+  },
+  {
+   "ad": "Camgöbeği Jeot",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Cyan_Geode.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Volkanik Kraterler"
+   ],
+   "boy": 2.6,
+   "hucre": 24,
+   "olasilik": 0.3,
+   "olcek": [
+    1,
+    2
+   ],
+   "yaricap": 160,
+   "azami": 50,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "parlak": 1.5
+  },
+  {
+   "ad": "Enerji Kuvarsı",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Energy_Quartz.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları"
+   ],
+   "boy": 2.4,
+   "hucre": 30,
+   "olasilik": 0.25,
+   "olcek": [
+    1,
+    2
+   ],
+   "yaricap": 170,
+   "azami": 40,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "parlak": 1.5
+  },
+  {
+   "ad": "Mor Yarık",
+   "dosya": "Akariz/Akariz_Planet_Asset_Library/models/Akariz_Crystal_Violet_Rift.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kanyon Sistemleri"
+   ],
+   "boy": 2.9,
+   "hucre": 26,
+   "olasilik": 0.3,
+   "olcek": [
+    1,
+    2.2
+   ],
+   "yaricap": 170,
+   "azami": 50,
+   "egimMax": 0.8,
+   "yMin": -50,
+   "parlak": 1.5
+  }
+ ],
+ "aquarion": [
+  {
+   "ad": "Kahraman Mangrov",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Hero_Mangrove.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Yosun Ormanları"
+   ],
+   "boy": 9,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    0.9,
+    1.4
+   ],
+   "yaricap": 190,
+   "azami": 90,
+   "egimMax": 0.45,
+   "yMin": 1.2,
+   "yerine": "palmiye",
+   "yMax": 12
+  },
+  {
+   "ad": "Gelgit Mangrovu",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Tidal_Mangrove.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Yosun Ormanları",
+    "Kristal Resifler"
+   ],
+   "boy": 7.5,
+   "hucre": 10,
+   "olasilik": 0.4,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 170,
+   "azami": 110,
+   "egimMax": 0.45,
+   "yMin": 0.4,
+   "yMax": 8
+  },
+  {
+   "ad": "Kadim Kök Tacı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Ancient_Root_Crown.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları",
+    "Dağ Sıraları"
+   ],
+   "boy": 10,
+   "hucre": 24,
+   "olasilik": 0.35,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 210,
+   "azami": 40,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Tuzrüzgârı İnciri",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Saltwind_Fig.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları",
+    "Antik Kalıntılar",
+    "Volkanik Bölgeler"
+   ],
+   "boy": 6.6,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    0.9,
+    1.4
+   ],
+   "yaricap": 180,
+   "azami": 70,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Kıyı Geniş Yapraklısı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Coastal_Broadleaf.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Antik Kalıntılar"
+   ],
+   "boy": 7.2,
+   "hucre": 18,
+   "olasilik": 0.3,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 180,
+   "azami": 60,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Mavisu Söğüdü",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Bluewater_Willow.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları",
+    "Mercan Resifleri"
+   ],
+   "boy": 8.5,
+   "hucre": 18,
+   "olasilik": 0.3,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 180,
+   "azami": 60,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Kireçtaşı Kök Ağacı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Limestone_Root_Tree.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Antik Kalıntılar",
+    "Dağ Sıraları"
+   ],
+   "boy": 7.3,
+   "hucre": 20,
+   "olasilik": 0.3,
+   "olcek": [
+    0.9,
+    1.3
+   ],
+   "yaricap": 180,
+   "azami": 50,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Gelgit Eğreltisi",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Tidal_Fern.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları",
+    "Mercan Resifleri",
+    "Dağ Sıraları"
+   ],
+   "boy": 2,
+   "hucre": 3.5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 60,
+   "azami": 500,
+   "egimMax": 0.45,
+   "yMin": 1.2
+  },
+  {
+   "ad": "Sığ Kamış",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Shallow_Reed.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Yosun Ormanları",
+    "Kristal Resifler"
+   ],
+   "boy": 1.5,
+   "hucre": 3,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 55,
+   "azami": 500,
+   "egimMax": 0.45,
+   "yMin": -0.8,
+   "yMax": 2.5
+  },
+  {
+   "ad": "Kabuk Öbeği",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Shell_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler"
+   ],
+   "boy": 1,
+   "hucre": 5,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.5
+   ],
+   "yaricap": 60,
+   "azami": 300,
+   "egimMax": 0.35,
+   "yMin": -0.5,
+   "yMax": 3
+  },
+  {
+   "ad": "Gelgit Bazaltı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Tidepool_Basalt.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Volkanik Bölgeler",
+    "Dağ Sıraları",
+    "Girdap Bölgeleri"
+   ],
+   "boy": 3.2,
+   "hucre": 10,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 150,
+   "azami": 160,
+   "egimMax": 0.8,
+   "yMin": -60,
+   "yerine": "kaya"
+  },
+  {
+   "ad": "Aşınmış Kireçtaşı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Eroded_Limestone_Hero.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Antik Kalıntılar",
+    "Mercan Resifleri"
+   ],
+   "boy": 3.6,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 160,
+   "azami": 90,
+   "egimMax": 0.8,
+   "yMin": -60
+  },
+  {
+   "ad": "Kök Aşındırmış Kaya",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Root_Worn_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları"
+   ],
+   "boy": 3.3,
+   "hucre": 14,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 150,
+   "azami": 80,
+   "egimMax": 0.8,
+   "yMin": -60
+  },
+  {
+   "ad": "Tuz Kesik Uçurum",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Salt_Cut_Cliff.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Dağ Sıraları",
+    "Buz Tabakaları"
+   ],
+   "boy": 3,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    1,
+    3
+   ],
+   "yaricap": 160,
+   "azami": 90,
+   "egimMax": 0.85,
+   "yMin": -60
+  },
+  {
+   "ad": "Katmanlı Silt Taşı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Silt_Layered_Stone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Derin Okyanus Çukurları",
+    "Girdap Bölgeleri"
+   ],
+   "boy": 3.8,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 160,
+   "azami": 90,
+   "egimMax": 0.8,
+   "yMin": -200
+  },
+  {
+   "ad": "Resif Kireçtaşı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Reef_Limestone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler"
+   ],
+   "boy": 2.7,
+   "hucre": 10,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 150,
+   "azami": 120,
+   "egimMax": 0.8,
+   "yMin": -60
+  },
+  {
+   "ad": "Beyin Mercanı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Brain_Coral_Colony.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler"
+   ],
+   "boy": 1.4,
+   "hucre": 4,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 80,
+   "azami": 400,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Tabak Mercan Terası",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Plate_Coral_Terrace.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri"
+   ],
+   "boy": 1.6,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 80,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Deniz Yelpazesi",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Sea_Fan_Colony.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler"
+   ],
+   "boy": 3.1,
+   "hucre": 6,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 90,
+   "azami": 250,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Geyik Boynuzu Mercan",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Staghorn_Reef.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri"
+   ],
+   "boy": 3,
+   "hucre": 6,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 90,
+   "azami": 250,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Tüp Sünger Bahçesi",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Tube_Sponge_Garden.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler",
+    "Derin Okyanus Çukurları"
+   ],
+   "boy": 1.4,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 80,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Yosun Ormanı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Kelp_Forest_Animated.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları"
+   ],
+   "boy": 2.1,
+   "hucre": 3,
+   "olasilik": 0.55,
+   "olcek": [
+    1.5,
+    4
+   ],
+   "yaricap": 80,
+   "azami": 700,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Deniz Çayırı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Seagrass_Meadow_Animated.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları",
+    "Mercan Resifleri"
+   ],
+   "boy": 2.1,
+   "hucre": 3,
+   "olasilik": 0.5,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 600,
+   "egimMax": 0.5,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Lagün Zambağı",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.2/models/Aquarion_Lagoon_Lily.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Yosun Ormanları"
+   ],
+   "boy": 2,
+   "hucre": 7,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 80,
+   "azami": 150,
+   "egimMax": 0.3,
+   "yMin": -3,
+   "yMax": -0.3
+  },
+  {
+   "ad": "Şerit Yosun",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Ribbon_Kelp.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yosun Ormanları",
+    "Girdap Bölgeleri"
+   ],
+   "boy": 2.2,
+   "hucre": 4,
+   "olasilik": 0.45,
+   "olcek": [
+    1,
+    3
+   ],
+   "yaricap": 80,
+   "azami": 400,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Gelgit Anemonu",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Tidepool_Anemone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mercan Resifleri",
+    "Kristal Resifler"
+   ],
+   "boy": 1,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -40,
+   "yMax": -1.2
+  },
+  {
+   "ad": "Yelpaze Resif",
+   "dosya": "Aquarion_Assets/Aquarion_Organic_Asset_Library_v0.1/models/Aquarion_Fan_Reef.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Resifler",
+    "Derin Okyanus Çukurları"
+   ],
+   "boy": 1.9,
+   "hucre": 6,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 80,
+   "azami": 250,
+   "egimMax": 0.6,
+   "yMin": -200,
+   "yMax": -1.2
+  }
+ ],
+ "altera": [
+  {
+   "ad": "Yarık Baca Konileri",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/volcanoes/Altera_Rift_Vent_Cones.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Lav Nehirleri Ağı",
+    "Kalkan Volkan Bölgesi"
+   ],
+   "boy": 38,
+   "hucre": 180,
+   "olasilik": 0.35,
+   "olcek": [
+    0.7,
+    1.5
+   ],
+   "yaricap": 900,
+   "azami": 14,
+   "egimMax": 0.3,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/pumice_ash",
+   "dokuOlcek": 6,
+   "isik": [
+    1,
+    0.35,
+    0.05,
+    0.6
+   ]
+  },
+  {
+   "ad": "Kül Taçlı Stratovolkan",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/volcanoes/Altera_Cinder_Crown_Stratovolcano.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Stratovolkan Kuşağı"
+   ],
+   "boy": 120,
+   "hucre": 520,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1600,
+   "azami": 4,
+   "egimMax": 0.25,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/pumice_ash",
+   "dokuOlcek": 14,
+   "isik": [
+    1,
+    0.3,
+    0.05,
+    0.5
+   ]
+  },
+  {
+   "ad": "Sütunlu Bazalt Anıtı",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Columnar_Basalt_Monolith.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Stratovolkan Kuşağı",
+    "Kalkan Volkan Bölgesi"
+   ],
+   "boy": 3.5,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    3
+   ],
+   "yaricap": 150,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/iron_oxide",
+   "renk": [
+    0.3,
+    0.28,
+    0.27
+   ],
+   "yerine": "kaya"
+  },
+  {
+   "ad": "Kül Aşındırmış Kaya",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Ash_Eroded_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kalkan Volkan Bölgesi",
+    "Lav Nehirleri Ağı"
+   ],
+   "boy": 2.8,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 150,
+   "azami": 120,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/pumice_ash"
+  },
+  {
+   "ad": "Obsidyen Kırık Levha",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Obsidian_Fracture_Slab.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Lav Nehirleri Ağı",
+    "Stratovolkan Kuşağı"
+   ],
+   "boy": 2.4,
+   "hucre": 10,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 140,
+   "azami": 160,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/iron_oxide",
+   "renk": [
+    0.08,
+    0.07,
+    0.08
+   ],
+   "yerine": "obsK"
+  },
+  {
+   "ad": "Kükürt Baca Kayası",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Sulfur_Vent_Rock.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Jeotermal Alanlar"
+   ],
+   "boy": 2.7,
+   "hucre": 10,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 140,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora",
+   "renk": [
+    1,
+    0.85,
+    0.3
+   ],
+   "isik": [
+    1,
+    0.8,
+    0.2,
+    0.25
+   ]
+  },
+  {
+   "ad": "Süngertaşı Bombası",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Pumice_Bomb_Rock.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kalkan Volkan Bölgesi",
+    "Ekstrem Yaşam Havzaları"
+   ],
+   "boy": 2.4,
+   "hucre": 12,
+   "olasilik": 0.35,
+   "olcek": [
+    0.6,
+    1.8
+   ],
+   "yaricap": 140,
+   "azami": 100,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/pumice_ash"
+  },
+  {
+   "ad": "Lav Tüpü Kenarı",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/rocks/Lava_Tube_Rim.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Lav Nehirleri Ağı"
+   ],
+   "boy": 2.8,
+   "hucre": 16,
+   "olasilik": 0.35,
+   "olcek": [
+    1,
+    3
+   ],
+   "yaricap": 160,
+   "azami": 70,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/magma_mineral",
+   "isik": [
+    1,
+    0.4,
+    0.08,
+    0.8
+   ]
+  },
+  {
+   "ad": "Bazalt Dikilitaş",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/crystals/Basaltic_Obelisk.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Stratovolkan Kuşağı",
+    "Mineral Yatakları"
+   ],
+   "boy": 1.7,
+   "hucre": 18,
+   "olasilik": 0.3,
+   "olcek": [
+    1,
+    2.4
+   ],
+   "yaricap": 150,
+   "azami": 60,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "renk": [
+    0.15,
+    0.14,
+    0.15
+   ]
+  },
+  {
+   "ad": "Demir Cam Kristalleri",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/crystals/Iron_Glass_Crystals.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mineral Yatakları"
+   ],
+   "boy": 1.7,
+   "hucre": 8,
+   "olasilik": 0.4,
+   "olcek": [
+    1,
+    2.4
+   ],
+   "yaricap": 140,
+   "azami": 160,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "renk": [
+    0.5,
+    0.2,
+    0.15
+   ],
+   "isik": [
+    0.9,
+    0.3,
+    0.15,
+    0.5
+   ]
+  },
+  {
+   "ad": "Magma Kuvars Jeotu",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/crystals/Magma_Quartz_Geode.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Mineral Yatakları",
+    "Ekstrem Yaşam Havzaları"
+   ],
+   "boy": 2.1,
+   "hucre": 10,
+   "olasilik": 0.4,
+   "olcek": [
+    1,
+    2.4
+   ],
+   "yaricap": 140,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "renk": [
+    1,
+    0.4,
+    0.15
+   ],
+   "isik": [
+    1,
+    0.35,
+    0.08,
+    1.6
+   ],
+   "yerine": "kristal"
+  },
+  {
+   "ad": "Kükürt Kule Öbeği",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/crystals/Sulfur_Spire_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Jeotermal Alanlar"
+   ],
+   "boy": 1.8,
+   "hucre": 8,
+   "olasilik": 0.4,
+   "olcek": [
+    1,
+    2.2
+   ],
+   "yaricap": 140,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "renk": [
+    1,
+    0.9,
+    0.25
+   ],
+   "isik": [
+    1,
+    0.85,
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "ad": "Bazalt Çiçeği",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/flora/Basalt_Bloom.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Ekstrem Yaşam Havzaları",
+    "Mineral Yatakları"
+   ],
+   "boy": 1.4,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 400,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora",
+   "isik": [
+    1,
+    0.3,
+    0.1,
+    0.4
+   ],
+   "yerine": "lavkris"
+  },
+  {
+   "ad": "Kor Eğreltisi",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/flora/Ember_Fern.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Ekstrem Yaşam Havzaları",
+    "Jeotermal Alanlar"
+   ],
+   "boy": 1.4,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 400,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora",
+   "isik": [
+    1,
+    0.4,
+    0.1,
+    0.5
+   ]
+  },
+  {
+   "ad": "Kül Kamışı",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/flora/Cinder_Reed.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Ekstrem Yaşam Havzaları",
+    "Kalkan Volkan Bölgesi"
+   ],
+   "boy": 1.4,
+   "hucre": 5,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora"
+  },
+  {
+   "ad": "Fumarol Yelpazesi",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/flora/Fumarole_Fan.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Jeotermal Alanlar"
+   ],
+   "boy": 1.4,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora",
+   "isik": [
+    1,
+    0.7,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "ad": "Termal Taç Sukulenti",
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/flora/Thermal_Crown_Succulent.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Ekstrem Yaşam Havzaları"
+   ],
+   "boy": 1.4,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.6
+   ],
+   "yaricap": 70,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/thermal_flora",
+   "isik": [
+    1,
+    0.5,
+    0.15,
+    0.4
+   ]
+  },
+  {
+   "ad": "Kül Kanatlı Termal Süzülücü",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/creatures/Ashwing_Thermal_Glider.glb",
+   "zUp": true,
+   "boy": 12,
+   "sayi": 3,
+   "bolgeler": [
+    "Stratovolkan Kuşağı",
+    "Kalkan Volkan Bölgesi"
+   ],
+   "irtifa": [
+    50,
+    170
+   ],
+   "yaricap": [
+    150,
+    360
+   ],
+   "yerine": "kanatli",
+   "renk": [
+    0.35,
+    0.12,
+    0.06
+   ],
+   "isik": [
+    1,
+    0.4,
+    0.08,
+    0.9
+   ]
+  },
+  {
+   "ad": "Kor Sırtlı Zırhlı Dörtayaklı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/creatures/Cinderback_Armored_Quadruped.glb",
+   "zUp": true,
+   "boy": 4,
+   "sayi": 4,
+   "bolgeler": [
+    "Lav Nehirleri Ağı",
+    "Ekstrem Yaşam Havzaları"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    40,
+    150
+   ],
+   "yer": true,
+   "yerine": "yuruyen",
+   "doku": "Altera/Altera_Volcanic_Asset_Library_v0.1/textures/2K/pumice_ash",
+   "renk": [
+    0.4,
+    0.3,
+    0.25
+   ],
+   "isik": [
+    1,
+    0.4,
+    0.1,
+    0.35
+   ]
+  },
+  {
+   "ad": "Magma Damarlı Yılan",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Altera/Altera_Volcanic_Asset_Library_v0.1/models/creatures/Magma_Vein_Serpent.glb",
+   "zUp": true,
+   "boy": 7,
+   "sayi": 3,
+   "bolgeler": [
+    "Lav Nehirleri Ağı"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    30,
+    110
+   ],
+   "yer": true,
+   "renk": [
+    0.25,
+    0.08,
+    0.04
+   ],
+   "isik": [
+    1,
+    0.45,
+    0.08,
+    1.4
+   ]
+  }
+ ],
+ "aura": [
+  {
+   "ad": "Prizma Yosun Tepesi",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/terrain/Prism_Moss_Hill.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Spiral Korular"
+   ],
+   "boy": 30,
+   "hucre": 160,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 700,
+   "azami": 30,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/prism_moss",
+   "dokuOlcek": 6
+  },
+  {
+   "ad": "Opal Nehir Yatağı Levhası",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/terrain/Opal_Riverbed_Slab.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Desenli Ovalar",
+    "Matematiksel Bahçeler"
+   ],
+   "boy": 16,
+   "hucre": 120,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 600,
+   "azami": 40,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/luminous_riverbed",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Tayf Teras Sırtı",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/terrain/Spectral_Terrace_Ridge.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Matematiksel Bahçeler"
+   ],
+   "boy": 42,
+   "hucre": 220,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 900,
+   "azami": 24,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/opal_stone",
+   "dokuOlcek": 6
+  },
+  {
+   "ad": "Kromatik Kanyon Rafı",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/terrain/Chromatic_Canyon_Shelf.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Desenli Ovalar"
+   ],
+   "boy": 26,
+   "hucre": 180,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 800,
+   "azami": 28,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/opal_stone",
+   "dokuOlcek": 5
+  },
+  {
+   "ad": "Hafıza Odası",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/caves/Prism_Memory_Chamber.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri"
+   ],
+   "boy": 18,
+   "hucre": 420,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1200,
+   "azami": 8,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/cave_resonance",
+   "dokuOlcek": 4,
+   "isik": [
+    0.5,
+    0.4,
+    1,
+    0.25
+   ]
+  },
+  {
+   "ad": "Kırılma Katedrali Mağarası",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/caves/Refraction_Cathedral_Cave.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Spiral Korular"
+   ],
+   "boy": 22,
+   "hucre": 520,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1400,
+   "azami": 6,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/cave_resonance",
+   "dokuOlcek": 4,
+   "isik": [
+    0.5,
+    0.4,
+    1,
+    0.25
+   ]
+  },
+  {
+   "ad": "Rezonans Jeot Tüneli",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/caves/Resonance_Geode_Tunnel.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri"
+   ],
+   "boy": 20,
+   "hucre": 520,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1400,
+   "azami": 6,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/cave_resonance",
+   "dokuOlcek": 4,
+   "isik": [
+    0.45,
+    0.5,
+    1,
+    0.3
+   ]
+  },
+  {
+   "ad": "Opal Jeot Kümesi",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/crystals/Opal_Geode_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Matematiksel Bahçeler",
+    "Uyum Tepeleri"
+   ],
+   "boy": 4.5,
+   "hucre": 18,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 200,
+   "azami": 70,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/iridescent_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.7,
+    0.6,
+    1,
+    0.6
+   ]
+  },
+  {
+   "ad": "Prizmatik Kule Korusu",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/crystals/Prismatic_Spire_Grove.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Spiral Korular"
+   ],
+   "boy": 6,
+   "hucre": 30,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 260,
+   "azami": 50,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/iridescent_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.5,
+    0.7,
+    1,
+    0.6
+   ]
+  },
+  {
+   "ad": "Gökkuşağı Mineral Kemeri",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/crystals/Rainbow_Mineral_Arch.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Uyum Tepeleri",
+    "Matematiksel Bahçeler"
+   ],
+   "boy": 10,
+   "hucre": 90,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 500,
+   "azami": 20,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/opal_stone",
+   "dokuOlcek": 3,
+   "isik": [
+    1,
+    0.7,
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "ad": "Rezonans Kristal Yelpazesi",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/crystals/Resonance_Crystal_Fan.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Desenli Ovalar",
+    "Uyum Tepeleri"
+   ],
+   "boy": 4,
+   "hucre": 24,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 220,
+   "azami": 70,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/iridescent_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.6,
+    0.8,
+    1,
+    0.6
+   ]
+  },
+  {
+   "ad": "Kromatik Örgü Kamışı",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/flora/Chromatic_Weave_Reed.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Desenli Ovalar",
+    "Matematiksel Bahçeler"
+   ],
+   "boy": 2.2,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/prism_moss",
+   "dokuOlcek": 1,
+   "isik": [
+    0.4,
+    0.9,
+    0.7,
+    0.25
+   ]
+  },
+  {
+   "ad": "Yanardöner Çatı Bitkisi",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/flora/Iridescent_Canopy_Plant.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Spiral Korular",
+    "Matematiksel Bahçeler"
+   ],
+   "boy": 2.6,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 260,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/chromatic_flower",
+   "dokuOlcek": 1,
+   "isik": [
+    0.9,
+    0.4,
+    0.9,
+    0.25
+   ]
+  },
+  {
+   "ad": "Lümen Taç Çalısı",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/flora/Lumen_Petal_Shrub.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Matematiksel Bahçeler",
+    "Desenli Ovalar"
+   ],
+   "boy": 2,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 260,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/chromatic_flower",
+   "dokuOlcek": 1,
+   "isik": [
+    1,
+    0.6,
+    0.8,
+    0.3
+   ]
+  },
+  {
+   "ad": "Prizma Eğreltisi",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/flora/Prism_Fern.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Spiral Korular",
+    "Uyum Tepeleri"
+   ],
+   "boy": 2,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/prism_moss",
+   "dokuOlcek": 1,
+   "isik": [
+    0.3,
+    0.9,
+    0.6,
+    0.2
+   ]
+  },
+  {
+   "ad": "Tayf Çiçeği",
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/flora/Spectrum_Bloom.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Matematiksel Bahçeler",
+    "Desenli Ovalar"
+   ],
+   "boy": 1.6,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aura/tex/chromatic_flower",
+   "dokuOlcek": 1,
+   "isik": [
+    1,
+    0.5,
+    0.9,
+    0.35
+   ]
+  },
+  {
+   "ad": "Auralis Manta Süzülücüsü",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/fauna/Auralis_Manta_Glider.glb",
+   "zUp": true,
+   "boy": 9,
+   "sayi": 3,
+   "bolgeler": [
+    "Matematiksel Bahçeler",
+    "Desenli Ovalar",
+    "Uyum Tepeleri"
+   ],
+   "irtifa": [
+    10,
+    45
+   ],
+   "yaricap": [
+    80,
+    300
+   ],
+   "doku": "Aura/tex/iridescent_crystal",
+   "isik": [
+    0.6,
+    0.7,
+    1,
+    0.5
+   ],
+   "yerine": "kanatli"
+  },
+  {
+   "ad": "Armonik Şerit Yüzücü",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/fauna/Harmonic_Ribbon_Swimmer.glb",
+   "zUp": true,
+   "boy": 10,
+   "sayi": 3,
+   "bolgeler": [
+    "Spiral Korular",
+    "Matematiksel Bahçeler"
+   ],
+   "irtifa": [
+    8,
+    36
+   ],
+   "yaricap": [
+    60,
+    260
+   ],
+   "doku": "Aura/tex/iridescent_crystal",
+   "isik": [
+    0.9,
+    0.5,
+    1,
+    0.5
+   ]
+  },
+  {
+   "ad": "Prizma Kuyruklu Sürüklenen",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aura/Aura_Spectral_Asset_Library_v0.1/Aura_Spectral_Asset_Library_v0.1/models/fauna/Prism_Tail_Drifter.glb",
+   "zUp": true,
+   "boy": 7,
+   "sayi": 3,
+   "bolgeler": [
+    "Desenli Ovalar",
+    "Uyum Tepeleri"
+   ],
+   "irtifa": [
+    6,
+    30
+   ],
+   "yaricap": [
+    60,
+    240
+   ],
+   "doku": "Aura/tex/iridescent_crystal",
+   "isik": [
+    0.5,
+    1,
+    0.8,
+    0.5
+   ]
+  }
+ ],
+ "aurora": [
+  {
+   "ad": "Aurora Işık Kristali",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/crystals/Aurora_Light_Crystal_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri",
+    "Soğuk Dağlar"
+   ],
+   "boy": 5.5,
+   "hucre": 30,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 260,
+   "azami": 70,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/aurora_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.3,
+    0.9,
+    0.8,
+    0.7
+   ]
+  },
+  {
+   "ad": "Buzlu Kristal Kemer",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/crystals/Frosted_Crystal_Arch.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Buzul Vadileri",
+    "Soğuk Dağlar"
+   ],
+   "boy": 11,
+   "hucre": 120,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 600,
+   "azami": 16,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/aurora_crystal",
+   "dokuOlcek": 3,
+   "isik": [
+    0.4,
+    0.7,
+    1,
+    0.4
+   ]
+  },
+  {
+   "ad": "Kutup Prizma Kuleleri",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/crystals/Polar_Prism_Spires.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri"
+   ],
+   "boy": 7,
+   "hucre": 36,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 300,
+   "azami": 50,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/aurora_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.5,
+    0.8,
+    1,
+    0.6
+   ]
+  },
+  {
+   "ad": "Buzul Altı Rezonans Jeotu",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/crystals/Subglacial_Resonance_Geode.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Buzul Vadileri",
+    "Kadim Kalıntılar"
+   ],
+   "boy": 4,
+   "hucre": 26,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 240,
+   "azami": 60,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/aurora_crystal",
+   "dokuOlcek": 2,
+   "isik": [
+    0.4,
+    1,
+    0.8,
+    0.6
+   ]
+  },
+  {
+   "ad": "Kırık Don Kayası",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ice/Frost_Shattered_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Soğuk Dağlar",
+    "Kadim Kalıntılar"
+   ],
+   "boy": 3.4,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.4
+   ],
+   "yaricap": 200,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/ancient_frosted_stone",
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Buzul Mavisi Monolit",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ice/Glacial_Blue_Ice_Monolith.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Buzul Vadileri",
+    "Aurora Düzlükleri"
+   ],
+   "boy": 6,
+   "hucre": 40,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 300,
+   "azami": 60,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/glacial_blue_ice",
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Basınç Sırtlı Buz Blok",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ice/Pressure_Ridged_Ice_Block.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Buzul Vadileri",
+    "Aurora Düzlükleri"
+   ],
+   "boy": 4,
+   "hucre": 24,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 240,
+   "azami": 90,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/glacial_blue_ice",
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Karla Gömülü Kalıntı Taşı",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ice/Snow_Buried_Relic_Stone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kadim Kalıntılar",
+    "Aurora Düzlükleri"
+   ],
+   "boy": 3.2,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 220,
+   "azami": 100,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/cryo_metal_relic",
+   "dokuOlcek": 2
+  },
+  {
+   "ad": "Kadim Kutup Geçidi",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ruins/Ancient_Polar_Gateway.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kadim Kalıntılar"
+   ],
+   "boy": 16,
+   "hucre": 420,
+   "olasilik": 0.5,
+   "olcek": [
+    0.9,
+    1.2
+   ],
+   "yaricap": 1400,
+   "azami": 5,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/ancient_frosted_stone",
+   "dokuOlcek": 3,
+   "isik": [
+    0.3,
+    0.8,
+    1,
+    0.15
+   ]
+  },
+  {
+   "ad": "Kriyojenik Arşiv Direği",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ruins/Cryogenic_Archive_Pylon.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kadim Kalıntılar"
+   ],
+   "boy": 10,
+   "hucre": 90,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 600,
+   "azami": 22,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/cryo_metal_relic",
+   "dokuOlcek": 2,
+   "isik": [
+    0.3,
+    0.9,
+    1,
+    0.5
+   ]
+  },
+  {
+   "ad": "Düşmüş Uygarlık Sütunu",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ruins/Fallen_Civilization_Column.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kadim Kalıntılar",
+    "Aurora Düzlükleri"
+   ],
+   "boy": 6.5,
+   "hucre": 50,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 420,
+   "azami": 40,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/ancient_frosted_stone",
+   "dokuOlcek": 2
+  },
+  {
+   "ad": "Buzul Altı Arşiv Odası",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/ruins/Subglacial_Archive_Chamber.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kadim Kalıntılar"
+   ],
+   "boy": 20,
+   "hucre": 520,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1500,
+   "azami": 4,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/cryo_metal_relic",
+   "dokuOlcek": 3,
+   "isik": [
+    0.3,
+    0.9,
+    1,
+    0.3
+   ]
+  },
+  {
+   "ad": "Kadim Buzul Şelalesi Terası",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/terrain/Ancient_Icefall_Terrace.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Soğuk Dağlar",
+    "Buzul Vadileri"
+   ],
+   "boy": 48,
+   "hucre": 300,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1100,
+   "azami": 14,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/glacial_blue_ice",
+   "dokuOlcek": 8
+  },
+  {
+   "ad": "Mavi Buz Yarık Sırtı",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/terrain/Blue_Ice_Creasse_Ridge.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Buzul Vadileri",
+    "Soğuk Dağlar"
+   ],
+   "boy": 50,
+   "hucre": 300,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1100,
+   "azami": 14,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/glacial_blue_ice",
+   "dokuOlcek": 8
+  },
+  {
+   "ad": "Kutup Sahanlığı Kırığı",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/terrain/Polar_Shelf_Fracture.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri"
+   ],
+   "boy": 52,
+   "hucre": 300,
+   "olasilik": 0.3,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1100,
+   "azami": 12,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/frozen_snow_crust",
+   "dokuOlcek": 8
+  },
+  {
+   "ad": "Rüzgâr Oyması Buzul",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/terrain/Wind_Sculpted_Glacier.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Soğuk Dağlar",
+    "Aurora Düzlükleri"
+   ],
+   "boy": 50,
+   "hucre": 300,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1100,
+   "azami": 12,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/frozen_snow_crust",
+   "dokuOlcek": 8
+  },
+  {
+   "ad": "Aurora Liken Yelpazesi",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/flora/Aurora_Lichen_Fan.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri",
+    "Kadim Kalıntılar"
+   ],
+   "boy": 1.6,
+   "hucre": 5,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 260,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/polar_organic_bark",
+   "dokuOlcek": 1,
+   "isik": [
+    0.3,
+    1,
+    0.7,
+    0.25
+   ]
+  },
+  {
+   "ad": "Don Peçeli Çalı",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/flora/Frost_Veil_Shrub.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri"
+   ],
+   "boy": 1.8,
+   "hucre": 5,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 220,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/polar_organic_bark",
+   "dokuOlcek": 1,
+   "isik": [
+    0.5,
+    0.8,
+    1,
+    0.2
+   ]
+  },
+  {
+   "ad": "Kutup Cam Kamışı",
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/flora/Polar_Glass_Reed.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Kadim Kalıntılar"
+   ],
+   "boy": 2,
+   "hucre": 4,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 300,
+   "egimMax": 0.6,
+   "yMin": -50,
+   "doku": "Aurora/tex/aurora_crystal",
+   "dokuOlcek": 1,
+   "isik": [
+    0.4,
+    0.9,
+    1,
+    0.35
+   ]
+  },
+  {
+   "ad": "Aurora Kar Avcısı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/fauna/Aurora_Snowstalker.glb",
+   "zUp": true,
+   "boy": 3.6,
+   "sayi": 4,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri",
+    "Kadim Kalıntılar"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    40,
+    220
+   ],
+   "yer": true,
+   "doku": "Aurora/tex/frozen_snow_crust",
+   "renk": [
+    0.85,
+    0.9,
+    0.95
+   ],
+   "yerine": "yuruyen"
+  },
+  {
+   "ad": "Kriyo Sürü Muhafızı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/fauna/Cryo_Herd_Warden.glb",
+   "zUp": true,
+   "boy": 4.6,
+   "sayi": 3,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Buzul Vadileri"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    40,
+    220
+   ],
+   "yer": true,
+   "doku": "Aurora/tex/ancient_frosted_stone",
+   "renk": [
+    0.7,
+    0.8,
+    0.9
+   ],
+   "yerine": "yuruyen"
+  },
+  {
+   "ad": "Tayfsal Kutup Süzülücüsü",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Aurora/Aurora_Cinematic_Asset_Library_v0.1/Aurora_Cinematic_Asset_Library_v0.1/models/fauna/Spectral_Polar_Glider.glb",
+   "zUp": true,
+   "boy": 10,
+   "sayi": 3,
+   "bolgeler": [
+    "Aurora Düzlükleri",
+    "Soğuk Dağlar",
+    "Buzul Vadileri"
+   ],
+   "irtifa": [
+    30,
+    120
+   ],
+   "yaricap": [
+    120,
+    360
+   ],
+   "doku": "Aurora/tex/aurora_crystal",
+   "isik": [
+    0.4,
+    0.9,
+    1,
+    0.6
+   ],
+   "yerine": "kanatli"
+  }
+ ],
+ "bana": [
+  {
+   "ad": "Ebedi Alp Zirvesi",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Alpine_Eternal_Peak.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Karlı Zirveler"
+   ],
+   "boy": 110,
+   "hucre": 700,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 2400,
+   "azami": 6,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/ancient_stone",
+   "dokuOlcek": 12,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Yağmur Ormanı Sırtı",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Rainforest_Ridge.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "boy": 70,
+   "hucre": 420,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1800,
+   "azami": 8,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/moss_and_fern",
+   "dokuOlcek": 10,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Şelale Kayalığı",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Waterfall_Cliff.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler"
+   ],
+   "boy": 40,
+   "hucre": 300,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 1300,
+   "azami": 8,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/ancient_stone",
+   "dokuOlcek": 8,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Şelale Kaya Dudağı",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Waterfall_Rock_Lip.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler"
+   ],
+   "boy": 12,
+   "hucre": 70,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 500,
+   "azami": 24,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/river_stone",
+   "dokuOlcek": 3,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Nehir Kıyısı Havzası",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Riverbank_Basin.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 34,
+   "hucre": 160,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 800,
+   "azami": 20,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/river_stone",
+   "dokuOlcek": 6,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Kadim Gövde Ağacı",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Ancient_Canopy_Tree.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 34,
+   "hucre": 16,
+   "olasilik": 0.5,
+   "olcek": [
+    0.7,
+    1.5
+   ],
+   "yaricap": 500,
+   "azami": 160,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/rainforest_bark",
+   "dokuOlcek": 3,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Kadim Kütüphane Sütunu",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Ancient_Library_Column.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Karlı Zirveler"
+   ],
+   "boy": 9,
+   "hucre": 180,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 900,
+   "azami": 18,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/ancient_stone",
+   "dokuOlcek": 2,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Kadim Kök Kemeri",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Ancient_Root_Arch.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Kıta Ovaları"
+   ],
+   "boy": 14,
+   "hucre": 110,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 600,
+   "azami": 20,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/rainforest_bark",
+   "dokuOlcek": 3,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Biyolüm Mantarı",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Biolume_Mushroom.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Kıta Ovaları"
+   ],
+   "boy": 2.6,
+   "hucre": 6,
+   "olasilik": 0.4,
+   "olcek": [
+    0.7,
+    1.8
+   ],
+   "yaricap": 120,
+   "azami": 220,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/flower_petal",
+   "dokuOlcek": 1,
+   "isik": [
+    0.3,
+    1,
+    0.8,
+    0.8
+   ],
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Kristal Mağara Oluşumu",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Crystal_Cave_Formation.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Karlı Zirveler",
+    "Kıta Ovaları"
+   ],
+   "boy": 7,
+   "hucre": 80,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 500,
+   "azami": 22,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/crystal_mineral",
+   "dokuOlcek": 2,
+   "isik": [
+    0.5,
+    1,
+    0.9,
+    0.4
+   ],
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Kristal Nilüfer Tomurcuğu",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Crystal_Lotus_Bud.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 2.4,
+   "hucre": 8,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 120,
+   "azami": 160,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/crystal_mineral",
+   "dokuOlcek": 1,
+   "isik": [
+    0.6,
+    1,
+    0.9,
+    0.5
+   ],
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Egzotik Meyve Kabuğu",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Exotic_Fruit_Pod.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "boy": 1.5,
+   "hucre": 5,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 100,
+   "azami": 200,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/canopy_leaf",
+   "dokuOlcek": 1,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Eğrelti Kümesi",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Fern_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 2.4,
+   "hucre": 4,
+   "olasilik": 0.5,
+   "olcek": [
+    0.7,
+    1.8
+   ],
+   "yaricap": 90,
+   "azami": 420,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/moss_and_fern",
+   "dokuOlcek": 1,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Yüzen Ada",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Floating_Island.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "boy": 46,
+   "hucre": 900,
+   "olasilik": 0.5,
+   "olcek": [
+    0.7,
+    1.4
+   ],
+   "yaricap": 2000,
+   "azami": 6,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/moss_and_fern",
+   "dokuOlcek": 10,
+   "kaldir": 75,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Çiçek Kümesi",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Flower_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 2.2,
+   "hucre": 4,
+   "olasilik": 0.4,
+   "olcek": [
+    0.7,
+    1.7
+   ],
+   "yaricap": 90,
+   "azami": 320,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/flower_petal",
+   "dokuOlcek": 1,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Orman Monoliti",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Forest_Monolith.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "boy": 16,
+   "hucre": 180,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 800,
+   "azami": 18,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/ancient_stone",
+   "dokuOlcek": 3,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Dev Nilüfer",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Giant_Lotus.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 6,
+   "hucre": 50,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.4
+   ],
+   "yaricap": 400,
+   "azami": 40,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/canopy_leaf",
+   "dokuOlcek": 2,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Yosunlu Kaya",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Mossy_Boulder.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler",
+    "Karlı Zirveler"
+   ],
+   "boy": 3.4,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 220,
+   "azami": 160,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/moss_and_fern",
+   "dokuOlcek": 2,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Nehir Taşı Kümesi",
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_River_Stone_Cluster.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "boy": 3.6,
+   "hucre": 12,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 220,
+   "azami": 140,
+   "egimMax": 0.6,
+   "yMin": 0.8,
+   "doku": "Bana/tex/river_stone",
+   "dokuOlcek": 2,
+   "vc": true,
+   "sadeceNormal": true
+  },
+  {
+   "ad": "Gövde Tepesi Primatı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Canopy_Primate.glb",
+   "zUp": true,
+   "boy": 2.8,
+   "sayi": 4,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    30,
+    160
+   ],
+   "yer": true,
+   "vc": true,
+   "yerine": "yuruyen"
+  },
+  {
+   "ad": "Orman Otlayıcısı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Forest_Grazer.glb",
+   "zUp": true,
+   "boy": 6.4,
+   "sayi": 4,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    40,
+    200
+   ],
+   "yer": true,
+   "vc": true,
+   "yerine": "yuruyen"
+  },
+  {
+   "ad": "Kristal Tüylü Kuş",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Crystal_Feather_Bird.glb",
+   "zUp": true,
+   "boy": 6,
+   "sayi": 4,
+   "bolgeler": [
+    "Kıta Ovaları",
+    "Şelaleli Nehirler",
+    "Ekvator Okyanusu Kıyıları"
+   ],
+   "irtifa": [
+    15,
+    80
+   ],
+   "yaricap": [
+    80,
+    280
+   ],
+   "isik": [
+    0.5,
+    1,
+    0.9,
+    0.4
+   ],
+   "vc": true,
+   "yerine": "kanatli"
+  },
+  {
+   "ad": "Ruh Koruyucusu",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Spirit_Guardian_Hero_Blockout.glb",
+   "zUp": true,
+   "boy": 6,
+   "sayi": 1,
+   "bolgeler": [
+    "Karlı Zirveler",
+    "Kıta Ovaları"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    20,
+    90
+   ],
+   "yer": true,
+   "isik": [
+    0.6,
+    0.9,
+    1,
+    0.3
+   ],
+   "vc": true
+  },
+  {
+   "ad": "Leviathan",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Bana/Bana_Cinematic_Asset_Library_v0.1/models/Bana_Leviathan_Hero_Blockout.glb",
+   "zUp": true,
+   "boy": 38,
+   "sayi": 1,
+   "bolgeler": [
+    "Ekvator Okyanusu Kıyıları",
+    "Şelaleli Nehirler"
+   ],
+   "irtifa": [
+    25,
+    70
+   ],
+   "yaricap": [
+    300,
+    520
+   ],
+   "isik": [
+    0.3,
+    0.8,
+    1,
+    0.3
+   ],
+   "vc": true,
+   "yerine": "balina"
+  }
+ ],
+ "berylum": [
+  {
+   "ad": "Kristal Kubbeli Kale",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/01_Citadel_Crystal_Dome.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir"
+   ],
+   "boy": 42,
+   "hucre": 300,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 900,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Rezonans Kulesi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/02_Resonance_Spire.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir",
+    "Batık Şehirler"
+   ],
+   "boy": 30,
+   "hucre": 160,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 700,
+   "azami": 24,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Leviathan Kapısı",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/03_Leviathan_Gate.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir",
+    "Batık Şehirler"
+   ],
+   "boy": 32,
+   "hucre": 320,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 900,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kemerli Köprü",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/04_Arcade_Bridge.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir"
+   ],
+   "boy": 38,
+   "hucre": 260,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kristal Enerji Dikilitaşı",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/05_Crystal_Energy_Obelisk.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir",
+    "Kristal Okyanus Tabanı"
+   ],
+   "boy": 28,
+   "hucre": 170,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 700,
+   "azami": 22,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Batık Arşiv",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/06_Submerged_Archive.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Batık Şehirler"
+   ],
+   "boy": 26,
+   "hucre": 260,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 12,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Beril Kristal Kümesi (küçük)",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/07_Beryl_Crystal_Cluster_Small.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Derin Çukurlar"
+   ],
+   "boy": 3.5,
+   "hucre": 10,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 160,
+   "azami": 200,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Beril Kristal Kümesi (büyük)",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/08_Beryl_Crystal_Cluster_Large.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Derin Çukurlar"
+   ],
+   "boy": 10,
+   "hucre": 36,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 320,
+   "azami": 60,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Mavi Kristal Yelpazesi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/09_Blue_Crystal_Fan.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı"
+   ],
+   "boy": 6,
+   "hucre": 22,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 260,
+   "azami": 90,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Yeşil Kristal Büyümesi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/10_Green_Crystal_Growth.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Derin Çukurlar"
+   ],
+   "boy": 7,
+   "hucre": 26,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 280,
+   "azami": 80,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Rezonans Kristal Kalbi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/11_Resonance_Crystal_Heart.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Derin Çukurlar"
+   ],
+   "boy": 8,
+   "hucre": 110,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 500,
+   "azami": 24,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kırık Kristal Alanı",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/12_Broken_Crystal_Field.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı"
+   ],
+   "boy": 9,
+   "hucre": 70,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 450,
+   "azami": 34,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kristal Koro Sütunu",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/16_Crystal_Choir_Column.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Kayıp Işıltılı Şehir"
+   ],
+   "boy": 11,
+   "hucre": 60,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 450,
+   "azami": 40,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kayıp Şehir Kemeri",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/17_Lost_City_Arch_Ruin.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Batık Şehirler",
+    "Yıkık Tapınaklar"
+   ],
+   "boy": 14,
+   "hucre": 160,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 600,
+   "azami": 24,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": 1000000000.0
+  },
+  {
+   "ad": "Kadim Rezonans Çekirdeği",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/18_Ancient_Resonance_Core.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir",
+    "Derin Çukurlar"
+   ],
+   "boy": 11,
+   "hucre": 300,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Dipsiz Tapınak Sütunu",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/19_Abyssal_Temple_Pillar.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Batık Şehirler",
+    "Yıkık Tapınaklar"
+   ],
+   "boy": 15,
+   "hucre": 60,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 450,
+   "azami": 40,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": 1000000000.0
+  },
+  {
+   "ad": "Biyolüminesan Anemon",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/20_Bioluminescent_Anemone.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Derin Çukurlar"
+   ],
+   "boy": 2.8,
+   "hucre": 5,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.8
+   ],
+   "yaricap": 110,
+   "azami": 360,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Batık Kristal Nakliyesi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/21_Sunken_Crystal_Transport.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Batık Şehirler"
+   ],
+   "boy": 9,
+   "hucre": 300,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Leviathan Mabedi",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/22_Leviathan_Shrine.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Yıkık Tapınaklar",
+    "Batık Şehirler"
+   ],
+   "boy": 15,
+   "hucre": 200,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 12,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": 1000000000.0
+  },
+  {
+   "ad": "Deniz Tabanı Bacası Kristali",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/23_Seafloor_Vent_Crystal.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Derin Çukurlar"
+   ],
+   "boy": 8,
+   "hucre": 40,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 400,
+   "azami": 40,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Kristal Pencere Modülü",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/24_Crystal_Window_Module.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Kayıp Işıltılı Şehir",
+    "Batık Şehirler"
+   ],
+   "boy": 6,
+   "hucre": 120,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 450,
+   "azami": 26,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Enkaz ve Kadim Döküntü",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/25_Rubble_And_Ancient_Debris.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Batık Şehirler",
+    "Yıkık Tapınaklar",
+    "Kayıp Işıltılı Şehir"
+   ],
+   "boy": 3.8,
+   "hucre": 14,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 200,
+   "azami": 160,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": 1000000000.0
+  },
+  {
+   "ad": "Kadim Leviathan Başı",
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/13_Ancient_Leviathan_Head.glb",
+   "zUp": true,
+   "bolgeler": [
+    "Derin Çukurlar"
+   ],
+   "boy": 30,
+   "hucre": 500,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1200,
+   "azami": 3,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Dev Işıltılı Balina",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/14_Giant_Luminous_Whale.glb",
+   "zUp": true,
+   "boy": 24,
+   "sayi": 3,
+   "bolgeler": [
+    "Kristal Okyanus Tabanı",
+    "Derin Çukurlar"
+   ],
+   "irtifa": [
+    8,
+    32
+   ],
+   "yaricap": [
+    200,
+    420
+   ],
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yerine": "balina"
+  },
+  {
+   "ad": "Kafadan Bacaklı Muhafız",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Berylum/Berylum_Cinematic_Asset_Library_v0.1/Berylum_Cinematic_Asset_Library_v0.1/Models/15_Cephalopod_Guardian.glb",
+   "zUp": true,
+   "boy": 9,
+   "sayi": 2,
+   "bolgeler": [
+    "Derin Çukurlar",
+    "Kristal Okyanus Tabanı"
+   ],
+   "irtifa": [
+    4,
+    14
+   ],
+   "yaricap": [
+    80,
+    260
+   ],
+   "dokuHarita": {
+    "Abyssal Stone": "Berylum/tex/deepstone",
+    "Ancient Alloy": "Berylum/tex/ancient_alloy",
+    "Crystal Glass": "Berylum/tex/crystal_glass",
+    "Blue Beryl": "Berylum/tex/blue_beryl",
+    "Green Beryl": "Berylum/tex/green_beryl",
+    "Resonance Glow": "Berylum/tex/resonance",
+    "Seafloor Sediment": "Berylum/tex/sediment",
+    "Leviathan Hide": "Berylum/tex/organic_hide"
+   },
+   "dokuOlcek": 3,
+   "yerine": "medusa"
+  }
+ ],
+ "caelum-prime": [
+  {
+   "ad": "Göktaşı Gözlemevi Tapınağı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/01_Meteor_Observatory_Temple.glb",
+   "zUp": true,
+   "boy": 48,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 520,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1400,
+   "azami": 6,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Bulut Şehri Gök Sütunu",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/02_Cloud_City_Sky_Pillar.glb",
+   "zUp": true,
+   "boy": 30,
+   "bolgeler": [
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "hucre": 180,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 24,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Bulut Yolu Gök Köprüsü",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/03_Cloudway_Sky_Bridge.glb",
+   "zUp": true,
+   "boy": 44,
+   "bolgeler": [
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "hucre": 420,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1000,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 45
+  },
+  {
+   "ad": "Bulut Şehri Kapısı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/04_Cloud_City_Gate.glb",
+   "zUp": true,
+   "boy": 34,
+   "bolgeler": [
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 420,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1000,
+   "azami": 6,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Yüzen Şehir Konutu",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/05_Floating_City_Residence.glb",
+   "zUp": true,
+   "boy": 14,
+   "bolgeler": [
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "hucre": 90,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 600,
+   "azami": 40,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Bulut Şehri Salonu",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/06_Cloud_City_Hall.glb",
+   "zUp": true,
+   "boy": 20,
+   "bolgeler": [
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 240,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 800,
+   "azami": 12,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Yosunlu Yüzen Ada",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/07_Floating_Island_Mossy.glb",
+   "zUp": true,
+   "boy": 46,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Sisli Vadiler",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 420,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1600,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 70
+  },
+  {
+   "ad": "Işıltılı Yüzen Ada",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/08_Floating_Island_Luminous.glb",
+   "zUp": true,
+   "boy": 42,
+   "bolgeler": [
+    "Sisli Vadiler",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 520,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1600,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 85
+  },
+  {
+   "ad": "Yüzen Dağ Kayası",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/09_Floating_Mountain_Rock.glb",
+   "zUp": true,
+   "boy": 56,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Sisli Vadiler"
+   ],
+   "hucre": 640,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1800,
+   "azami": 6,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 95
+  },
+  {
+   "ad": "Bulut Ormanı Adası",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/10_Cloud_Forest_Island.glb",
+   "zUp": true,
+   "boy": 48,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 520,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1600,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 65
+  },
+  {
+   "ad": "Şelaleli Ada Kenarı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/11_Waterfall_Island_Ledge.glb",
+   "zUp": true,
+   "boy": 44,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Yağmur Ormanı"
+   ],
+   "hucre": 520,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1600,
+   "azami": 8,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 75
+  },
+  {
+   "ad": "Parlayan Ada Çekirdeği",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/12_Parlayan_Island_Core.glb",
+   "zUp": true,
+   "boy": 38,
+   "bolgeler": [
+    "Sisli Vadiler",
+    "Şelale Sırtları"
+   ],
+   "hucre": 620,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 1800,
+   "azami": 5,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "kaldir": 100
+  },
+  {
+   "ad": "Yüzen Ada Şelalesi",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/22_Floating_Island_Waterfall.glb",
+   "zUp": true,
+   "boy": 36,
+   "bolgeler": [
+    "Şelale Sırtları"
+   ],
+   "hucre": 260,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 900,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Yıldız Haritalama Aleti",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/19_Star_Mapping_Instrument.glb",
+   "zUp": true,
+   "boy": 12,
+   "bolgeler": [
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "hucre": 300,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 900,
+   "azami": 10,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Göksel Takvim Dikilitaşı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/20_Celestial_Calendar_Obelisk.glb",
+   "zUp": true,
+   "boy": 9,
+   "bolgeler": [
+    "Kanopi Tepeleri",
+    "Sisli Vadiler"
+   ],
+   "hucre": 180,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 700,
+   "azami": 18,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Biyolüminesan Bulut Bitkisi",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/21_Bioluminescent_Cloud_Forest_Plant.glb",
+   "zUp": true,
+   "boy": 3.2,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Sisli Vadiler",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 5,
+   "olasilik": 0.45,
+   "olcek": [
+    0.8,
+    2
+   ],
+   "yaricap": 110,
+   "azami": 360,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Göktaşı Kalıntısı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/23_Meteorite_Relic.glb",
+   "zUp": true,
+   "boy": 6,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Sisli Vadiler"
+   ],
+   "hucre": 70,
+   "olasilik": 0.35,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 500,
+   "azami": 30,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Kadim Gök Tapınağı Sütunu",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/24_Ancient_Sky_Temple_Pillar.glb",
+   "zUp": true,
+   "boy": 12,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Kanopi Tepeleri"
+   ],
+   "hucre": 80,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    1.3
+   ],
+   "yaricap": 600,
+   "azami": 40,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Göktaşı Kalıntı Alanı",
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/25_Meteor_Rubble_Field.glb",
+   "zUp": true,
+   "boy": 5,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Sisli Vadiler",
+    "Yağmur Ormanı"
+   ],
+   "hucre": 18,
+   "olasilik": 0.4,
+   "olcek": [
+    0.8,
+    2.2
+   ],
+   "yaricap": 250,
+   "azami": 120,
+   "egimMax": 0.6,
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Gök Balinası",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/13_Sky_Whale.glb",
+   "zUp": true,
+   "boy": 26,
+   "sayi": 3,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Sisli Vadiler",
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "irtifa": [
+    70,
+    160
+   ],
+   "yaricap": [
+    260,
+    520
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "yerine": "balina"
+  },
+  {
+   "ad": "Bulut Vatozu",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/14_Cloud_Ray.glb",
+   "zUp": true,
+   "boy": 14,
+   "sayi": 4,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Sisli Vadiler",
+    "Kanopi Tepeleri",
+    "Şelale Sırtları"
+   ],
+   "irtifa": [
+    40,
+    130
+   ],
+   "yaricap": [
+    140,
+    360
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "yerine": "kanatli"
+  },
+  {
+   "ad": "Şimşek Kuşu",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/15_Lightning_Bird.glb",
+   "zUp": true,
+   "boy": 9,
+   "sayi": 4,
+   "bolgeler": [
+    "Sisli Vadiler",
+    "Şelale Sırtları",
+    "Kanopi Tepeleri"
+   ],
+   "irtifa": [
+    30,
+    110
+   ],
+   "yaricap": [
+    120,
+    320
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "yerine": "kanatli"
+  },
+  {
+   "ad": "Bulut Yaratığı (Vatoz Formu)",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/16_Cloud_Creature_Ray_Form.glb",
+   "zUp": true,
+   "boy": 8,
+   "sayi": 3,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Sisli Vadiler"
+   ],
+   "irtifa": [
+    20,
+    80
+   ],
+   "yaricap": [
+    100,
+    300
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3
+  },
+  {
+   "ad": "Yüzen Ada Otlayıcısı",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/17_Floating_Island_Grazer.glb",
+   "zUp": true,
+   "boy": 3.6,
+   "sayi": 4,
+   "bolgeler": [
+    "Yağmur Ormanı",
+    "Kanopi Tepeleri"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    30,
+    160
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "yer": true,
+   "yerine": "yuruyen"
+  },
+  {
+   "ad": "Fırtına Nöbetçisi",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Caelum/Caelum_Cinematic_Asset_Library_v0.1/Caelum_Cinematic_Asset_Library_v0.1/Models/18_Storm_Sentinel_Creature.glb",
+   "zUp": true,
+   "boy": 5,
+   "sayi": 3,
+   "bolgeler": [
+    "Şelale Sırtları",
+    "Sisli Vadiler"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    30,
+    140
+   ],
+   "dokuHarita": {
+    "Stormworn ancient stone": "Caelum/tex/stormstone",
+    "Sky silver alloy": "Caelum/tex/sky_silver",
+    "Meteoric iron": "Caelum/tex/meteor_iron",
+    "Cloud blue crystal": "Caelum/tex/cloud_blue",
+    "Storm violet crystal": "Caelum/tex/storm_violet",
+    "Atmospheric bioluminescence": "Caelum/tex/lumen",
+    "Floating island moss": "Caelum/tex/island_moss",
+    "Aurora resonance": "Caelum/tex/aurora_teal"
+   },
+   "dokuOlcek": 3,
+   "yer": true,
+   "yerine": "yuruyen"
+  }
+ ],
+ "cognitus": [
+  {
+   "ad": "Metropol Kulesi I",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Metropolis_Spire_1.glb",
+   "zUp": true,
+   "boy": 60,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 70,
+   "olasilik": 0.5,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 700,
+   "azami": 40,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Metropol Kulesi II",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Metropolis_Spire_2.glb",
+   "zUp": true,
+   "boy": 76,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 80,
+   "olasilik": 0.5,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 700,
+   "azami": 30,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Metropol Kulesi III",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Metropolis_Spire_3.glb",
+   "zUp": true,
+   "boy": 92,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 90,
+   "olasilik": 0.5,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 800,
+   "azami": 24,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Metropol Kulesi IV",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Metropolis_Spire_4.glb",
+   "zUp": true,
+   "boy": 108,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 110,
+   "olasilik": 0.5,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 800,
+   "azami": 20,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Bilişsel Sermaye Kulesi",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Cognitive_Capital_Tower.glb",
+   "zUp": true,
+   "boy": 150,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 420,
+   "olasilik": 0.45,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1200,
+   "azami": 4,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4,
+   "isik": [
+    0.6,
+    0.8,
+    1,
+    0.12
+   ]
+  },
+  {
+   "ad": "İşbirlikçi Kültür Anıtı",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Collaborative_Culture_Monument.glb",
+   "zUp": true,
+   "boy": 44,
+   "bolgeler": [
+    "Bilişsel Metropolleri",
+    "Kehribar Bozkırlar"
+   ],
+   "hucre": 260,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 900,
+   "azami": 10,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Yıldızlararası Geçiş Merkezi",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Interstellar_Transit_Hub.glb",
+   "zUp": true,
+   "boy": 90,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 600,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1400,
+   "azami": 3,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Nanoteknoloji Üretim Tezgâhı",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Nanotech_Fabrication_Bench.glb",
+   "zUp": true,
+   "boy": 16,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 160,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 600,
+   "azami": 14,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Kuantum Hesaplama Çekirdeği",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Quantum_Computing_Core.glb",
+   "zUp": true,
+   "boy": 24,
+   "bolgeler": [
+    "Bilişsel Metropolleri",
+    "Kızıl Kayalık Platolar"
+   ],
+   "hucre": 240,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 800,
+   "azami": 10,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4,
+   "isik": [
+    0.5,
+    0.7,
+    1,
+    0.4
+   ]
+  },
+  {
+   "ad": "Kuantum İşlemci Küresi",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Quantum_Processor_Sphere.glb",
+   "zUp": true,
+   "boy": 16,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 160,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 700,
+   "azami": 12,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/glass",
+   "dokuOlcek": 4,
+   "isik": [
+    0.6,
+    0.8,
+    1,
+    0.4
+   ]
+  },
+  {
+   "ad": "Astrofizik Gözlemevi",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Astrophysics_Observatory.glb",
+   "zUp": true,
+   "boy": 46,
+   "bolgeler": [
+    "Kızıl Kayalık Platolar",
+    "Buzullar"
+   ],
+   "hucre": 420,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1200,
+   "azami": 6,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Derin Uzay Teleskobu",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Deep_Space_Telescope.glb",
+   "zUp": true,
+   "boy": 44,
+   "bolgeler": [
+    "Kızıl Kayalık Platolar",
+    "Buzullar"
+   ],
+   "hucre": 360,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1000,
+   "azami": 8,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Telepatik Rezonans Kemeri",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Telepathic_Resonance_Arch.glb",
+   "zUp": true,
+   "boy": 50,
+   "bolgeler": [
+    "Kehribar Bozkırlar",
+    "Bilişsel Metropolleri",
+    "Mor-Yeşil Ormanlar"
+   ],
+   "hucre": 420,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1100,
+   "azami": 6,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/glass",
+   "dokuOlcek": 4,
+   "isik": [
+    0.5,
+    0.8,
+    1,
+    0.3
+   ]
+  },
+  {
+   "ad": "Sinirsel Veri Kristali",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Neural_Data_Crystal.glb",
+   "zUp": true,
+   "boy": 13,
+   "bolgeler": [
+    "Mor-Yeşil Ormanlar",
+    "Kızıl Kayalık Platolar",
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 60,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 500,
+   "azami": 40,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/neural_crystal",
+   "dokuOlcek": 4,
+   "isik": [
+    0.6,
+    0.5,
+    1,
+    0.6
+   ]
+  },
+  {
+   "ad": "Bilişsel Gövde Heykeli",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Bilişsel_Humanoid_Torso.glb",
+   "zUp": true,
+   "boy": 16,
+   "bolgeler": [
+    "Bilişsel Metropolleri",
+    "Kehribar Bozkırlar"
+   ],
+   "hucre": 220,
+   "olasilik": 0.35,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 800,
+   "azami": 8,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Sinir Tepesi Heykeli",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Cognitian_Cranial_Neural_Crest.glb",
+   "zUp": true,
+   "boy": 10,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 200,
+   "olasilik": 0.35,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 700,
+   "azami": 8,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/neural_crystal",
+   "dokuOlcek": 4,
+   "isik": [
+    0.6,
+    0.5,
+    1,
+    0.4
+   ]
+  },
+  {
+   "ad": "Hassas Manipülatör El",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Precision_Manipulator_Hand.glb",
+   "zUp": true,
+   "boy": 4,
+   "bolgeler": [
+    "Bilişsel Metropolleri"
+   ],
+   "hucre": 60,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 400,
+   "azami": 20,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/white_alloy",
+   "dokuOlcek": 4
+  },
+  {
+   "ad": "Çöl Kumul Formu",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Desert_Dune_Form.glb",
+   "zUp": true,
+   "boy": 64,
+   "bolgeler": [
+    "Kehribar Bozkırlar"
+   ],
+   "hucre": 320,
+   "olasilik": 0.45,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1200,
+   "azami": 10,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/desert_regolith",
+   "dokuOlcek": 10
+  },
+  {
+   "ad": "Otlak Biyom Modülü",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Grassland_Biome_Module.glb",
+   "zUp": true,
+   "boy": 50,
+   "bolgeler": [
+    "Kehribar Bozkırlar",
+    "Mor-Yeşil Ormanlar"
+   ],
+   "hucre": 260,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1000,
+   "azami": 10,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/forest_biomass",
+   "dokuOlcek": 8
+  },
+  {
+   "ad": "Dağ Silsilesi Modülü",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Mountain_Range_Module.glb",
+   "zUp": true,
+   "boy": 96,
+   "bolgeler": [
+    "Kızıl Kayalık Platolar",
+    "Buzullar"
+   ],
+   "hucre": 520,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 1600,
+   "azami": 6,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/sandstone",
+   "dokuOlcek": 12
+  },
+  {
+   "ad": "Yağmur Ormanı Gövde Kütlesi",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Rainforest_Canopy_Biomass.glb",
+   "zUp": true,
+   "boy": 32,
+   "bolgeler": [
+    "Mor-Yeşil Ormanlar"
+   ],
+   "hucre": 70,
+   "olasilik": 0.5,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 800,
+   "azami": 50,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/forest_biomass",
+   "dokuOlcek": 6
+  },
+  {
+   "ad": "Okyanus Çukuru Kayası",
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Ocean_Trench_Rock.glb",
+   "zUp": true,
+   "boy": 24,
+   "bolgeler": [
+    "Sığ Denizler"
+   ],
+   "hucre": 120,
+   "olasilik": 0.4,
+   "olcek": [
+    0.85,
+    1.25
+   ],
+   "yaricap": 700,
+   "azami": 20,
+   "egimMax": 0.5,
+   "doku": "Cognitus/tex/ocean_basalt",
+   "dokuOlcek": 5,
+   "yMax": -1.5
+  },
+  {
+   "ad": "Uyumlu Biyom Kâşifi",
+   "tur": "canli",
+   "basit": true,
+   "dosya": "Cognitus/Cognitus_Cinematic_Asset_Library_v0.1/GLB_Models/Adaptive_Biome_Explorer.glb",
+   "zUp": true,
+   "boy": 4,
+   "sayi": 3,
+   "bolgeler": [
+    "Kehribar Bozkırlar",
+    "Mor-Yeşil Ormanlar",
+    "Kızıl Kayalık Platolar"
+   ],
+   "irtifa": [
+    0,
+    0
+   ],
+   "yaricap": [
+    30,
+    160
+   ],
+   "yer": true,
+   "doku": "Cognitus/tex/white_alloy",
+   "yerine": "yuruyen"
+  }
+ ]
 }

@@ -1,0 +1,77 @@
+{
+  "library": "Akariz Planet Asset Library",
+  "version": "0.1",
+  "units": "approximate metres; Z-up",
+  "counts": {
+    "trees": 6,
+    "rocks": 10,
+    "crystal_clusters": 6,
+    "undergrowth_assets": 6,
+    "ground_tiles": 12,
+    "PBR_texture_sets": 12
+  },
+  "texture_maps": [
+    "albedo",
+    "roughness",
+    "normal",
+    "height",
+    "ao"
+  ],
+  "models": {
+    "trees": [
+      "Akariz_Tree_Ancient_Canopy",
+      "Akariz_Tree_Blue_Mangrove",
+      "Akariz_Tree_Crystal_Bloom",
+      "Akariz_Tree_Golden_Crown",
+      "Akariz_Tree_Twisted_Canyon",
+      "Akariz_Tree_Weeping_Veil"
+    ],
+    "rocks": [
+      "Akariz_Rock_Basalt_Boulder",
+      "Akariz_Rock_Obsidian_Shard",
+      "Akariz_Rock_Red_Canyon_Rock",
+      "Akariz_Rock_Lichen_Stone",
+      "Akariz_Rock_Granite_Slab",
+      "Akariz_Rock_Jagged_Ridge",
+      "Akariz_Rock_River_Smooth",
+      "Akariz_Rock_Volcanic_Scorched",
+      "Akariz_Rock_Moss_Root_Boulder",
+      "Akariz_Rock_Pale_Limestone"
+    ],
+    "crystals": [
+      "Akariz_Crystal_Azure",
+      "Akariz_Crystal_Amethyst",
+      "Akariz_Crystal_Cyan_Geode",
+      "Akariz_Crystal_Obsidian_Spire",
+      "Akariz_Crystal_Energy_Quartz",
+      "Akariz_Crystal_Violet_Rift"
+    ],
+    "undergrowth": [
+      "Akariz_Plant_Blue_Fern",
+      "Akariz_Plant_Glow_Mushrooms",
+      "Akariz_Plant_Star_Flower",
+      "Akariz_Plant_Root_Vine",
+      "Akariz_Plant_Grass_Tuft",
+      "Akariz_Plant_Lichen_Fan"
+    ],
+    "ground_tiles": [
+      "Akariz_Ground_Forest_Moss.glb",
+      "Akariz_Ground_Emerald_Grass.glb",
+      "Akariz_Ground_Blue_Biolume_Moss.glb",
+      "Akariz_Ground_Wet_Soil.glb",
+      "Akariz_Ground_Fern_Litter.glb",
+      "Akariz_Ground_River_Silt.glb",
+      "Akariz_Ground_Golden_Sand.glb",
+      "Akariz_Ground_Basalt.glb",
+      "Akariz_Ground_Obsidian.glb",
+      "Akariz_Ground_Granite.glb",
+      "Akariz_Ground_Red_Canyon.glb",
+      "Akariz_Ground_Blue_Crystal_Dust.glb"
+    ]
+  },
+  "notes": [
+    "Procedural modular starter assets, not photogrammetry scans or final hand-sculpted hero assets.",
+    "Ground GLBs embed albedo, roughness and normal maps. Texture folders additionally contain height and AO.",
+    "Import GLB files into Blender, Unreal Engine, Unity or Three.js. Review scale, collision and material response."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "planet": "Cognitus",
+  "sequence_number": 50,
+  "assets": [
+    {
+      "name": "Seraphis_Dual_Star_Orb",
+      "file": "Seraphis_Dual_Star_Orb.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Primary luminous star representation"
+    },
+    {
+      "name": "Seraphis_Companion_Star",
+      "file": "Seraphis_Companion_Star.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Secondary star of binary system"
+    },
+    {
+      "name": "Cognitus_Planetary_Globe",
+      "file": "Cognitus_Planetary_Globe.glb",
+      "material": "Cognitus_Ocean_Basalt",
+      "description": "Planetary globe with varied biomes"
+    },
+    {
+      "name": "Cognitive_Capital_Tower",
+      "file": "Cognitive_Capital_Tower.glb",
+      "material": "Cognitus_Obsidian_Ceramic",
+      "description": "Metropolitan research spire"
+    },
+    {
+      "name": "Quantum_Computing_Core",
+      "file": "Quantum_Computing_Core.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Quantum computation reactor"
+    },
+    {
+      "name": "Neural_Data_Crystal",
+      "file": "Neural_Data_Crystal.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Large faceted neural data crystal"
+    },
+    {
+      "name": "Interstellar_Transit_Hub",
+      "file": "Interstellar_Transit_Hub.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Transit terminal for interplanetary collaboration"
+    },
+    {
+      "name": "Telepathic_Resonance_Arch",
+      "file": "Telepathic_Resonance_Arch.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Resonance ring for long-distance communication"
+    },
+    {
+      "name": "Metropolis_Spire_1",
+      "file": "Metropolis_Spire_1.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Modular metropolitan tower"
+    },
+    {
+      "name": "Metropolis_Spire_2",
+      "file": "Metropolis_Spire_2.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Modular metropolitan tower"
+    },
+    {
+      "name": "Metropolis_Spire_3",
+      "file": "Metropolis_Spire_3.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Modular metropolitan tower"
+    },
+    {
+      "name": "Metropolis_Spire_4",
+      "file": "Metropolis_Spire_4.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Modular metropolitan tower"
+    },
+    {
+      "name": "Bilişsel_Humanoid_Torso",
+      "file": "Bilişsel_Humanoid_Torso.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Cognitian humanoid body core"
+    },
+    {
+      "name": "Cognitian_Cranial_Neural_Crest",
+      "file": "Cognitian_Cranial_Neural_Crest.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Expanded neural cranial structure"
+    },
+    {
+      "name": "Precision_Manipulator_Hand",
+      "file": "Precision_Manipulator_Hand.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "High-dexterity hand component"
+    },
+    {
+      "name": "Adaptive_Biome_Explorer",
+      "file": "Adaptive_Biome_Explorer.glb",
+      "material": "Cognitus_Obsidian_Ceramic",
+      "description": "Adaptive exploration suit form"
+    },
+    {
+      "name": "Astrophysics_Observatory",
+      "file": "Astrophysics_Observatory.glb",
+      "material": "Cognitus_Obsidian_Ceramic",
+      "description": "Research observatory platform"
+    },
+    {
+      "name": "Deep_Space_Telescope",
+      "file": "Deep_Space_Telescope.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Long-range astrophysics telescope"
+    },
+    {
+      "name": "Quantum_Processor_Sphere",
+      "file": "Quantum_Processor_Sphere.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Quantum processor housing"
+    },
+    {
+      "name": "Nanotech_Fabrication_Bench",
+      "file": "Nanotech_Fabrication_Bench.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Nanotechnology fabrication workstation"
+    },
+    {
+      "name": "Rainforest_Canopy_Biomass",
+      "file": "Rainforest_Canopy_Biomass.glb",
+      "material": "Cognitus_Forest_Biomass",
+      "description": "Dense rainforest canopy asset"
+    },
+    {
+      "name": "Desert_Dune_Form",
+      "file": "Desert_Dune_Form.glb",
+      "material": "Cognitus_Desert_Regolith",
+      "description": "Wind-shaped desert terrain form"
+    },
+    {
+      "name": "Mountain_Range_Module",
+      "file": "Mountain_Range_Module.glb",
+      "material": "Cognitus_Sandstone",
+      "description": "Mountainous terrain module"
+    },
+    {
+      "name": "Ocean_Trench_Rock",
+      "file": "Ocean_Trench_Rock.glb",
+      "material": "Cognitus_Ocean_Basalt",
+      "description": "Deep ocean trench geological formation"
+    },
+    {
+      "name": "Grassland_Biome_Module",
+      "file": "Grassland_Biome_Module.glb",
+      "material": "Cognitus_Forest_Biomass",
+      "description": "Open grassland terrain patch"
+    },
+    {
+      "name": "Collaborative_Culture_Monument",
+      "file": "Collaborative_Culture_Monument.glb",
+      "material": "Cognitus_White_Alloy",
+      "description": "Monument representing inter-civilization collaboration"
+    },
+    {
+      "name": "Seraphis_Orbital_Ring",
+      "file": "Seraphis_Orbital_Ring.glb",
+      "material": "Cognitus_Neural_Crystal",
+      "description": "Orbital ring structure for binary-system display"
+    }
+  ],
+  "materials": [
+    "Cognitus_Obsidian_Ceramic",
+    "Cognitus_White_Alloy",
+    "Cognitus_Neural_Crystal",
+    "Cognitus_Sandstone",
+    "Cognitus_Forest_Biomass",
+    "Cognitus_Desert_Regolith",
+    "Cognitus_Ocean_Basalt",
+    "Cognitus_Glass"
+  ]
+}

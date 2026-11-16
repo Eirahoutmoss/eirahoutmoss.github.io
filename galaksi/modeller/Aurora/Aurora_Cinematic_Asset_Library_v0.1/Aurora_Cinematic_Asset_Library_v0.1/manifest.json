@@ -1,0 +1,196 @@
+{
+  "title": "Aurora Cinematic Asset Library v0.1",
+  "source": "Aurora.docx",
+  "world_identity": [
+    "Polar world covered by dynamic aurora-like spectral light waves",
+    "Ancient civilization remnants preserved beneath ice",
+    "Local fauna synchronizes biological rhythms and migration with light frequencies",
+    "Deep polar night and long restoration cycles",
+    "Neutral protected heritage region with cryogenic preservation structures"
+  ],
+  "texture_spec": "All PBR maps are 2048x2048 (2K); each set contains albedo, roughness, normal, height and AO.",
+  "textures": {
+    "Glacial_Blue_Ice": {
+      "albedo": "textures/2K/glacial_blue_ice_albedo_2k.jpg",
+      "roughness": "textures/2K/glacial_blue_ice_roughness_2k.jpg",
+      "normal": "textures/2K/glacial_blue_ice_normal_2k.jpg",
+      "height": "textures/2K/glacial_blue_ice_height_2k.jpg",
+      "ao": "textures/2K/glacial_blue_ice_ao_2k.jpg"
+    },
+    "Ancient_Frosted_Stone": {
+      "albedo": "textures/2K/ancient_frosted_stone_albedo_2k.jpg",
+      "roughness": "textures/2K/ancient_frosted_stone_roughness_2k.jpg",
+      "normal": "textures/2K/ancient_frosted_stone_normal_2k.jpg",
+      "height": "textures/2K/ancient_frosted_stone_height_2k.jpg",
+      "ao": "textures/2K/ancient_frosted_stone_ao_2k.jpg"
+    },
+    "Aurora_Crystal": {
+      "albedo": "textures/2K/aurora_crystal_albedo_2k.jpg",
+      "roughness": "textures/2K/aurora_crystal_roughness_2k.jpg",
+      "normal": "textures/2K/aurora_crystal_normal_2k.jpg",
+      "height": "textures/2K/aurora_crystal_height_2k.jpg",
+      "ao": "textures/2K/aurora_crystal_ao_2k.jpg"
+    },
+    "Frozen_Snow_Crust": {
+      "albedo": "textures/2K/frozen_snow_crust_albedo_2k.jpg",
+      "roughness": "textures/2K/frozen_snow_crust_roughness_2k.jpg",
+      "normal": "textures/2K/frozen_snow_crust_normal_2k.jpg",
+      "height": "textures/2K/frozen_snow_crust_height_2k.jpg",
+      "ao": "textures/2K/frozen_snow_crust_ao_2k.jpg"
+    },
+    "Cryo_Metal_Relic": {
+      "albedo": "textures/2K/cryo_metal_relic_albedo_2k.jpg",
+      "roughness": "textures/2K/cryo_metal_relic_roughness_2k.jpg",
+      "normal": "textures/2K/cryo_metal_relic_normal_2k.jpg",
+      "height": "textures/2K/cryo_metal_relic_height_2k.jpg",
+      "ao": "textures/2K/cryo_metal_relic_ao_2k.jpg"
+    },
+    "Polar_Organic_Bark": {
+      "albedo": "textures/2K/polar_organic_bark_albedo_2k.jpg",
+      "roughness": "textures/2K/polar_organic_bark_roughness_2k.jpg",
+      "normal": "textures/2K/polar_organic_bark_normal_2k.jpg",
+      "height": "textures/2K/polar_organic_bark_height_2k.jpg",
+      "ao": "textures/2K/polar_organic_bark_ao_2k.jpg"
+    }
+  },
+  "models": [
+    {
+      "name": "Blue_Ice_Creasse_Ridge",
+      "file": "models/terrain/Blue_Ice_Creasse_Ridge.glb",
+      "type": "glacial_terrain",
+      "description": "High-density irregular glacial landform with wind-cut ridges and fractured ice silhouette"
+    },
+    {
+      "name": "Wind_Sculpted_Glacier",
+      "file": "models/terrain/Wind_Sculpted_Glacier.glb",
+      "type": "glacial_terrain",
+      "description": "High-density irregular glacial landform with wind-cut ridges and fractured ice silhouette"
+    },
+    {
+      "name": "Polar_Shelf_Fracture",
+      "file": "models/terrain/Polar_Shelf_Fracture.glb",
+      "type": "glacial_terrain",
+      "description": "High-density irregular glacial landform with wind-cut ridges and fractured ice silhouette"
+    },
+    {
+      "name": "Ancient_Icefall_Terrace",
+      "file": "models/terrain/Ancient_Icefall_Terrace.glb",
+      "type": "glacial_terrain",
+      "description": "High-density irregular glacial landform with wind-cut ridges and fractured ice silhouette"
+    },
+    {
+      "name": "Frost_Shattered_Boulder",
+      "file": "models/ice/Frost_Shattered_Boulder.glb",
+      "type": "ice_formation",
+      "description": "Weathered high-poly ice mass with pressure deformation and fractured silhouette"
+    },
+    {
+      "name": "Glacial_Blue_Ice_Monolith",
+      "file": "models/ice/Glacial_Blue_Ice_Monolith.glb",
+      "type": "ice_formation",
+      "description": "Weathered high-poly ice mass with pressure deformation and fractured silhouette"
+    },
+    {
+      "name": "Pressure_Ridged_Ice_Block",
+      "file": "models/ice/Pressure_Ridged_Ice_Block.glb",
+      "type": "ice_formation",
+      "description": "Weathered high-poly ice mass with pressure deformation and fractured silhouette"
+    },
+    {
+      "name": "Snow_Buried_Relic_Stone",
+      "file": "models/ice/Snow_Buried_Relic_Stone.glb",
+      "type": "ice_formation",
+      "description": "Weathered high-poly ice mass with pressure deformation and fractured silhouette"
+    },
+    {
+      "name": "Aurora_Light_Crystal_Cluster",
+      "file": "models/crystals/Aurora_Light_Crystal_Cluster.glb",
+      "type": "crystal",
+      "description": "Faceted translucent polar mineral cluster with varied spire profiles"
+    },
+    {
+      "name": "Polar_Prism_Spires",
+      "file": "models/crystals/Polar_Prism_Spires.glb",
+      "type": "crystal",
+      "description": "Faceted translucent polar mineral cluster with varied spire profiles"
+    },
+    {
+      "name": "Subglacial_Resonance_Geode",
+      "file": "models/crystals/Subglacial_Resonance_Geode.glb",
+      "type": "crystal",
+      "description": "Faceted translucent polar mineral cluster with varied spire profiles"
+    },
+    {
+      "name": "Frosted_Crystal_Arch",
+      "file": "models/crystals/Frosted_Crystal_Arch.glb",
+      "type": "crystal",
+      "description": "Faceted translucent polar mineral cluster with varied spire profiles"
+    },
+    {
+      "name": "Ancient_Polar_Gateway",
+      "file": "models/ruins/Ancient_Polar_Gateway.glb",
+      "type": "ancient_ruin",
+      "description": "Modular ancient polar civilization relic; weathered geometry for cinematic environment dressing"
+    },
+    {
+      "name": "Cryogenic_Archive_Pylon",
+      "file": "models/ruins/Cryogenic_Archive_Pylon.glb",
+      "type": "ancient_ruin",
+      "description": "Modular ancient polar civilization relic; weathered geometry for cinematic environment dressing"
+    },
+    {
+      "name": "Fallen_Civilization_Column",
+      "file": "models/ruins/Fallen_Civilization_Column.glb",
+      "type": "ancient_ruin",
+      "description": "Modular ancient polar civilization relic; weathered geometry for cinematic environment dressing"
+    },
+    {
+      "name": "Subglacial_Archive_Chamber",
+      "file": "models/ruins/Subglacial_Archive_Chamber.glb",
+      "type": "ancient_ruin",
+      "description": "Modular ancient polar civilization relic; weathered geometry for cinematic environment dressing"
+    },
+    {
+      "name": "Frost_Veil_Shrub",
+      "file": "models/flora/Frost_Veil_Shrub.glb",
+      "type": "polar_flora",
+      "description": "Cold-adapted low-profile alien flora with frost-coated layered structures"
+    },
+    {
+      "name": "Aurora_Lichen_Fan",
+      "file": "models/flora/Aurora_Lichen_Fan.glb",
+      "type": "polar_flora",
+      "description": "Cold-adapted low-profile alien flora with frost-coated layered structures"
+    },
+    {
+      "name": "Polar_Glass_Reed",
+      "file": "models/flora/Polar_Glass_Reed.glb",
+      "type": "polar_flora",
+      "description": "Cold-adapted low-profile alien flora with frost-coated layered structures"
+    },
+    {
+      "name": "Aurora_Snowstalker",
+      "file": "models/fauna/Aurora_Snowstalker.glb",
+      "type": "fauna_prototype",
+      "description": "Polar-adapted creature silhouette designed for realistic sculpt and rigging pass"
+    },
+    {
+      "name": "Spectral_Polar_Glider",
+      "file": "models/fauna/Spectral_Polar_Glider.glb",
+      "type": "fauna_prototype",
+      "description": "Polar-adapted creature silhouette designed for realistic sculpt and rigging pass"
+    },
+    {
+      "name": "Cryo_Herd_Warden",
+      "file": "models/fauna/Cryo_Herd_Warden.glb",
+      "type": "fauna_prototype",
+      "description": "Polar-adapted creature silhouette designed for realistic sculpt and rigging pass"
+    }
+  ],
+  "production_notes": [
+    "Models are modular procedural high-poly starter meshes, not finished hand-sculpted hero assets.",
+    "Texture maps are separate files and must be assigned to materials in Blender, Unreal or Unity.",
+    "No baked animation clips are included; fauna and flora are rigging-ready prototypes.",
+    "Aurora light curtains, volumetric atmosphere and moving spectral sky should be implemented in the target renderer using animated shaders/particles for cinematic results."
+  ]
+}

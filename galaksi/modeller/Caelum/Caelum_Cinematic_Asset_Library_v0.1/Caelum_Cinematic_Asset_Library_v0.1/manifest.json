@@ -1,0 +1,192 @@
+{
+  "title": "Caelum Cinematic Asset Library",
+  "version": "0.1",
+  "models_count": 25,
+  "pbr_material_sets": 8,
+  "texture_maps_per_set": 5,
+  "texture_resolution": "1024x1024",
+  "models": [
+    {
+      "name": "01_Meteor_Observatory_Temple",
+      "file": "Models/01_Meteor_Observatory_Temple.glb"
+    },
+    {
+      "name": "02_Cloud_City_Sky_Pillar",
+      "file": "Models/02_Cloud_City_Sky_Pillar.glb"
+    },
+    {
+      "name": "03_Cloudway_Sky_Bridge",
+      "file": "Models/03_Cloudway_Sky_Bridge.glb"
+    },
+    {
+      "name": "04_Cloud_City_Gate",
+      "file": "Models/04_Cloud_City_Gate.glb"
+    },
+    {
+      "name": "05_Floating_City_Residence",
+      "file": "Models/05_Floating_City_Residence.glb"
+    },
+    {
+      "name": "06_Cloud_City_Hall",
+      "file": "Models/06_Cloud_City_Hall.glb"
+    },
+    {
+      "name": "07_Floating_Island_Mossy",
+      "file": "Models/07_Floating_Island_Mossy.glb"
+    },
+    {
+      "name": "08_Floating_Island_Luminous",
+      "file": "Models/08_Floating_Island_Luminous.glb"
+    },
+    {
+      "name": "09_Floating_Mountain_Rock",
+      "file": "Models/09_Floating_Mountain_Rock.glb"
+    },
+    {
+      "name": "10_Cloud_Forest_Island",
+      "file": "Models/10_Cloud_Forest_Island.glb"
+    },
+    {
+      "name": "11_Waterfall_Island_Ledge",
+      "file": "Models/11_Waterfall_Island_Ledge.glb"
+    },
+    {
+      "name": "12_Parlayan_Island_Core",
+      "file": "Models/12_Parlayan_Island_Core.glb"
+    },
+    {
+      "name": "13_Sky_Whale",
+      "file": "Models/13_Sky_Whale.glb"
+    },
+    {
+      "name": "14_Cloud_Ray",
+      "file": "Models/14_Cloud_Ray.glb"
+    },
+    {
+      "name": "15_Lightning_Bird",
+      "file": "Models/15_Lightning_Bird.glb"
+    },
+    {
+      "name": "16_Cloud_Creature_Ray_Form",
+      "file": "Models/16_Cloud_Creature_Ray_Form.glb"
+    },
+    {
+      "name": "17_Floating_Island_Grazer",
+      "file": "Models/17_Floating_Island_Grazer.glb"
+    },
+    {
+      "name": "18_Storm_Sentinel_Creature",
+      "file": "Models/18_Storm_Sentinel_Creature.glb"
+    },
+    {
+      "name": "19_Star_Mapping_Instrument",
+      "file": "Models/19_Star_Mapping_Instrument.glb"
+    },
+    {
+      "name": "20_Celestial_Calendar_Obelisk",
+      "file": "Models/20_Celestial_Calendar_Obelisk.glb"
+    },
+    {
+      "name": "21_Bioluminescent_Cloud_Forest_Plant",
+      "file": "Models/21_Bioluminescent_Cloud_Forest_Plant.glb"
+    },
+    {
+      "name": "22_Floating_Island_Waterfall",
+      "file": "Models/22_Floating_Island_Waterfall.glb"
+    },
+    {
+      "name": "23_Meteorite_Relic",
+      "file": "Models/23_Meteorite_Relic.glb"
+    },
+    {
+      "name": "24_Ancient_Sky_Temple_Pillar",
+      "file": "Models/24_Ancient_Sky_Temple_Pillar.glb"
+    },
+    {
+      "name": "25_Meteor_Rubble_Field",
+      "file": "Models/25_Meteor_Rubble_Field.glb"
+    }
+  ],
+  "materials": [
+    {
+      "name": "stormstone",
+      "maps": [
+        "Textures/stormstone/stormstone_BaseColor.png",
+        "Textures/stormstone/stormstone_Roughness.png",
+        "Textures/stormstone/stormstone_Metallic.png",
+        "Textures/stormstone/stormstone_Normal.png",
+        "Textures/stormstone/stormstone_Height.png"
+      ]
+    },
+    {
+      "name": "sky_silver",
+      "maps": [
+        "Textures/sky_silver/sky_silver_BaseColor.png",
+        "Textures/sky_silver/sky_silver_Roughness.png",
+        "Textures/sky_silver/sky_silver_Metallic.png",
+        "Textures/sky_silver/sky_silver_Normal.png",
+        "Textures/sky_silver/sky_silver_Height.png"
+      ]
+    },
+    {
+      "name": "cloud_blue",
+      "maps": [
+        "Textures/cloud_blue/cloud_blue_BaseColor.png",
+        "Textures/cloud_blue/cloud_blue_Roughness.png",
+        "Textures/cloud_blue/cloud_blue_Metallic.png",
+        "Textures/cloud_blue/cloud_blue_Normal.png",
+        "Textures/cloud_blue/cloud_blue_Height.png"
+      ]
+    },
+    {
+      "name": "aurora_teal",
+      "maps": [
+        "Textures/aurora_teal/aurora_teal_BaseColor.png",
+        "Textures/aurora_teal/aurora_teal_Roughness.png",
+        "Textures/aurora_teal/aurora_teal_Metallic.png",
+        "Textures/aurora_teal/aurora_teal_Normal.png",
+        "Textures/aurora_teal/aurora_teal_Height.png"
+      ]
+    },
+    {
+      "name": "storm_violet",
+      "maps": [
+        "Textures/storm_violet/storm_violet_BaseColor.png",
+        "Textures/storm_violet/storm_violet_Roughness.png",
+        "Textures/storm_violet/storm_violet_Metallic.png",
+        "Textures/storm_violet/storm_violet_Normal.png",
+        "Textures/storm_violet/storm_violet_Height.png"
+      ]
+    },
+    {
+      "name": "meteor_iron",
+      "maps": [
+        "Textures/meteor_iron/meteor_iron_BaseColor.png",
+        "Textures/meteor_iron/meteor_iron_Roughness.png",
+        "Textures/meteor_iron/meteor_iron_Metallic.png",
+        "Textures/meteor_iron/meteor_iron_Normal.png",
+        "Textures/meteor_iron/meteor_iron_Height.png"
+      ]
+    },
+    {
+      "name": "island_moss",
+      "maps": [
+        "Textures/island_moss/island_moss_BaseColor.png",
+        "Textures/island_moss/island_moss_Roughness.png",
+        "Textures/island_moss/island_moss_Metallic.png",
+        "Textures/island_moss/island_moss_Normal.png",
+        "Textures/island_moss/island_moss_Height.png"
+      ]
+    },
+    {
+      "name": "lumen",
+      "maps": [
+        "Textures/lumen/lumen_BaseColor.png",
+        "Textures/lumen/lumen_Roughness.png",
+        "Textures/lumen/lumen_Metallic.png",
+        "Textures/lumen/lumen_Normal.png",
+        "Textures/lumen/lumen_Height.png"
+      ]
+    }
+  ]
+}
