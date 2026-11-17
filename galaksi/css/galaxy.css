@@ -33,7 +33,7 @@ button{font-family:inherit}
 #th{font-size:clamp(1.8rem,5vw,3.6rem);letter-spacing:.3em;text-transform:uppercase;color:var(--g);font-weight:400;text-shadow:0 0 40px #e8b84b66}
 #ts{margin-top:.6rem;letter-spacing:.35em;font-size:.8rem;color:var(--d);text-transform:uppercase}
 @keyframes ttl{0%{opacity:0;filter:blur(12px);transform:scale(1.06)}20%{opacity:1;filter:none;transform:none}91%{opacity:1;filter:none}100%{opacity:0;filter:blur(8px)}}
-.hudc{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:36;display:flex;gap:10px;align-items:flex-start}
+.hudc{position:fixed;top:46px;left:50%;transform:translateX(-50%);z-index:36;display:flex;gap:10px;align-items:flex-start}
 #q{width:220px;background:rgba(20,17,13,.82);border:1px solid #6b5d42;color:var(--p);padding:9px 14px;font:13px Georgia,serif;outline:0}
 #q:focus{border-color:var(--g)}
 #sres{position:absolute;top:40px;left:0;width:220px;display:flex;flex-direction:column;background:rgba(12,10,8,.96);border:1px solid #6b5d4255}
@@ -235,7 +235,7 @@ body.idle #tools{opacity:.06}
 #defter figure{margin:0;cursor:pointer}#defter figure img{width:100%;display:block;border:1px solid #6b5d4266}#defter figcaption{font-size:11px;color:#9d927a;margin-top:4px;letter-spacing:.08em}
 #defter .dlb{position:fixed;inset:0;background:#000e;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;cursor:zoom-out;padding:16px}#defter .dlb img{max-width:min(900px,96vw);max-height:80vh}#defter .dlb p{color:#cfc4aa;font-size:13px}
 #atl{background:rgba(20,17,13,.82);color:var(--p);border:1px solid #6b5d42;padding:9px 14px;font-size:13px;text-decoration:none;transition:.3s;display:inline-flex;align-items:center}#atl:hover{border-color:var(--g);color:var(--g)}
-#zaman{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:20;text-align:center}
+#zaman{position:fixed;left:50%;bottom:62px;transform:translateX(-50%);z-index:20;text-align:center}
 #zaman small{display:block;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#8f8570;margin-bottom:6px}
 #zaman .zt{display:flex;border:1px solid #6b5d4299;background:rgba(14,12,9,.82);backdrop-filter:blur(6px)}
 #zaman button{background:none;border:0;border-right:1px solid #6b5d4255;color:#b8ab8e;padding:8px 16px;cursor:pointer;font-family:inherit;text-align:left;line-height:1.25;transition:.3s}
@@ -286,7 +286,7 @@ body.sergi:not(.sergip) .hudr,body.sergi:not(.sergip) .hudc,body.sergi:not(.serg
 @media(max-width:900px){#surf .sgz{top:142px;right:20px}}
 #drift{position:fixed;left:14px;bottom:14px;z-index:40;background:rgba(20,17,13,.82);color:var(--g);border:1px solid #6b5d42;padding:10px 16px;font-size:13px;cursor:pointer;border-radius:999px;transition:opacity .6s,border-color .3s;touch-action:manipulation}
 #drift:hover{border-color:var(--g)}
-body.drift .hud,body.drift .hudc,body.drift .hudr,body.drift #chips,body.drift #where,body.drift #dist,body.drift .legend{opacity:0!important;pointer-events:none!important}
+body.drift .hud,body.drift .hudc,body.drift .hudr,body.drift #zaman,body.drift #tools,body.drift #chips,body.drift #where,body.drift #dist,body.drift .legend{opacity:0!important;pointer-events:none!important}
 body.drift #drift{opacity:.18}body.drift #drift:hover,body.drift #drift:active{opacity:1}
 @media(max-width:760px){#drift{left:auto;right:12px;top:110px;bottom:auto;transform:none;padding:9px 14px;font-size:12px;z-index:60}}
 #dlog{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:39;display:flex;gap:18px;flex-wrap:wrap;justify-content:center;max-width:94vw;padding:8px 18px;border-radius:999px;background:rgba(12,10,8,.55);backdrop-filter:blur(6px);color:#cfc3a8;font-size:12px;letter-spacing:.06em;opacity:0;pointer-events:none;transition:opacity 1.6s}
