@@ -56,8 +56,32 @@ h2{font-size:clamp(1.4rem,3.6vw,2.6rem);font-weight:400;letter-spacing:.14em;tex
 a.cta{display:inline-block;margin:.6rem;padding:1rem 2.4rem;border:1px solid var(--g);color:var(--g);text-decoration:none;letter-spacing:.3em;font-size:.8rem;text-transform:uppercase;transition:.5s}
 a.cta:hover{background:var(--g);color:var(--v);box-shadow:0 0 50px #e8b84b66}a.cta.s{border-color:#6b5d42;color:var(--d)}
 .note{max-width:34em;font-size:.95rem;color:#b9ad92;margin-bottom:2.4rem}
+
+.cn{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.2rem;max-width:1050px;width:100%}
+.cn div{border-top:1px solid #6b5d4255;padding:1.1rem .4rem;text-align:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--d)}
+.cn strong{display:block;font-weight:400;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.04em;color:var(--g);text-shadow:0 0 40px #e8b84b44;margin-bottom:.3rem}
+.sub{max-width:36em;font-size:.82rem;color:var(--d);margin-top:1.6rem;line-height:1.6}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;max-width:1050px;width:100%}
+.cmp .tile h3{font-weight:400;font-size:1.15rem;color:var(--g);margin-bottom:.5rem}.cmp .tile p{font-size:.92rem;color:#b9ad92;line-height:1.65}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(460px,100%),1fr));gap:1.2rem;max-width:1150px;width:100%;margin:1rem 0 2rem}
+.shots a{display:block;border:1px solid #6b5d4244;background:#0a0910;transition:.6s;box-shadow:0 20px 50px #000a;overflow:hidden}
+.shots a:hover{transform:translateY(-8px);border-color:var(--g);box-shadow:0 30px 70px #e8b84b33}
+.shots img{display:block;width:100%;height:auto}
+.stack{max-width:820px;width:100%;display:grid;gap:.8rem}
+.stack div{border:1px solid #6b5d4244;background:linear-gradient(160deg,#14110d99,#07060a99);padding:1.1rem 1.4rem;text-align:left}
+.stack div:nth-child(1){border-color:#e8b84b88}
+.stack b{display:block;font-weight:400;color:var(--p);font-size:1.05rem}.stack small{display:block;color:var(--d);font-size:.82rem;line-height:1.55;margin-top:.2rem}
+.mec{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;max-width:900px;margin-top:2rem}
+.mec span{border:1px solid #6b5d4277;padding:.35rem .9rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--p)}
+.dur{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;max-width:1050px;width:100%;text-align:left}
+.dur ul{list-style:none;padding:0}.dur li{padding:.55rem 0;border-bottom:1px solid #6b5d4233;font-size:.95rem;color:#c4b99d}
+.dur h3{font-weight:400;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:.8rem}.dur .ok h3{color:#8fd8a0}.dur .wip h3{color:var(--g)}
+.faq{max-width:760px;width:100%;text-align:left}
+.faq details{border-bottom:1px solid #6b5d4244;padding:1rem 0}.faq summary{cursor:pointer;font-size:1.05rem;color:var(--p);list-style:none}
+.faq summary::before{content:'+ ';color:var(--g)}.faq details[open] summary::before{content:'– '}
+.faq p{font-size:.92rem;color:#b9ad92;line-height:1.7;margin-top:.7rem}
 footer{position:relative;z-index:1;text-align:center;padding:4rem;color:var(--d);font-size:.7rem;letter-spacing:.3em}
-</style><script data-base="../galaksi/lang/" src="../i18n_sayfa.js?v=1daf289577"></script></head><body>
+</style><script data-base="../galaksi/lang/" src="../i18n_sayfa.js?v=488001fcb4"></script></head><body>
 <canvas id="sky"></canvas><div class="neb"></div>
 <div class="lb t"></div><div class="lb b"></div>
 <div class="top"><a data-i18n="site.yap.2" href="index.html">← Vitrin</a><span class="stamp" data-i18n="site.yap.3">Özel gösterim</span></div>
@@ -73,8 +97,33 @@ footer{position:relative;z-index:1;text-align:center;padding:4rem;color:var(--d)
 <div class="tile r"><i data-i18n="site.yap.10">Yapı</i><b data-i18n="site.yap.11">On iki kitap: üç ciltlik ana hikâye ve aynı kanona bağlı bağımsız anlatılar.</b></div>
 <div class="tile r"><i data-i18n="site.yap.12">Zaman katmanları</i><b data-i18n="site.yap.13">Günümüz · 2.600 yıl sonrası · 15.000 yıl sonrası</b></div>
 <div class="tile r"><i data-i18n="site.yap.14">Evren</i><b data-i18n="site.yap.15">Eşlenik Evrenler: Eirahoutmoss ve Yeremya. Aralarında Araf ve Cherqa.</b></div>
-<div class="tile r"><i data-i18n="site.yap.16">Ölçek</i><b data-i18n="site.yap.17">100'ün üzerinde galaksi. 93 kayıtlı gezegen, her biri kimlik kartlı.</b></div>
-<div class="tile r"><i data-i18n="site.yap.18">Hacim</i><b data-i18n="site.yap.19">Dört romanda yaklaşık 209 bin kelime. Kanon dosyaları ayrıca.</b></div>
+<div class="tile r"><i data-i18n="site.yap.16">Ölçek</i><b data-i18n="site.yap.17">100'ün üzerinde galaksi. 97 kayıtlı gezegen, her biri kimlik kartlı.</b></div>
+<div class="tile r"><i data-i18n="site.yap.18">Hacim</i><b data-i18n="site.yap.19">On iki anlatı dosyasında yaklaşık 460 bin kelime (taslak). Kanon dosyaları ayrıca.</b></div>
+</div>
+</section>
+<section id="olcek">
+<h2 class="r" data-i18n="site.yap.73">Sayılarla büyüklük</h2>
+<div class="cn">
+<div class="r" data-i18n="site.yap.74"><strong data-n="460">0</strong>bin kelime · 12 anlatı</div>
+<div class="r" data-i18n="site.yap.75"><strong data-n="97">0</strong>gezegen · her biri kimlik kartlı</div>
+<div class="r" data-i18n="site.yap.76"><strong data-n="102">0</strong>kayıtlı karakter</div>
+<div class="r" data-i18n="site.yap.77"><strong data-n="15">0</strong>aksiyom · 15 büyük soru</div>
+<div class="r" data-i18n="site.yap.78"><strong data-n="66">0</strong>müzik parçası</div>
+</div>
+<p class="sub r" data-i18n="site.yap.79">Sayılar dosyalardan ve harita verisinden ölçülmüştür; kelime sayısı taslak sürümleri kapsar ve kitaplar tamamlandıkça değişir.</p>
+</section>
+<section>
+<h2 class="r" data-i18n="site.yap.80">Neden ayrışır</h2>
+<div class="cmp">
+<div class="tile r"><h3 data-i18n="site.yap.81">Gezilebilir</h3><p data-i18n="site.yap.82">Okur evreni yalnızca okumaz; yüzlerce galaksinin arasında dolaşır, bir gezegene iner, kara deliğe düşer. Bu, bir ön-prodüksiyon aracı olarak da çalışır.</p></div>
+<div class="tile r"><h3 data-i18n="site.yap.83">Bilimle tutarlı</h3><p data-i18n="site.yap.84">Gezegenler, bilinen fizikle uyumlu kurallarla yazılır: yerçekimi, yörünge, atmosfer ve ışık gerçek ilkelere dayanır. Fantastik olan, bu zemin üzerinde durur.</p></div>
+<div class="tile r"><h3 data-i18n="site.yap.85">Çok medeniyetli</h3><p data-i18n="site.yap.86">Merkezinde tek bir kahraman ya da ırk yoktur. Her medeniyet gerçekliği farklı algılar; bu, aynı olayı farklı mecralarda ve bakışlarda anlatmaya elverişlidir.</p></div>
+<div class="tile r"><h3 data-i18n="site.yap.87">Tutarlılık güvencesi</h3><p data-i18n="site.yap.88">Tek bir kanon, her yeni metni denetleyen bir kontrol sistemi ve sürüm kaydı. Evren büyür; çekirdeği bozulmaz.</p></div>
+</div>
+<p class="sub r" data-i18n="site.yap.89">Yakınlık, taklit değil yön gösterir. Güncel yayın ve izlenme verileri görüşme aşamasında kaynağından birlikte doğrulanır.</p>
+<div class="cmp" style="margin-top:2rem">
+<div class="tile r"><h3 data-i18n="site.yap.90">Silo çizgisine yakın</h3><p data-i18n="site.yap.91">Kapalı bir dünyanın sırlarını katman katman çözen anlatı. Fark: bizim kapalı mekânımız (2678) daha geniş, gezilebilir bir evrenin kapısıdır.</p></div>
+<div class="tile r"><h3 data-i18n="site.yap.92">Üç Cisim Problemi çizgisine yakın</h3><p data-i18n="site.yap.93">Bilimi dramın motoru yapan, bir kültürden dünyaya açılan seri. Fark: bilimin yanında kadim bir iç yolculuk, tasavvuf ve yitme fikri vardır.</p></div>
 </div>
 </section>
 <section>
@@ -84,6 +133,83 @@ footer{position:relative;z-index:1;text-align:center;padding:4rem;color:var(--d)
 <div class="r"><em data-i18n="site.yap.24">II</em><span><h3 data-i18n="site.yap.25">Bağımsız giriş kapıları</h3><p data-i18n="site.yap.26">Her anlatı tek başına izlenebilir, hepsi aynı kanona bağlıdır. Bir hikâye kanonla çelişirse düzeltilen hikâyedir. Evren büyür, çekirdeği bozulmaz.</p></span></div>
 <div class="r"><em data-i18n="site.yap.27">III</em><span><h3 data-i18n="site.yap.28">Bilimle konuşan mistisizm</h3><p data-i18n="site.yap.29">Modern dünyada büyü yoktur; frekans ve titreşim vardır. "Cin çarpması" bir bilişsel parazittir. Tasavvufun "yitmek" fikri, bir bilim-kurgunun duygusal omurgası olur.</p></span></div>
 <div class="r"><em data-i18n="site.yap.30">IV</em><span><h3 data-i18n="site.yap.31">Metrobüsten galaksiye</h3><p data-i18n="site.yap.32">İstanbul'daki bir patlamadan Nemrut'a, bir koloni gemisinin sessizliğinden yüzlerce galaksiyi kapsayan bir konfederasyona uzanan, ölçeği ayarlanabilen bir dünya.</p></span></div>
+</div>
+</section>
+<section>
+<h2 class="r" data-i18n="site.yap.94">Bilimle konuşan evren</h2>
+<p class="note r" data-i18n="site.yap.95">Gezegen kanonu, yazılı fizik ilkeleriyle denetlenir. Hedef, bilinen fizikle çelişmeyen bir dünyadır; kanıtlanmış bir bilim iddiası değildir.</p>
+<div class="grid">
+<div class="tile r"><i data-i18n="site.yap.96">İlke I</i><b data-i18n="site.yap.97">Büyü yok: her şey frekans, titreşim ve bilinen doğa yasalarıyla işler.</b></div>
+<div class="tile r"><i data-i18n="site.yap.98">İlke II</i><b data-i18n="site.yap.99">Kütleli her gök cisminin yerçekimi vardır; "yerçekimsiz gezegen" yoktur.</b></div>
+<div class="tile r"><i data-i18n="site.yap.100">İlke III</i><b data-i18n="site.yap.101">Zaman yalnız kütleçekimi ve hızla genişler; geriye zaman yolculuğu yoktur.</b></div>
+<div class="tile r"><i data-i18n="site.yap.102">İlke IV</i><b data-i18n="site.yap.103">Telepati yok: iletişim ses, ışık, koku, kimyasal ya da elektromanyetik sinyalle olur.</b></div>
+<div class="tile r"><i data-i18n="site.yap.104">Örnek</i><b data-i18n="site.yap.105">Cognitus'ta iki güneş gökte birbirine yakın görünür; çevre-ikili yörünge fiziğine uygun.</b></div>
+<div class="tile r"><i data-i18n="site.yap.106">Örnek</i><b data-i18n="site.yap.107">Gelgit kilitli dünyalarda yaşam alacakaranlık kuşağında ya da gece yarıküresinde kurulur.</b></div>
+<div class="tile r"><i data-i18n="site.yap.108">Örnek</i><b data-i18n="site.yap.109">Dev gezegenlerin bulut katmanlarında süzülen yaşam: katı yüzey yok, yüzücüler var.</b></div>
+<div class="tile r"><i data-i18n="site.yap.110">Örnek</i><b data-i18n="site.yap.111">Berylum'da yüzde 40'ı aşan oksijen oranı solunamaz ve yangına yatkındır; atmosfer buna göre yazılmıştır.</b></div>
+</div>
+</section>
+<section>
+<h2 class="r" data-i18n="site.yap.112">Hazır ön-prodüksiyon varlıkları</h2>
+<p class="note r" data-i18n="site.yap.113">Dünya inşası bir yapımın en pahalı kalemlerinden biridir. Burada dünya zaten kurulmuş, gezilebilir ve her gezegen bir kimlik kartıyla belgelenmiş durumdadır.</p>
+<div class="shots r">
+<a href="../galaksi/index.html"><img alt="Aeris sektör kimlik kartı" loading="lazy" src="../galaksi/img/aeris.jpg"/></a>
+<a href="../galaksi/index.html"><img alt="Aquarion sektör kimlik kartı" loading="lazy" src="../galaksi/img/aquarion.jpg"/></a>
+<a href="../galaksi/index.html"><img alt="Aurora sektör kimlik kartı" loading="lazy" src="../galaksi/img/aurora.jpg"/></a>
+<a href="../galaksi/index.html"><img alt="Berylum sektör kimlik kartı" loading="lazy" src="../galaksi/img/berylum.jpg"/></a>
+</div>
+<div class="grid">
+<div class="tile r"><i data-i18n="site.yap.114">Galaksi Haritası</i><b data-i18n="site.yap.115">117 galaksi, 97 gezegen, merkezlerinde kara delikler; her gezegene iniş yapılabilir, kendi yüzeyi ve yaşamı vardır.</b></div>
+<div class="tile r"><i data-i18n="site.yap.116">Mavi Bilye</i><b data-i18n="site.yap.117">Dünya'yı yörüngeden gösteren görünüm: Güneş, Ay, gece ışıkları ve gerçek yörünge verisiyle uydular, uzay istasyonu dahil.</b></div>
+<div class="tile r"><i data-i18n="site.yap.118">Uzay Laboratuvarı</i><b data-i18n="site.yap.119">Güneş Sistemi, bilimsel araçlar ve canlı verilerle çalışan, kitaplardan bağımsız bir keşif alanı.</b></div>
+<div class="tile r"><i data-i18n="site.yap.120">Ses</i><b data-i18n="site.yap.121">Evrenin atmosferini kuran 66 müzik parçası.</b></div>
+</div>
+<div class="r" style="margin-top:2rem"><a class="cta" data-i18n="site.yap.122" href="../galaksi/index.html">Haritayı Aç</a></div>
+</section>
+<section>
+<h2 class="r" data-i18n="site.yap.123">Tek dünya, çok mecra</h2>
+<div class="stack">
+<div class="r"><b data-i18n="site.yap.124">Çekirdek hat</b><small data-i18n="site.yap.125">Üç ciltlik ana hikâye: evrenin omurgası ve onbeş büyük sorunun ana taşıyıcısı.</small></div>
+<div class="r"><b data-i18n="site.yap.126">Bağımsız anlatılar</b><small data-i18n="site.yap.127">Her biri tek başına izlenebilir/okunabilir, hepsi aynı kanona bağlı. Dizi için antoloji ya da sezon dalları olarak düşünülebilir.</small></div>
+<div class="r"><b data-i18n="site.yap.128">Gezilebilir dünya</b><small data-i18n="site.yap.129">Harita, gezegen kimlik kartları, yüzeyler ve ses: her anlatıya bağlanan ortak ön-prodüksiyon katmanı.</small></div>
+<div class="r"><b data-i18n="site.yap.130">Giriş kapısı: 2678 · Azazel'in Sistemi</b><small data-i18n="site.yap.131">Kapalı mekân uzay gerilimi: iki yüz yıldır süren yolculukta 4.400 uyuyan yolcu. Tek mekân, sınırlı kadro, pilot için uygun bir yapı.</small></div>
+</div>
+<div class="mec r"><span data-i18n="site.yap.132">Kitap</span><span data-i18n="site.yap.133">Dizi / film</span><span data-i18n="site.yap.134">Ses</span><span data-i18n="site.yap.135">Etkileşimli</span><span data-i18n="site.yap.136">Eğitim / planetaryum</span></div>
+</section>
+<section id="kapi">
+<h2 class="r" data-i18n="site.yap.159">2678 · Azazel'in Sistemi</h2>
+<p class="log r" data-i18n="site.yap.160">İki yüz yıldır Dünya'dan uzaklaşan bir koloni gemisinde, hiçbir yere ait olmayan bir tarım işçisi kendi iç sesini duymaya başlar. Ses ona "küçülmemeyi" vaat eder; gemiye gizlice girmiş dört görünmez varlıktan biri ona fısıldamaktadır.<small>Logline</small></p>
+<p class="note r" data-i18n="site.yap.161" style="margin-top:2rem">Serinin ufku: bir koloni gemisinde başlayan tek bir fısıltı, on beş bin yıl sürecek bir sistemin ilk adımıdır ve o sistemin sonu, bir arşiv bekçisinin sorduğu tek bir soruyla gelir.</p>
+<div class="pil">
+<div class="r"><em data-i18n="site.yap.162">I</em><span><h3 data-i18n="site.yap.163">Gemi</h3><p data-i18n="site.yap.164">Sükun, 4.400 uyuyan yolcu ve iki yüz yılın sessizliği. Kryo güvertesinde bir kapsülde milisaniyelik bir sıçrama.</p></span></div>
+<div class="r"><em data-i18n="site.yap.165">II</em><span><h3 data-i18n="site.yap.166">Elan</h3><p data-i18n="site.yap.167">Dünya'yı hiç görmemiş sekizinci kuşaktan bir tarım işçisi. Eşini kaybetmiş, eş uykusuz, yani kilitsiz uyuyor. İlk ses gelir.</p></span></div>
+<div class="r"><em data-i18n="site.yap.168">III</em><span><h3 data-i18n="site.yap.169">Arşiv</h3><p data-i18n="site.yap.170">Genetik kaydında bir markör, atasının eşyaları arasında kapüşonlu bir figür.</p></span></div>
+<div class="r"><em data-i18n="site.yap.171">IV</em><span><h3 data-i18n="site.yap.172">Isı</h3><p data-i18n="site.yap.173">Yanında hava bir derece sıcak. Doktor, üç eski kaydı yan yana koyunca bir örüntü görür.</p></span></div>
+<div class="r"><em data-i18n="site.yap.174">V</em><span><h3 data-i18n="site.yap.175">Su</h3><p data-i18n="site.yap.176">Bir boru patlar; avuçlara sıçrayan su ve iz bırakmayan bir acı.</p></span></div>
+<div class="r"><em data-i18n="site.yap.177">VI</em><span><h3 data-i18n="site.yap.178">Karantina</h3><p data-i18n="site.yap.179">Kaptan karar verir. Elan "İyiyim" der ve bu sesin kendisine ait olmadığını hisseder.</p></span></div>
+</div>
+<p class="sub r" data-i18n="site.yap.180">Seri biçimi: önce gemi yolculuğu, sınırlı seri olarak. Başarıya bağlı olarak varış, Sistem'in yayılması ve çöküş, dönem dönem sezonlar olarak sürer. Yukarıdaki dizi, pilot ana hattının özetidir.</p>
+</section>
+<section id="bible">
+<h2 class="r" data-i18n="site.yap.181">Seri bible · özet</h2>
+<p class="note r" data-i18n="site.yap.182">2678 · Azazel'in Sistemi için dünyanın kuralları, kadro ve ton. Tam bible talep üzerine paylaşılır.</p>
+<div class="grid">
+<div class="tile r"><i data-i18n="site.yap.183">Kural</i><b data-i18n="site.yap.184">İdio, ateş ve havadan doğmuş bedensiz bir soydur; maddeye dokunamaz.</b></div>
+<div class="tile r"><i data-i18n="site.yap.185">Kural</i><b data-i18n="site.yap.186">Mimetik Fısıltı: kurban dışarıdan bir ses duymaz, kendi sesini duyar ve onu kendi düşüncesi sanır.</b></div>
+<div class="tile r"><i data-i18n="site.yap.187">Kural</i><b data-i18n="site.yap.188">Büyü yoktur; olağan dışı görünen her şey henüz bilinmeyen bir bilginin sonucudur.</b></div>
+<div class="tile r"><i data-i18n="site.yap.189">Kural</i><b data-i18n="site.yap.190">Su, İdio'yu söndürebilir; sönme, geri gelmeyen bir ölüm değil, hatırlanamayan uzun bir aralıktır.</b></div>
+</div>
+<div class="stack" style="margin-top:2.4rem">
+<div class="r"><b data-i18n="site.yap.191">Elan</b><small data-i18n="site.yap.192">Gemide doğmuş sekizinci kuşaktan tarım işçisi. Fısıltıyı duyan. Ait olmama ve küçülme korkusuyla yaşıyor.</small></div>
+<div class="r"><b data-i18n="site.yap.193">Doktor Selin</b><small data-i18n="site.yap.194">Yirmi yıllık gemi doktoru. Elan'ın bedeninde ilk örüntüyü fark eden; yemini hastaya değil gemiyedir.</small></div>
+<div class="r"><b data-i18n="site.yap.195">Roa</b><small data-i18n="site.yap.196">Elan'ın tarım güvertesindeki arkadaşı; değişimi ilk fark eden.</small></div>
+<div class="r"><b data-i18n="site.yap.197">Kaptan Rehav</b><small data-i18n="site.yap.198">Gemiyi yöneten; kararı karantinadır, ama karantina bir ziyaretçiyi durdurmaz.</small></div>
+<div class="r"><b data-i18n="site.yap.199">Azazel</b><small data-i18n="site.yap.200">Görünmez İdio. Sabırlı, hata yapmaya alışmamış; yanında üç İdio daha var.</small></div>
+</div>
+<div class="grid" style="margin-top:2.4rem">
+<div class="tile r"><i data-i18n="site.yap.201">Ton</i><b data-i18n="site.yap.202">Bir nöbetçi pencerede iki yüz yılı sayar; dışarıda yıldız yok, yalnız boş ve derin bir mor.</b></div>
+<div class="tile r"><i data-i18n="site.yap.203">Ton</i><b data-i18n="site.yap.204">Elan, atasının gemiye binmeden çektiği Dünya gökyüzünü bin kez izler: sahip olmadığı bir özlemi devralmak.</b></div>
+<div class="tile r"><i data-i18n="site.yap.205">Ton</i><b data-i18n="site.yap.206">Elan avucunu lambaya tutar; deri aynıdır, ama derinin altında bir şey uyanıyordur.</b></div>
 </div>
 </section>
 <section>
@@ -104,15 +230,31 @@ footer{position:relative;z-index:1;text-align:center;padding:4rem;color:var(--d)
 </div>
 </section>
 <section>
+<h2 class="r" data-i18n="site.yap.137">Teslim paketi</h2>
+<div class="dur">
+<div class="r ok"><h3 data-i18n="site.yap.138">Hazır</h3><ul><li data-i18n="site.yap.146">Seri bible özeti: dünya kuralları, kadro, ton sahneleri (taslak)</li><li data-i18n="site.yap.148">Karşılaştırma sayfası (taslak)</li><li data-i18n="site.yap.149">İlk kitap örneği: 2678, Bölüm 1 (PDF, talep üzerine)</li><li data-i18n="site.yap.145">Logline ve bir sayfalık önerme (taslak)</li><li data-i18n="site.yap.147">Pilot ana hattı (taslak)</li><li data-i18n="site.yap.139">Dünya özeti ve seçili bölümler</li><li data-i18n="site.yap.140">Gezegen kimlik kartları</li><li data-i18n="site.yap.141">Gezilebilir Galaksi Haritası</li><li data-i18n="site.yap.142">Müzik arşivi</li><li data-i18n="site.yap.143">Kanon ve fizik ilkeleri belgeleri</li></ul></div>
+<div class="r wip"><h3 data-i18n="site.yap.144">Hazırlanıyor</h3><ul><li data-i18n="site.yap.207">Genişletilmiş seri bible</li><li data-i18n="site.yap.208">Okur ilgisi ölçümü: e-posta listesi ve harita ziyaretleri</li></ul></div>
+</div>
+</section>
+<section>
 <h2 class="r" data-i18n="site.yap.64">Dünyayı gez</h2>
 <p class="note r" data-i18n="site.yap.65">Galaksi Konfederasyonu'nun etkileşimli haritası: yüzlerce galaksi, merkezlerinde kara delikler ve kimlik kartıyla her gezegen.</p>
 <div class="r"><a class="cta" data-i18n="site.yap.66" href="../galaksi/index.html">Galaksi Haritasına Gir</a></div>
 </section>
+<section>
+<h2 class="r" data-i18n="site.yap.150">Sık sorulanlar</h2>
+<div class="faq r">
+<details><summary data-i18n="site.yap.151">Bu kadar büyük bir evren tutarlı kalabiliyor mu?</summary><p data-i18n="site.yap.152">Evrenin tek bir kanonu var; her yeni metin bir kontrol sisteminden geçer ve bir hikâye kanonla çelişirse düzeltilen hikâyedir, kanon değil. Sürümler kayıt altındadır.</p></details>
+<details><summary data-i18n="site.yap.153">Hangi dillerde?</summary><p data-i18n="site.yap.154">Kaynak dil Türkçe. Site Türkçe ve İngilizce sunulur; diğer diller sonraki aşamadır.</p></details>
+<details><summary data-i18n="site.yap.155">Hangi hikâyeyle başlanmalı?</summary><p data-i18n="site.yap.156">Giriş kapısı 2678 · Azazel'in Sistemi: kapalı mekân, sınırlı kadro ve güçlü bir önerme. Diğer anlatılar aynı kanona bağlı bağımsız girişlerdir.</p></details>
+<details><summary data-i18n="site.yap.157">Metinleri okuyabilir miyim?</summary><p data-i18n="site.yap.158">Evet. Dünya özeti, seçili bölümler ve gezegen kimlik kartlarını içeren okuma paketi talep üzerine paylaşılır.</p></details>
+</div>
+</section>
 <section id="iletisim">
 <h2 class="r" data-i18n="site.yap.67">Okuma paketi</h2>
 <p class="note r" data-i18n="site.yap.68">Dünya özeti, seçili bölümler ve gezegen kimlik kartlarını içeren özel okuma paketi talep üzerine paylaşılır.</p>
-<div class="r"><a class="cta" data-i18n="site.yap.69" href="#iletisim">Paket talep et</a><a class="cta s" data-i18n="site.yap.70" href="index.html">Vitrine dön</a></div>
-<p class="note r" data-i18n="site.yap.71" style="margin-top:2rem;font-size:.8rem;color:var(--d)">İletişim: (e-posta adresi buraya eklenecek) · Hasan Güler</p>
+<div class="r"><a class="cta" data-i18n="site.yap.69" href="mailto:guler.hasan@gmail.com?subject=Qul%20Efsaneleri%20%C2%B7%20Okuma%20paketi%20talebi">Paket talep et</a><a class="cta s" data-i18n="site.yap.70" href="index.html">Vitrine dön</a></div>
+<p class="note r" data-i18n="site.yap.71" style="margin-top:2rem;font-size:.8rem;color:var(--d)">İletişim: <a href="mailto:guler.hasan@gmail.com" style="color:inherit">guler.hasan@gmail.com</a> · Hasan Güler</p>
 </section>
 <footer data-i18n="site.yap.72">© HASAN GÜLER · QUL EFSANELERİ</footer>
 <script>
@@ -127,4 +269,6 @@ const g=x.createRadialGradient(px,py,0,px,py,r*4);g.addColorStop(0,`rgba(${s.c},
 requestAnimationFrame(f)})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.3});
 document.querySelectorAll('.r').forEach(e=>io.observe(e));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,n=+el.dataset.n,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1600),v=Math.round(n*(1-Math.pow(1-k,3)));el.textContent=v;if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(e=>co.observe(e));
 </script></body></html>
