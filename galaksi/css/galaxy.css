@@ -358,3 +358,6 @@ body.sinif #panel{font-size:1.18em}body.sinif #tools button,body.sinif .hudc inp
 
 /* v95: sadeleştirme — alt başlık, lejant ve Zaman Katmanı kaldırıldı */
 .hud p,.legend,#zaman{display:none!important}
+/* v96: Araf·Cherqa bir boyut — sağ üst tek satır, alt küçük metin kaldırıldı */
+#dist i{display:none}
+#title{top:18%}
