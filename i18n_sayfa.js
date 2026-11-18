@@ -8,7 +8,7 @@
     var L=window.QUL_LANG; if(L&&L.code!=='tr'){ document.documentElement.lang=L.code; document.documentElement.dir=L.dir||'ltr';
       [].forEach.call(document.querySelectorAll('[data-i18n]'),function(e){ var v=L.s[e.getAttribute('data-i18n')]; if(v) e.innerHTML=v; }); }
     var ls=window.QUL_LANGS||[]; if(ls.length<2) return; try{ if(window.parent!==window && window.parent.document) return; }catch(e){}
-    var sel=document.createElement('select'); sel.setAttribute('aria-label','Language'); sel.style.cssText='position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:90;background:#14110dcc;color:#d8c9a8;border:1px solid #6b5d4288;padding:4px 8px;font:12px Georgia,serif;cursor:pointer';
+    var sel=document.createElement('select'); sel.id='qlangsel'; sel.setAttribute('aria-label','Language'); sel.style.cssText='position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:90;background:#14110dcc;color:#d8c9a8;border:1px solid #6b5d4288;padding:4px 8px;font:12px Georgia,serif;cursor:pointer';
     ls.forEach(function(l){ var o=document.createElement('option'); o.value=l.c; o.textContent=l.n; sel.appendChild(o); }); sel.value=window.QUL_CODE||'tr';
     sel.onchange=function(){ try{ localStorage.setItem('qlang',sel.value); }catch(e){} try{ top.location.reload(); }catch(e){ location.reload(); } };
     document.body.appendChild(sel);
