@@ -361,3 +361,6 @@ body.sinif #panel{font-size:1.18em}body.sinif #tools button,body.sinif .hudc inp
 /* v96: Araf·Cherqa bir boyut — sağ üst tek satır, alt küçük metin kaldırıldı */
 #dist i{display:none}
 #title{top:18%}
+
+/* gömülü mod (?embed=1): arayüz üst sayfada; yalnız 3B harita kalır */
+.embed .hud,.embed .hudr,.embed .hudc,.embed #tools,.embed #chips,.embed #where,.embed #dist,.embed #zaman,.embed #drift,.embed #driftx,.embed #qver,.embed #title,.embed #hush,.embed #carec,.embed #bt,.embed #bb{display:none!important}.embed body,.embed html{background:transparent}
